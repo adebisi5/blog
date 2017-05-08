@@ -93,11 +93,16 @@ SectionPagesMenu = "Main"
         [[Params.Footer.List]]
 
             icon_class = "twitter"
-            icon_link = "#!"
+            icon_link = "https://twitter.com/jlozadad2426"
 
         [[Params.Footer.List]]
 
             icon_class = "linkedin"
+            icon_link = "#!"
+
+        [[Params.Footer.List]]
+
+            icon_class = "linux"
             icon_link = "#!"
 
         [[Params.Footer.List]]
@@ -173,9 +178,9 @@ SectionPagesMenu = "Main"
 
         [[Params.Cells.List]]
 
-            name = "Projects"
-            #link = "/project/"
-            link = "[ask.sysadminonlinux.org](//ask.sysadminonlinux.org)"
+            name = "Git Projects"
+            link = "/project/"
+            #link = "[ask.sysadminonlinux.org](//ask.sysadminonlinux.org)"
             #link = "https://gitlab.com/users/jlozada2426/projects"
             image = "/img/tux_inside.png"
 

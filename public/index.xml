@@ -7,13 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; Jonathan Lozada De La Matta For content only</copyright>
-    <lastBuildDate>Mon, 08 May 2017 13:32:05 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 08 May 2017 15:51:12 -0400</lastBuildDate>
     
 	<atom:link href="https://jlozada2426.gitlab.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Using Ansible to Resolve IT Issues</title>
+      <title>use_ansible_to_resolve2</title>
+      <link>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve2/</link>
+      <pubDate>Mon, 08 May 2017 15:51:12 -0400</pubDate>
+      
+      <guid>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using Ansible to Resolve IT Issues Part 1</title>
       <link>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve/</link>
       <pubDate>Mon, 08 May 2017 13:32:05 -0400</pubDate>
       
