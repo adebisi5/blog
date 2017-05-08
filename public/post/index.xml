@@ -13,16 +13,16 @@
     
     
     <item>
-      <title>Big Data on Openstack Part 2</title>
-      <link>https://jlozada2426.gitlab.io/blog/post/big_data_on_openstack_2/</link>
+      <title>Using Ansible to Resolve IT Issues</title>
+      <link>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve/</link>
       <pubDate>Mon, 08 May 2017 13:32:05 -0400</pubDate>
       
-      <guid>https://jlozada2426.gitlab.io/blog/post/big_data_on_openstack_2/</guid>
-      <description></description>
+      <guid>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve/</guid>
+      <description>After I was able to successfully Install Cloudera CM and create a cluster, I was trying to find a way to reduce the deployment time. The current deployments would take too long, waste over 500 of labor hours and no consistency. I could not meet customer demand for new datanodes or clusters and had a reduced workforce due to contract changes. At first I tried to find an all solution like puppet or foreman.</description>
     </item>
     
     <item>
-      <title>Big Data on Openstack Part 1</title>
+      <title>Big Data on Openstack</title>
       <link>https://jlozada2426.gitlab.io/blog/post/big_data_on_openstack/</link>
       <pubDate>Mon, 08 May 2017 11:52:33 -0400</pubDate>
       

@@ -2,7 +2,7 @@
 categories = []
 date = "2017-05-08T11:52:33-04:00"
 tags = []
-title = "Big Data on Openstack Part 1"
+title = "Big Data on Openstack"
 
 +++
 Openstack can be a great solution due to the increase demand of  cloud and more resources. But, it can't resolve every issue out there. an Openstack deployment can provide "unlimited" resources but, is useless if is not architectured for the specific applications that the VM's will be hosting. For example, a previous customer had over 20 regions, configured almost the same and had performance issues. This  customer hosted big data applications (Cloudera to be specific) on those VM's, had an older deployment of Openstack ( Icehouse so we could not take advantage of the newer cloud features) and no budget for further expansion and upgrades ( Including software and hardware) but, had the following issues:

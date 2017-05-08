@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html 
+    lang="en-us"
+    class="no-js"
+>
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    
+    <meta name="generator" content="Hugo 0.20.7" />
+    <meta name="generation-date" content="2017-05-08 15:25:06.881138658 -0400 EDT">
+    <title>Using Ansible to Resolve IT Issues &middot; Tux Is the Best</title>
+    <link rel="shortcut icon" href="https://jlozada2426.gitlab.io/blog/img/favicon.ico">
+    <link rel="icon" href="https://jlozada2426.gitlab.io/blog/img/favicon.ico">
+    
+<link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/materialize.min.css">
+
+
+<link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/font-awesome.min.css">
+
+
+    
+    <link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/styles/railscasts.css">
+
+
+
+<link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/lightbox.css">
+
+
+<link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/main.css">
+
+
+    <script src="https://jlozada2426.gitlab.io/blog/js/modernizr-latest.js"></script>
+    <script src="https://jlozada2426.gitlab.io/blog/js/lazysizes.min.js"></script>
+    <script src="https://jlozada2426.gitlab.io/blog/js/ls.noscript.min.js"></script>
+
+    <script>
+        window.lazySizesConfig = window.lazySizesConfig || {};
+        lazySizesConfig.addClasses = true;
+        lazySizesConfig.loadMode = 2;
+    </script>
+
+    
+</head>
+
+
+
+<body class="page-colors minimum-viewport-height">
+    
+
+<nav class="main-menu menu-colors">
+    <ul class="menu menu-colors no-list-float">
+        <li><a href="https://jlozada2426.gitlab.io/blog/"><i class="fa fa-home fa-2x"></i></a></li>
+        <li>
+            <a href="#!"><i class="fa fa-bars fa-2x"></i></a>
+
+            
+            <ul class="menu flexible-width menu-colors no-list-float">
+                
+                
+                    <li class="active">
+                    
+                        <a href="https://jlozada2426.gitlab.io/blog//blog/post/">
+                            
+                            <span>Posts</span>
+                        </a>
+                    
+                    </li>
+                
+            </ul>
+        </li>
+        <li><a href="#!" data-lightbox-id="searchbox"><i class="fa fa-search fa-2x"></i></a></li>
+        
+            <li class="blue-grey-text" style="border-top: 1px solid;"></li>
+            
+        
+        <li class="blue-grey-text" style="border-top: 1px solid;"></li>
+        <li>
+            <a href="" type="application/rss+xml" target="_blank">
+                <i class="fa fa-rss fa-2x"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<div id="searchbox" class="no-display">
+    <div class="valign-wrapper fill-container">
+        <div class="valign large-form horizontal-center-hack">
+            <form method="get" id="search" action="http://duckduckgo.com/">
+    <input type="hidden" name="sites"value="https://jlozada2426.gitlab.io/blog/"/>
+    <input type="hidden" name="ka" value="h"/>
+    <input type="hidden" name="k7" value="#fafafa"/>
+    <input type="hidden" name="kj" value="#3f3f3f"/>
+    <input type="hidden" name="ky" value="#fafafa"/>
+    <input type="hidden" name="kx" value="b"/>
+    <input type="hidden" name="kt" value="Helvetica"/>
+    <input type="text" name="q" maxlength="255" placeholder="Search"/>
+    <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
+</form>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <div class="main-content">
+        <div class="center-space">
+            <div class="article-colors">
+                
+                <article>
+                    <header>
+                        <h1 class="article-title">Using Ansible to Resolve IT Issues</h1>
+                        <time class="date-color">Mon May 08, 2017</time>
+                        <span class="separator">|</span>
+                        
+<ul class="categories">
+    <li>
+        <i class="fa fa-book"></i>
+    </li>
+    
+</ul>
+
+
+                        <span class="separator">|</span>
+                        
+<ul class="tags">
+    <li>
+        <i class="fa fa-tags"></i>
+    </li>
+    
+</ul>
+
+
+                    </header>
+
+                    <hr>
+
+                    <section>
+                        
+                            
+
+<p>After I was able to successfully Install Cloudera CM and create a cluster, I was trying to find a way to reduce the deployment time. The current deployments would take too long, waste over 500 of labor hours and no consistency. I could not meet customer demand for new datanodes or clusters and had a reduced workforce due to contract changes. At first I tried to find an all solution like puppet or foreman. But, by installing this two solutions I ran into the same problem with the private name and it was a longer process to get it working. A more troublesome problem was changing the certs for https on Foreman. I also needed to find something that the team can learn fast and able to use. We got into debates going back and forth between ansible and puppet, although none on the team had much experience with Configuration Management. At the end no decision was made and everyone did what they though was easier for them. I decided to learn and use ansible, others kept deploying VM&rsquo;s and configuration manually and others decided to invest more time with <code>shell scripting</code>. Using scripts was still a better option but, there was no control or revision on the scripts. Anyone made changes and used the scripts in production making things worse. I went and bought a book on Ansible, Decided to use Gitlab to host all my roles and playbooks.</p>
+
+<h1 id="learning-ansible">Learning Ansible</h1>
+
+<p>I have used ansible before in a previous job but, I never created the roles and playbooks. All I did was run the playbooks and manually fix in the servers what failed. My first challenge was getting spacing and indent correctly on the .yaml. That took me a while to learn and understand. Although I read the ansible docs, I did not realize how to format the file correctly. It took me around 20 tries to finally get it correctly.</p>
+
+<p>The first problem as a team was adding users with PKI keys and removing users that left. It was a tedious process:</p>
+
+<ol>
+<li>Scp the script to the VM&rsquo;s run <code>adduser.sh</code> or <code>removeuser.sh</code></li>
+<li>We had to do this to every VM when we had a new user or someone left. This was tedious and took us a long time since it was a large number of VM&rsquo;s. Something that could take weeks to 5-8 months depending on the workload.</li>
+</ol>
+
+<p>At first I tried to copy roles that I found in Ansible Galaxy but, I did not understand them right away. I was not able to understand the variables, defaults and how others wrote their roles. I needed something simple that I could learn and be able to teach the rest of the team if the decide to use it. I came across a new acquired customer who started using ansible and had simpler roles I was to understand. So to be able to successfully create new users, I copy and pasted the modules all over the tasks/main.yml for every user I needed. Here is an example:</p>
+
+<pre><code>---
+  - name: Create Group &quot;&quot;
+    group: name=
+  - name: Creater user &quot;&quot;
+    user: name=&quot;&quot; group=&quot;&quot; uid=&quot;&quot; groups=&quot;&quot; expires=&quot;&quot;
+  - name: Authorized keys &quot;&quot;
+authorized_key: user=&quot;&quot; key=&quot;{{ lookup('file',&quot;dirtothekey/.pub') }}&quot;
+</code></pre>
+
+<p>I copy and pasted this for every user I needed created. My <code>main.yml</code> was messy and dirty but, I was able to successfully create users with their keys at a fast pace. The whole processing of scping every script I needed were long gone. I just saved months of work to around 2-3 hours.</p>
+
+                        
+                    </section>
+
+                    <footer class="right-align">
+                        <p><small>Copyright &#169; Jonathan Lozada De La Matta For content only</small></p>
+                    </footer>
+
+                    
+
+
+                </article>
+            </div>
+        </div>
+    </div>
+
+    
+<script src="https://jlozada2426.gitlab.io/blog/js/jquery-2.1.4.min.js"></script>
+
+
+<script src="https://jlozada2426.gitlab.io/blog/js/materialize.min.js"></script>
+
+
+<script src="https://jlozada2426.gitlab.io/blog/js/imagesloaded.pkgd.min.js"></script>
+
+
+<script src="https://jlozada2426.gitlab.io/blog/js/masonry.pkgd.min.js"></script>
+
+
+    
+    <script src="https://jlozada2426.gitlab.io/blog/js/highlight.pack.js"></script>
+
+
+
+<script src="https://jlozada2426.gitlab.io/blog/js/lightbox.min.js"></script>
+
+
+<script src="https://jlozada2426.gitlab.io/blog/js/jquery.infinitescroll.min.js"></script>
+
+
+<script src="https://jlozada2426.gitlab.io/blog/js/main.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+
