@@ -6,37 +6,28 @@
     <description>Recent content on Tux Is the Best</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;#169; Jonathan Lozada De La Matta</copyright>
-    <lastBuildDate>Mon, 08 May 2017 11:45:19 -0400</lastBuildDate>
+    <copyright>Copyright &amp;#169; Jonathan Lozada De La Matta For content only</copyright>
+    <lastBuildDate>Mon, 08 May 2017 13:32:05 -0400</lastBuildDate>
     
 	<atom:link href="https://jlozada2426.gitlab.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>ansible</title>
-      <link>https://jlozada2426.gitlab.io/blog/post/ansible/</link>
-      <pubDate>Mon, 08 May 2017 11:45:19 -0400</pubDate>
+      <title>Big Data on Openstack Part 2</title>
+      <link>https://jlozada2426.gitlab.io/blog/post/big_data_on_openstack_2/</link>
+      <pubDate>Mon, 08 May 2017 13:32:05 -0400</pubDate>
       
-      <guid>https://jlozada2426.gitlab.io/blog/post/ansible/</guid>
+      <guid>https://jlozada2426.gitlab.io/blog/post/big_data_on_openstack_2/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>nifi</title>
-      <link>https://jlozada2426.gitlab.io/blog/post/nifi/</link>
-      <pubDate>Mon, 08 May 2017 11:45:14 -0400</pubDate>
+      <title>Big Data on Openstack Part 1</title>
+      <link>https://jlozada2426.gitlab.io/blog/post/big_data_on_openstack/</link>
+      <pubDate>Mon, 08 May 2017 11:52:33 -0400</pubDate>
       
-      <guid>https://jlozada2426.gitlab.io/blog/post/nifi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cloudera</title>
-      <link>https://jlozada2426.gitlab.io/blog/post/cloudera/</link>
-      <pubDate>Mon, 08 May 2017 11:07:22 -0400</pubDate>
-      
-      <guid>https://jlozada2426.gitlab.io/blog/post/cloudera/</guid>
-      <description></description>
+      <guid>https://jlozada2426.gitlab.io/blog/post/big_data_on_openstack/</guid>
+      <description>Openstack can be a great solution due to the increase demand of cloud and more resources. But, it can&amp;rsquo;t resolve every issue out there. an Openstack deployment can provide &amp;ldquo;unlimited&amp;rdquo; resources but, is useless if is not architectured for the specific applications that the VM&amp;rsquo;s will be hosting. For example, a previous customer had over 20 regions, configured almost the same and had performance issues. This customer hosted big data applications (Cloudera to be specific) on those VM&amp;rsquo;s, had an older deployment of Openstack ( Icehouse so we could not take advantage of the newer cloud features) and no budget for further expansion and upgrades ( Including software and hardware) but, had the following issues:</description>
     </item>
     
   </channel>

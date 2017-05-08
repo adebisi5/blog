@@ -2,18 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jlozada2426.gitlab.io/blog/post/ansible/</loc>
-    <lastmod>2017-05-08T11:45:19-04:00</lastmod>
+    <loc>https://jlozada2426.gitlab.io/blog/post/big_data_on_openstack_2/</loc>
+    <lastmod>2017-05-08T13:32:05-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jlozada2426.gitlab.io/blog/post/nifi/</loc>
-    <lastmod>2017-05-08T11:45:14-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jlozada2426.gitlab.io/blog/post/cloudera/</loc>
-    <lastmod>2017-05-08T11:07:22-04:00</lastmod>
+    <loc>https://jlozada2426.gitlab.io/blog/post/big_data_on_openstack/</loc>
+    <lastmod>2017-05-08T11:52:33-04:00</lastmod>
   </url>
   
   <url>
@@ -23,7 +18,7 @@
   
   <url>
     <loc>https://jlozada2426.gitlab.io/blog/post/</loc>
-    <lastmod>2017-05-08T11:45:19-04:00</lastmod>
+    <lastmod>2017-05-08T13:32:05-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -34,7 +29,7 @@
   
   <url>
     <loc>https://jlozada2426.gitlab.io/blog/</loc>
-    <lastmod>2017-05-08T11:45:19-04:00</lastmod>
+    <lastmod>2017-05-08T13:32:05-04:00</lastmod>
     <priority>0</priority>
   </url>
   
