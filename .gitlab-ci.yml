@@ -1,0 +1,23 @@
+mage: publysher/hugo
+before_script:
+  #- mkdir -p /tmp/certbot/public_html/.well-known/acme-challenge
+  #- cd /tmp/certbot/public_html
+  #- printf "%s" kbB9RRq1BfYjyZKQQCJDtx6M69bA3c7JMB3uepDVRbg.WAdRXMzaOFR97s9OPlE4Cq0zSW8Rw0qA7ITi44O89FU > .well-known/acme-challenge/kbB9RRq1BfYjyZKQQCJDtx6M69bA3c7JMB3uepDVRbg
+  #- $(command -v python2 || command -v python2.7 || command -v python2.6) -c \ "import BaseHTTPServer, SimpleHTTPServer; \ s = BaseHTTPServer.HTTPServer(('', 80), SimpleHTTPServer.SimpleHTTPRequestHandler); \ s.serve_forever()"
+#  - wget https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1_Linux-64bit.tar.gz
+#  - echo "37ee91ab3469afbf7602a091d466dfa5  hugo_0.18.1_linux-64bit.tgz" | md5sum -c
+#  - tar xf hugo_0.18.1_Linux-64bit.tar.gz  && mv hugo_0.18.1_linux_amd64 hugo && cp -r hugo /usr/bin
+#  - /usr/bin/hugo/hugo_0.18.1_linux_amd64 version
+test:
+  script:
+  - hugo version
+  except:
+  - master
+pages:
+  script:
+  - hugo --theme=grid-side
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
