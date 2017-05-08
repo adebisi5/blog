@@ -3,7 +3,7 @@ baseurl = "https://jlozada2426.gitlab.io/blog/"
 languageCode = "en-us"
 title = "Tux Is the Best"
 theme = "grid-side"
-copyright = "Copyright &#169; Jonathan Lozada De La Matta"
+copyright = "Copyright &#169; Jonathan Lozada De La Matta For content only"
 
 # The theme uses pagination for post, gallery, and project listings.
 #paginate = 12
@@ -174,7 +174,9 @@ SectionPagesMenu = "Main"
         [[Params.Cells.List]]
 
             name = "Projects"
-            link = "/project/"
+            #link = "/project/"
+            link = "[ask.sysadminonlinux.org](//ask.sysadminonlinux.org)"
+            #link = "https://gitlab.com/users/jlozada2426/projects"
             image = "/img/tux_inside.png"
 
         [[Params.Cells.List]]
