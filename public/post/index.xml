@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tux Is the Best</title>
-    <link>https://jlozada2426.gitlab.io/blog/</link>
-    <description>Recent content on Tux Is the Best</description>
+    <title>Posts on Tux Is the Best</title>
+    <link>https://jlozada2426.gitlab.io/blog/post/</link>
+    <description>Recent content in Posts on Tux Is the Best</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; Jonathan Lozada De La Matta</copyright>
     <lastBuildDate>Mon, 08 May 2017 11:07:22 -0400</lastBuildDate>
     
-	<atom:link href="https://jlozada2426.gitlab.io/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jlozada2426.gitlab.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

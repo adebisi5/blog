@@ -1,7 +1,7 @@
 # Site settings (baseurl must end with a trailing slash!)
-baseurl = "https://www.example.com/"
+baseurl = "https://jlozada2426.gitlab.io/blog/"
 languageCode = "en-us"
-title = "Grid Side"
+title = "Tux Is the Best"
 theme = "grid-side"
 copyright = "Copyright &#169; Jonathan Lozada De La Matta"
 
@@ -66,7 +66,7 @@ SectionPagesMenu = "Main"
         email = "jlozada2426@protonmail.com"
 
         # Not providing this results in a color being used
-        image = "/img/header.png"
+        image = "/img/header.jpg"
 
         # This uses the CSS background-position, given the image above is set,
         # useful when you want to adjust where the background-image lands
