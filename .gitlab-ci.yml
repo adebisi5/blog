@@ -15,7 +15,7 @@ test:
   - master
 pages:
   script:
-  - hugo --theme=grid-side
+  - hugo --theme=beautifulhugo
   artifacts:
     paths:
     - public
