@@ -12,7 +12,7 @@ pygmentCodeFences = true
 [Params]
   subtitle = "love FOSS, Tux and Star Trek NG is the best then DS9"
   logo = "img/tux.gif"
-  favicon = "img/favicon.ico"
+  favicon = "img/tux_sticker.ico"
   dateFormat = "January 2, 2006"
   commit = false
   rss = true
@@ -60,30 +60,30 @@ pygmentCodeFences = true
     url = "page/about/"
     weight = 3
 
-[[menu.main]]
-    identifier = "samples"
-    name = "Samples"
-    weight = 2
+#[[menu.main]]
+#    identifier = "samples"
+#    name = "Samples"
+#    weight = 2
 
-[[menu.main]]
-    parent = "samples"
-    name = "Big Image Sample"
-    url = "post/2017-03-07-bigimg-sample"
-    weight = 1
+#[[menu.main]]
+#    parent = "samples"
+#    name = "Big Image Sample"
+#    url = "post/2017-03-07-bigimg-sample"
+#    weight = 1
 
-[[menu.main]]
-    parent = "samples"
-    name = "Math Sample"
-    url = "post/2017-03-05-math-sample"
-    weight = 2
+#[[menu.main]]
+#    parent = "samples"
+#    name = "Math Sample"
+#    url = "post/2017-03-05-math-sample"
+#    weight = 2
 
-[[menu.main]]
-    parent = "samples"
-    name = "Code Sample"
-    url = "post/2016-03-08-code-sample"
-    weight = 3
+#[[menu.main]]
+#    parent = "samples"
+#    name = "Code Sample"
+#    url = "post/2016-03-08-code-sample"
+#    weight = 3
 
-[[menu.main]]
-    name = "Tags"
-    url = "tags"
-    weight = 3
+#[[menu.main]]
+#    name = "Tags"
+#    url = "tags"
+#    weight = 3
