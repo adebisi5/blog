@@ -1,5 +1,5 @@
 +++
-categories = []
+categories = ["openstack","cloud"]
 date = "2017-05-08T11:52:33-04:00"
 tags = []
 title = "Big Data on Openstack"

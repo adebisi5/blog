@@ -14,31 +14,31 @@
     <meta name="description" content="">
     
     <meta name="generator" content="Hugo 0.20.7" />
-    <meta name="generation-date" content="2017-05-08 16:42:58.716615412 -0400 EDT">
-    <title>use_ansible_to_resolve2 &middot; Tux Is the Best</title>
-    <link rel="shortcut icon" href="https://jlozada2426.gitlab.io/blog/img/favicon.ico">
-    <link rel="icon" href="https://jlozada2426.gitlab.io/blog/img/favicon.ico">
+    <meta name="generation-date" content="2017-05-08 20:02:35.776091191 -0400 EDT">
+    <title>Use Ansible to Resolve IT Issues Part 2 &middot; Tux Is the Best</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="icon" href="img/favicon.ico">
     
-<link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/materialize.min.css">
+<link rel="stylesheet" href="css/materialize.min.css">
 
 
-<link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
 
 
     
-    <link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/styles/railscasts.css">
+    <link rel="stylesheet" href="css/styles/railscasts.css">
 
 
 
-<link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/lightbox.css">
+<link rel="stylesheet" href="css/lightbox.css">
 
 
-<link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/main.css">
+<link rel="stylesheet" href="css/main.css">
 
 
-    <script src="https://jlozada2426.gitlab.io/blog/js/modernizr-latest.js"></script>
-    <script src="https://jlozada2426.gitlab.io/blog/js/lazysizes.min.js"></script>
-    <script src="https://jlozada2426.gitlab.io/blog/js/ls.noscript.min.js"></script>
+    <script src="js/modernizr-latest.js"></script>
+    <script src="js/lazysizes.min.js"></script>
+    <script src="js/ls.noscript.min.js"></script>
 
     <script>
         window.lazySizesConfig = window.lazySizesConfig || {};
@@ -56,7 +56,7 @@
 
 <nav class="main-menu menu-colors">
     <ul class="menu menu-colors no-list-float">
-        <li><a href="https://jlozada2426.gitlab.io/blog/"><i class="fa fa-home fa-2x"></i></a></li>
+        <li><a href=""><i class="fa fa-home fa-2x"></i></a></li>
         <li>
             <a href="#!"><i class="fa fa-bars fa-2x"></i></a>
 
@@ -66,7 +66,7 @@
                 
                     <li class="active">
                     
-                        <a href="https://jlozada2426.gitlab.io/blog//blog/post/">
+                        <a href="/post/">
                             
                             <span>Posts</span>
                         </a>
@@ -93,7 +93,7 @@
     <div class="valign-wrapper fill-container">
         <div class="valign large-form horizontal-center-hack">
             <form method="get" id="search" action="http://duckduckgo.com/">
-    <input type="hidden" name="sites"value="https://jlozada2426.gitlab.io/blog/"/>
+    <input type="hidden" name="sites"value=""/>
     <input type="hidden" name="ka" value="h"/>
     <input type="hidden" name="k7" value="#fafafa"/>
     <input type="hidden" name="kj" value="#3f3f3f"/>
@@ -119,7 +119,7 @@
                 
                 <article>
                     <header>
-                        <h1 class="article-title">use_ansible_to_resolve2</h1>
+                        <h1 class="article-title">Use Ansible to Resolve IT Issues Part 2</h1>
                         <time class="date-color">Mon May 08, 2017</time>
                         <span class="separator">|</span>
                         
@@ -127,6 +127,8 @@
     <li>
         <i class="fa fa-book"></i>
     </li>
+    
+        <li><a href="categories/ansible">ansible</a></li>
     
 </ul>
 
@@ -147,12 +149,43 @@
 
                     <section>
                         
-                            
+                            <p>After being able automate user creation/deletion, I tackle on how to automate the Cloudera CM install as much as possible. I ran into issues when I created the postgres user and DB, failing to connect. I forgot that postgres does not let you do this as root and you have to switch to the <code>postgres</code> user. This is how I was able to resolve it:</p>
+
+<p>Init the DB first</p>
+
+<pre><code>- name: init postgresql
+  become: True
+  become_user: postgres
+  command: '{{ pg_initdb_command }}' # the command is initdb -D /var/lib/pgsql/data
+  ignore_errors: yes
+</code></pre>
+
+<p>Then create the user and DB</p>
+
+<pre><code>  - name: create the postgres user and set the password
+    postgresql_user:
+     name: &quot;{{ postgres_username }}&quot; # DB user
+     password: &quot;{{ postgres_password }}&quot; # DB passwd
+     become: True
+     become_user: postgres
+
+-  name: create the postgresql database for Cloudera CM
+   postgresql_db:
+     name: &quot;{{ postgres_database }}&quot; # just the DB name
+     owner: &quot;{{ postgres_username }}&quot; # the DB user created above
+     state: present
+     login_user: postgres
+   become: True
+   become_user: postgres
+</code></pre>
+
+<p>I had to become user <code>postgres</code> then create the user and the password. Then create the DB Cloudera CM will use and give rights to the user.</p>
+
                         
                     </section>
 
                     <footer class="right-align">
-                        <p><small>Copyright &#169; Jonathan Lozada De La Matta For content only</small></p>
+                        <p><small>Copyright &#169; JLD</small></p>
                     </footer>
 
                     
@@ -164,31 +197,29 @@
     </div>
 
     
-<script src="https://jlozada2426.gitlab.io/blog/js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery-2.1.4.min.js"></script>
+
+<script src="js/materialize.min.js"></script>
 
 
-<script src="https://jlozada2426.gitlab.io/blog/js/materialize.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
 
 
-<script src="https://jlozada2426.gitlab.io/blog/js/imagesloaded.pkgd.min.js"></script>
-
-
-<script src="https://jlozada2426.gitlab.io/blog/js/masonry.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
 
 
     
-    <script src="https://jlozada2426.gitlab.io/blog/js/highlight.pack.js"></script>
+    <script src="js/highlight.pack.js"></script>
 
 
 
-<script src="https://jlozada2426.gitlab.io/blog/js/lightbox.min.js"></script>
+<script src="js/lightbox.min.js"></script>
 
 
-<script src="https://jlozada2426.gitlab.io/blog/js/jquery.infinitescroll.min.js"></script>
+<script src="js/jquery.infinitescroll.min.js"></script>
 
 
-<script src="https://jlozada2426.gitlab.io/blog/js/main.js"></script>
-
+<script src="js/main.js"></script>
 
 </body>
 

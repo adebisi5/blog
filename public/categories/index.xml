@@ -2,14 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Tux Is the Best</title>
-    <link>https://jlozada2426.gitlab.io/blog/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on Tux Is the Best</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;#169; Jonathan Lozada De La Matta For content only</copyright>
+    <copyright>Copyright &amp;#169; JLD</copyright>
+    <lastBuildDate>Mon, 08 May 2017 15:51:12 -0400</lastBuildDate>
     
-	<atom:link href="https://jlozada2426.gitlab.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ansible</title>
+      <link>/categories/ansible/</link>
+      <pubDate>Mon, 08 May 2017 15:51:12 -0400</pubDate>
+      
+      <guid>/categories/ansible/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloud</title>
+      <link>/categories/cloud/</link>
+      <pubDate>Mon, 08 May 2017 11:52:33 -0400</pubDate>
+      
+      <guid>/categories/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Openstack</title>
+      <link>/categories/openstack/</link>
+      <pubDate>Mon, 08 May 2017 11:52:33 -0400</pubDate>
+      
+      <guid>/categories/openstack/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

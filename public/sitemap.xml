@@ -2,38 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve2/</loc>
+    <loc>/post/use_ansible_to_resolve2/</loc>
     <lastmod>2017-05-08T15:51:12-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve/</loc>
+    <loc>/post/use_ansible_to_resolve/</loc>
     <lastmod>2017-05-08T13:32:05-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jlozada2426.gitlab.io/blog/post/big_data_on_openstack/</loc>
+    <loc>/post/big_data_on_openstack/</loc>
     <lastmod>2017-05-08T11:52:33-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jlozada2426.gitlab.io/blog/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozada2426.gitlab.io/blog/post/</loc>
+    <loc>/categories/ansible/</loc>
     <lastmod>2017-05-08T15:51:12-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jlozada2426.gitlab.io/blog/tags/</loc>
+    <loc>/categories/</loc>
+    <lastmod>2017-05-08T15:51:12-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jlozada2426.gitlab.io/blog/</loc>
+    <loc>/categories/cloud/</loc>
+    <lastmod>2017-05-08T11:52:33-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/openstack/</loc>
+    <lastmod>2017-05-08T11:52:33-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2017-05-08T15:51:12-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
     <lastmod>2017-05-08T15:51:12-04:00</lastmod>
     <priority>0</priority>
   </url>

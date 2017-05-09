@@ -1,9 +1,9 @@
 # Site settings (baseurl must end with a trailing slash!)
-baseurl = "https://jlozada2426.gitlab.io/blog/"
+#baseurl = "https://jlozada2426.gitlab.io/blog/"
 languageCode = "en-us"
 title = "Tux Is the Best"
 theme = "grid-side"
-copyright = "Copyright &#169; Jonathan Lozada De La Matta For content only"
+copyright = "Copyright &#169; JLD"
 
 # The theme uses pagination for post, gallery, and project listings.
 #paginate = 12
@@ -21,7 +21,7 @@ SectionPagesMenu = "Main"
 [Params]
     # When set to true, will use infinite scrolling to load paginated content
     # for posts, galleries, and projects
-    infinite_scroll = true
+    infinite_scroll = false
 
     #
     # The post, project, and gallery sections can have infinite scroll turned
@@ -60,7 +60,7 @@ SectionPagesMenu = "Main"
         name = "Jonathan Lozada De La Matta"
 
         # This is optional
-        description = "Projects and awesome sauce"
+        description = "love FOSS, Tux and Star Trek NG is the best then DS9"
 
         # This is optional
         email = "jlozada2426@protonmail.com"
@@ -70,7 +70,7 @@ SectionPagesMenu = "Main"
 
         # This uses the CSS background-position, given the image above is set,
         # useful when you want to adjust where the background-image lands
-        #image_position = "top"
+        image_position = "top"
 
         # This must be provided if the image above is not
         #color = "#FFF"
@@ -138,7 +138,7 @@ SectionPagesMenu = "Main"
         [[Params.Cells.List]]
 
             # The name to use with the cell, shows up on hover
-            name = "Posts"
+            name = "Blog"
 
             # The link to associate with the cell, used when clicked
             link = "/post/"

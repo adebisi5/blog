@@ -1,5 +1,5 @@
 +++
-categories = []
+categories = ["ansible"]
 date = "2017-05-08T13:32:05-04:00"
 tags = []
 title = "Using Ansible to Resolve IT Issues Part 1"
