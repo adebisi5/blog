@@ -5,8 +5,8 @@
     <link>https://jlozada2426.gitlab.io/blog/categories/cloud/</link>
     <description>Recent content in Cloud on Love Tux</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>youremail@domain.com (Some Person)</managingEditor>
-    <webMaster>youremail@domain.com (Some Person)</webMaster>
+    <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
+    <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
     <lastBuildDate>Mon, 08 May 2017 11:52:33 -0400</lastBuildDate>
     
 	<atom:link href="https://jlozada2426.gitlab.io/blog/categories/cloud/index.xml" rel="self" type="application/rss+xml" />
@@ -16,7 +16,7 @@
       <title>Big Data on Openstack</title>
       <link>https://jlozada2426.gitlab.io/blog/post/big_data_on_openstack/</link>
       <pubDate>Mon, 08 May 2017 11:52:33 -0400</pubDate>
-      <author>youremail@domain.com (Some Person)</author>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/post/big_data_on_openstack/</guid>
       <description>Openstack can be a great solution due to the increase demand of cloud and more resources. But, it can&amp;rsquo;t resolve every issue out there. an Openstack deployment can provide &amp;ldquo;unlimited&amp;rdquo; resources but, is useless if is not architectured for the specific applications that the VM&amp;rsquo;s will be hosting. For example, a previous customer had over 20 regions, configured almost the same and had performance issues. This customer hosted big data applications (Cloudera to be specific) on those VM&amp;rsquo;s, had an older deployment of Openstack ( Icehouse so we could not take advantage of the newer cloud features) and no budget for further expansion and upgrades ( Including software and hardware) but, had the following issues:</description>
     </item>
