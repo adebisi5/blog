@@ -1,5 +1,5 @@
 # Site settings (baseurl must end with a trailing slash!)
-#baseurl = "https://jlozada2426.gitlab.io/blog/"
+baseurl = "https://jlozada2426.gitlab.io/blog/"
 languageCode = "en-us"
 title = "Tux Is the Best"
 theme = "grid-side"
