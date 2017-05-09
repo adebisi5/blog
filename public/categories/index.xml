@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Tux Is the Best</title>
-    <link>/categories/</link>
-    <description>Recent content in Categories on Tux Is the Best</description>
+    <title>Categories on Love Tux</title>
+    <link>https://jlozada2426.gitlab.io/blog/categories/</link>
+    <description>Recent content in Categories on Love Tux</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Copyright &amp;#169; JLD</copyright>
+    <managingEditor>youremail@domain.com (Some Person)</managingEditor>
+    <webMaster>youremail@domain.com (Some Person)</webMaster>
     <lastBuildDate>Mon, 08 May 2017 15:51:12 -0400</lastBuildDate>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jlozada2426.gitlab.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ansible</title>
-      <link>/categories/ansible/</link>
+      <link>https://jlozada2426.gitlab.io/blog/categories/ansible/</link>
       <pubDate>Mon, 08 May 2017 15:51:12 -0400</pubDate>
-      
-      <guid>/categories/ansible/</guid>
+      <author>youremail@domain.com (Some Person)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/categories/ansible/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cloud</title>
-      <link>/categories/cloud/</link>
+      <link>https://jlozada2426.gitlab.io/blog/categories/cloud/</link>
       <pubDate>Mon, 08 May 2017 11:52:33 -0400</pubDate>
-      
-      <guid>/categories/cloud/</guid>
+      <author>youremail@domain.com (Some Person)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/categories/cloud/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Openstack</title>
-      <link>/categories/openstack/</link>
+      <link>https://jlozada2426.gitlab.io/blog/categories/openstack/</link>
       <pubDate>Mon, 08 May 2017 11:52:33 -0400</pubDate>
-      
-      <guid>/categories/openstack/</guid>
+      <author>youremail@domain.com (Some Person)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/categories/openstack/</guid>
       <description></description>
     </item>
     

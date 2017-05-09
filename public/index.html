@@ -1,329 +1,406 @@
 <!DOCTYPE html>
-<html 
-    lang="en-us"
-    class="no-js"
->
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
+  <title>Love Tux</title>
+  <meta property="og:title" content="Love Tux" />
+  <meta name="twitter:title" content="Love Tux" />
+  <meta name="author" content="Some Person"/>
+  <link href='https://jlozada2426.gitlab.io/blog/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://jlozada2426.gitlab.io/blog/img/tux.gif" />
+  <meta name="twitter:image" content="https://jlozada2426.gitlab.io/blog/img/tux.gif" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@username" />
+  <meta name="twitter:creator" content="@username" />
+  <meta property="og:url" content="https://jlozada2426.gitlab.io/blog/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Love Tux" />
 
+  <meta name="generator" content="Hugo 0.20.7" />
+  <link rel="canonical" href="https://jlozada2426.gitlab.io/blog/" />
+  <link rel="alternate" href="https://jlozada2426.gitlab.io/blog/index.xml" type="application/rss+xml" title="Love Tux">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/highlight.min.css" />
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="">
-    <meta name="description" content="">
-    
-      <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Tux Is the Best" />
-      <link href="/index.xml" rel="feed" type="application/rss+xml" title="Tux Is the Best" />
-    
-    <meta name="generator" content="Hugo 0.20.7" />
-    <meta name="generation-date" content="2017-05-08 20:02:35.790279792 -0400 EDT">
-    <title>Tux Is the Best &middot; Tux Is the Best</title>
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="icon" href="img/favicon.ico">
-    
-<link rel="stylesheet" href="css/materialize.min.css">
-
-
-<link rel="stylesheet" href="css/font-awesome.min.css">
-
-
-    
-    <link rel="stylesheet" href="css/styles/railscasts.css">
-
-
-
-<link rel="stylesheet" href="css/lightbox.css">
-
-
-<link rel="stylesheet" href="css/main.css">
-
-
-    <script src="js/modernizr-latest.js"></script>
-    <script src="js/lazysizes.min.js"></script>
-    <script src="js/ls.noscript.min.js"></script>
-
-    <script>
-        window.lazySizesConfig = window.lazySizesConfig || {};
-        lazySizesConfig.addClasses = true;
-        lazySizesConfig.loadMode = 2;
-    </script>
-
-    
 </head>
 
-
-
-
-<body class="page-colors">
-    <div class="parallax">
-        
-            
-            <div class="parallax__group">
-                <div class="parallax__layer parallax__layer--base">
-                    <div class="valign-wrapper" style="height: 100%;">
-    <span class="valign center white-text" style="
-        display: inline-block;
-        border: 2px solid #FFF;
-        background-color: rgba(0, 0, 0, 0.3);
-        padding: 15px 25px;
-        margin: 0 auto;
-    ">
-        <h2>Jonathan Lozada De La Matta</h2>
-        <h5>jlozada2426@protonmail.com</h5>
-        
-            <h2><hr></h2>
-            <h5>love FOSS, Tux and Star Trek NG is the best then DS9</h5>
-        
-    </span>
-</div>
-
-
-                </div>
-                <div class="parallax__layer parallax__layer--back fullsize-background-image"
-                    
-                        style="background-image: url('/img/header.jpg'); background-position: top;"
-                    
-                ></div>
-            </div>
-        
-
-        <div class="parallax__group parallax__group--auto-height">
-            <div class="parallax__layer parallax__layer--base">
-                <div class="row-colors center-align">
-                    <h2 class="no-margin">
-                        <ul class="horizontal no-bullets no-margin">
-                            <li>
-<svg class="face" height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg">
-    <path d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z"/>
-    <path d="M0 0h24v24H0z" fill="none"/>
-</svg>
-</li>
-                            <li>About Me</li>
-                        </ul>
-                    </h2>
-                </div>
-
-                <div class="flex-container">
-                    
-                        
-                        <a href="/post/" class="flex-item">
-                            <div class="cell
-                                fill-container
-                                no-padding
-                                
-                                
-                                fullsize-background-image
-                            " style="
-                                
-                                    background-image: url('/img/small_tux.png');
-                                
-
-                                
-                                height: 
-                                    33.33vh
-                                ;
-                            ">
-                                
-                                
-
-                                
-                                    <div class="highlight-block">
-                                        <h3 class="white-text">Blog</h3>
-                                    </div>
-                                
-                            </div>
-                        </a>
-                    
-                        
-                        <a href="/gallery/" class="flex-item">
-                            <div class="cell
-                                fill-container
-                                no-padding
-                                
-                                
-                                fullsize-background-image
-                            " style="
-                                
-                                    background-image: url('/img/cup.jpg');
-                                
-
-                                
-                                height: 
-                                    33.33vh
-                                ;
-                            ">
-                                
-                                
-
-                                
-                                    <div class="highlight-block">
-                                        <h3 class="white-text">Gallery</h3>
-                                    </div>
-                                
-                            </div>
-                        </a>
-                    
-                        
-                        <a href="/project/" class="flex-item">
-                            <div class="cell
-                                fill-container
-                                no-padding
-                                
-                                
-                                fullsize-background-image
-                            " style="
-                                
-                                    background-image: url('/img/tux_inside.png');
-                                
-
-                                
-                                height: 
-                                    33.33vh
-                                ;
-                            ">
-                                
-                                
-
-                                
-                                    <div class="highlight-block">
-                                        <h3 class="white-text">Git Projects</h3>
-                                    </div>
-                                
-                            </div>
-                        </a>
-                    
-                        
-                        <a href="/custompost/" class="flex-item">
-                            <div class="cell
-                                fill-container
-                                no-padding
-                                
-                                
-                                fullsize-background-image
-                            " style="
-                                
-                                    background-image: url('/img/food.jpg');
-                                
-
-                                
-                                height: 
-                                    33.33vh
-                                ;
-                            ">
-                                
-                                
-
-                                
-                                    <div class="highlight-block">
-                                        <h3 class="white-text">Custom Post Section Name</h3>
-                                    </div>
-                                
-                            </div>
-                        </a>
-                    
-                        
-                        <a href="/customgallery/" class="flex-item">
-                            <div class="cell
-                                fill-container
-                                no-padding
-                                
-                                
-                                fullsize-background-image
-                            " style="
-                                
-                                    background-image: url('/img/jars.jpg');
-                                
-
-                                
-                                height: 
-                                    33.33vh
-                                ;
-                            ">
-                                
-                                
-
-                                
-                                    <div class="highlight-block">
-                                        <h3 class="white-text">Custom Gallery Section Name</h3>
-                                    </div>
-                                
-                            </div>
-                        </a>
-                    
-                        
-                        <a href="/customproject/" class="flex-item">
-                            <div class="cell
-                                fill-container
-                                no-padding
-                                
-                                
-                                fullsize-background-image
-                            " style="
-                                
-                                    background-image: url('/img/phone.jpg');
-                                
-
-                                
-                                height: 
-                                    33.33vh
-                                ;
-                            ">
-                                
-                                
-
-                                
-                                    <div class="highlight-block">
-                                        <h3 class="white-text">Custom Project Section Name</h3>
-                                    </div>
-                                
-                            </div>
-                        </a>
-                    
-                </div>
-
-                
-                    <div class="row-colors right-align">
-                        <ul class="main-page-footer horizontal no-bullets no-margin">
-                            
-                            <li>Copyright &#169; JLD</li>
-                        </ul>
-                    </div>
-                
-            </div>
-        </div>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://jlozada2426.gitlab.io/blog/">Love Tux</a>
     </div>
 
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/blog/">Blog</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Samples</a>
+              <div class="navlinks-children">
+                
+                  <a href="/blog/post/2017-03-07-bigimg-sample">Big Image Sample</a>
+                
+                  <a href="/blog/post/2017-03-05-math-sample">Math Sample</a>
+                
+                  <a href="/blog/post/2016-03-08-code-sample">Code Sample</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/blog/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/blog/tags">Tags</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Love Tux" href="https://jlozada2426.gitlab.io/blog/">
+            <img class="avatar-img" src="https://jlozada2426.gitlab.io/blog/img/tux.gif" alt="Love Tux" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
     
-<script src="js/jquery-2.1.4.min.js"></script>
-
-<script src="js/materialize.min.js"></script>
-
-
-<script src="js/imagesloaded.pkgd.min.js"></script>
+  
+  
+  
 
 
-<script src="js/masonry.pkgd.min.js"></script>
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="page-heading">
+              <h1>Love Tux</h1>
+                
+                  
+                    <hr class="small">
+                    <span class="page-subheading">love FOSS, Tux and Star Trek NG is the best then DS9</span>
+                  
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
 
     
-    <script src="js/highlight.pack.js"></script>
+  <div role="main" class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+
+        <div class="posts-list">
+          
+          
+            <article class="post-preview">
+              <a href="https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve2/">
+                <h2 class="post-title">Use Ansible to Resolve IT Issues Part 2</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  Posted on May 8, 2017
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  After being able automate user creation/deletion, I tackle on how to automate the Cloudera CM install as much as possible. I ran into issues when I created the postgres user and DB, failing to connect. I forgot that postgres does not let you do this as root and you have to switch to the postgres user. This is how I was able to resolve it:
+Init the DB first
+- name: init postgresql become: True become_user: postgres command: '{{ pg_initdb_command }}' # the command is initdb -D /var/lib/pgsql/data ignore_errors: yes  Then create the user and DB
+                  <a href="https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve2/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve/">
+                <h2 class="post-title">Using Ansible to Resolve IT Issues Part 1</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  Posted on May 8, 2017
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  After I was able to successfully Install Cloudera CM and create a cluster, I was trying to find a way to reduce the deployment time. The current deployments would take too long, waste over 500 of labor hours and no consistency. I could not meet customer demand for new datanodes or clusters and had a reduced workforce due to contract changes. At first I tried to find an all solution like puppet or foreman.
+                  <a href="https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://jlozada2426.gitlab.io/blog/post/big_data_on_openstack/">
+                <h2 class="post-title">Big Data on Openstack</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  Posted on May 8, 2017
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  Openstack can be a great solution due to the increase demand of cloud and more resources. But, it can&rsquo;t resolve every issue out there. an Openstack deployment can provide &ldquo;unlimited&rdquo; resources but, is useless if is not architectured for the specific applications that the VM&rsquo;s will be hosting. For example, a previous customer had over 20 regions, configured almost the same and had performance issues. This customer hosted big data applications (Cloudera to be specific) on those VM&rsquo;s, had an older deployment of Openstack ( Icehouse so we could not take advantage of the newer cloud features) and no budget for further expansion and upgrades ( Including software and hardware) but, had the following issues:
+                  <a href="https://jlozada2426.gitlab.io/blog/post/big_data_on_openstack/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+            </article>
+          
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:youremail@domain.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/username" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.plus.google.com/&#43;username" title="Google&#43;">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/username" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/username" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://reddit.com/u/username" title="Reddit">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-reddit-alien fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/username" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.xing.com/profile/username" title="Xing">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-xing fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://stackoverflow.com/users/XXXXXXX/username" title="StackOverflow">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.snapchat.com/add/username" title="Snapchat">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-snapchat-ghost fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/username" title="Instagram">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/user/username" title="Youtube">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://soundcloud.com/username" title="SoundCloud">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-soundcloud fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://open.spotify.com/user/username" title="Spotify">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-spotify fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://username.bandcamp.com/" title="Bandcamp">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-bandcamp fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://itch.io/profile/username" title="Itch.io">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-gamepad fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://jlozada2426.gitlab.io/blog/index.xml" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          Some Person
+          &nbsp;&bull;&nbsp;
+          2017
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://jlozada2426.gitlab.io/blog/">Love Tux</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.20.7</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://jlozada2426.gitlab.io/blog/js/main.js"></script>
+<script src="https://jlozada2426.gitlab.io/blog/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
 
 
 
-<script src="js/lightbox.min.js"></script>
 
 
-<script src="js/jquery.infinitescroll.min.js"></script>
-
-
-<script src="js/main.js"></script>
-
-</body>
-
+  </body>
 </html>
-
-
-
-
 

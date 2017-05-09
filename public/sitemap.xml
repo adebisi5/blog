@@ -2,58 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/post/use_ansible_to_resolve2/</loc>
+    <loc>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve2/</loc>
     <lastmod>2017-05-08T15:51:12-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/use_ansible_to_resolve/</loc>
+    <loc>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve/</loc>
     <lastmod>2017-05-08T13:32:05-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/big_data_on_openstack/</loc>
+    <loc>https://jlozada2426.gitlab.io/blog/post/big_data_on_openstack/</loc>
     <lastmod>2017-05-08T11:52:33-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/ansible/</loc>
+    <loc>https://jlozada2426.gitlab.io/blog/categories/ansible/</loc>
     <lastmod>2017-05-08T15:51:12-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://jlozada2426.gitlab.io/blog/categories/</loc>
     <lastmod>2017-05-08T15:51:12-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/cloud/</loc>
-    <lastmod>2017-05-08T11:52:33-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/openstack/</loc>
+    <loc>https://jlozada2426.gitlab.io/blog/categories/cloud/</loc>
     <lastmod>2017-05-08T11:52:33-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>https://jlozada2426.gitlab.io/blog/</loc>
     <lastmod>2017-05-08T15:51:12-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://jlozada2426.gitlab.io/blog/categories/openstack/</loc>
+    <lastmod>2017-05-08T11:52:33-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://jlozada2426.gitlab.io/blog/post/</loc>
     <lastmod>2017-05-08T15:51:12-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jlozada2426.gitlab.io/blog/tags/</loc>
     <priority>0</priority>
   </url>
   

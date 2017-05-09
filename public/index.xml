@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tux Is the Best</title>
-    <link>/</link>
-    <description>Recent content on Tux Is the Best</description>
+    <title>Love Tux</title>
+    <link>https://jlozada2426.gitlab.io/blog/</link>
+    <description>Recent content on Love Tux</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Copyright &amp;#169; JLD</copyright>
+    <managingEditor>youremail@domain.com (Some Person)</managingEditor>
+    <webMaster>youremail@domain.com (Some Person)</webMaster>
     <lastBuildDate>Mon, 08 May 2017 15:51:12 -0400</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jlozada2426.gitlab.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Use Ansible to Resolve IT Issues Part 2</title>
-      <link>/post/use_ansible_to_resolve2/</link>
+      <link>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve2/</link>
       <pubDate>Mon, 08 May 2017 15:51:12 -0400</pubDate>
-      
-      <guid>/post/use_ansible_to_resolve2/</guid>
+      <author>youremail@domain.com (Some Person)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve2/</guid>
       <description>After being able automate user creation/deletion, I tackle on how to automate the Cloudera CM install as much as possible. I ran into issues when I created the postgres user and DB, failing to connect. I forgot that postgres does not let you do this as root and you have to switch to the postgres user. This is how I was able to resolve it:
 Init the DB first
 - name: init postgresql become: True become_user: postgres command: &#39;{{ pg_initdb_command }}&#39; # the command is initdb -D /var/lib/pgsql/data ignore_errors: yes  Then create the user and DB</description>
@@ -25,19 +25,19 @@ Init the DB first
     
     <item>
       <title>Using Ansible to Resolve IT Issues Part 1</title>
-      <link>/post/use_ansible_to_resolve/</link>
+      <link>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve/</link>
       <pubDate>Mon, 08 May 2017 13:32:05 -0400</pubDate>
-      
-      <guid>/post/use_ansible_to_resolve/</guid>
+      <author>youremail@domain.com (Some Person)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve/</guid>
       <description>After I was able to successfully Install Cloudera CM and create a cluster, I was trying to find a way to reduce the deployment time. The current deployments would take too long, waste over 500 of labor hours and no consistency. I could not meet customer demand for new datanodes or clusters and had a reduced workforce due to contract changes. At first I tried to find an all solution like puppet or foreman.</description>
     </item>
     
     <item>
       <title>Big Data on Openstack</title>
-      <link>/post/big_data_on_openstack/</link>
+      <link>https://jlozada2426.gitlab.io/blog/post/big_data_on_openstack/</link>
       <pubDate>Mon, 08 May 2017 11:52:33 -0400</pubDate>
-      
-      <guid>/post/big_data_on_openstack/</guid>
+      <author>youremail@domain.com (Some Person)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/post/big_data_on_openstack/</guid>
       <description>Openstack can be a great solution due to the increase demand of cloud and more resources. But, it can&amp;rsquo;t resolve every issue out there. an Openstack deployment can provide &amp;ldquo;unlimited&amp;rdquo; resources but, is useless if is not architectured for the specific applications that the VM&amp;rsquo;s will be hosting. For example, a previous customer had over 20 regions, configured almost the same and had performance issues. This customer hosted big data applications (Cloudera to be specific) on those VM&amp;rsquo;s, had an older deployment of Openstack ( Icehouse so we could not take advantage of the newer cloud features) and no budget for further expansion and upgrades ( Including software and hardware) but, had the following issues:</description>
     </item>
     
