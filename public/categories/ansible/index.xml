@@ -8,7 +8,9 @@
     <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
     <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
     <lastBuildDate>Mon, 08 May 2017 15:51:12 -0400</lastBuildDate>
-    <atom:link href="https://jlozada2426.gitlab.io/blog/categories/ansible/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://jlozada2426.gitlab.io/blog/categories/ansible/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Use Ansible to Resolve IT Issues Part 2</title>
@@ -16,73 +18,8 @@
       <pubDate>Mon, 08 May 2017 15:51:12 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve2/</guid>
-      <description>&lt;p&gt;After being able automate user creation/deletion, I tackle on how to automate the Cloudera CM install as much as possible. I first started trying to install the rpms with ansible. I discovered the yum and repo modules. They allow me to add a repo and install any rpm available. This what I have:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;- name: Add the cloudera-cm repo.
-  yum_repository:
-    name: cloudera-cm
-    description: cloudera-cm repo
-    baseurl: &amp;quot;{{ rpm_repo }}&amp;quot; # http://archive.cloudera.com/cm5/redhat/7/x86_64/cm/5.11/
-    gpgcheck: yes
-    gpgkey: &amp;quot;{{ gpg_key }}&amp;quot;
-    enabled: yes
-
-- name: update system # Just update the whole system to latest rpms
-  yum:
-    name: &#39;*&#39;
-    state: latest
-
-- name: install packages
-  yum:
-    name: &amp;quot;{{ packages }}&amp;quot; # wget,net-tools,python,vim,postgresql-server,java,mod_ssl,httpd,MySQL-python,fuse-libs
-    state: latest
-
-- name: install cloudera packages
-  yum:
-    name: &amp;quot;{{ cloudera_rpm }}&amp;quot; # cloudera-manager-agent,cloudera-manager-daemons,cloudera-manager-server
-    state: latest
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Previously doing this process took around 30 minutes to around 2 hours since I had to manually do this to all the potential Cloudera CM&amp;rsquo;s.&lt;/p&gt;
-
-&lt;p&gt;I ran into issues when I created the postgres user and DB, failing to connect. I forgot that postgres does not let you do this as root and you have to switch to the &lt;code&gt;postgres&lt;/code&gt; user. This is how I was able to resolve it:&lt;/p&gt;
-
-&lt;p&gt;Init the DB first&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;- name: init postgresql
-  become: True
-  become_user: postgres
-  command: &#39;{{ pg_initdb_command }}&#39; # the command is initdb -D /var/lib/pgsql/data
-  ignore_errors: yes
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then create the user and DB&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  - name: create the postgres user and set the password
-    postgresql_user:
-     name: &amp;quot;{{ postgres_username }}&amp;quot; # DB user
-     password: &amp;quot;{{ postgres_password }}&amp;quot; # DB passwd
-     become: True
-     become_user: postgres
-
--  name: create the postgresql database for Cloudera CM
-   postgresql_db:
-     name: &amp;quot;{{ postgres_database }}&amp;quot; # just the DB name
-     owner: &amp;quot;{{ postgres_username }}&amp;quot; # the DB user created above
-     state: present
-     login_user: postgres
-   become: True
-   become_user: postgres
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I had to become user &lt;code&gt;postgres&lt;/code&gt; then create the user and the password. Then create the DB Cloudera CM will use and give rights to the user. To get the DB finalized, you need to run &lt;code&gt;/usr/share/cmf/schema/scm_prepare_database.sh postgresql scm scm scm&lt;/code&gt;. I used a variable to make the &lt;code&gt;task/main.yml&lt;/code&gt; easier to read. This command indicates the type of DB to be used, the user and passwd.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; - name: Run the db script to configure for Cloudera CM
-  shell: &amp;quot;{{ prepare_database }}&amp;quot; # includes the command above.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you want to see the whole role, check it out at &lt;a href=&#34;https://gitlab.com/sysadminonlinux/cloudera-cm&#34;&gt;https://gitlab.com/sysadminonlinux/cloudera-cm&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>After being able automate user creation/deletion, I tackle on how to automate the Cloudera CM install as much as possible. I first started trying to install the rpms with ansible. I discovered the yum and repo modules. They allow me to add a repo and install any rpm available. This what I have:
+- name: Add the cloudera-cm repo. yum_repository: name: cloudera-cm description: cloudera-cm repo baseurl: &amp;quot;{{ rpm_repo }}&amp;quot; # http://archive.</description>
     </item>
     
     <item>
@@ -91,44 +28,7 @@
       <pubDate>Mon, 08 May 2017 13:32:05 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve/</guid>
-      <description>
-
-&lt;p&gt;After I was able to successfully Install Cloudera CM and create a cluster, I was trying to find a way to reduce the deployment time. The current deployments would take too long, waste over 500 of labor hours and no consistency. I could not meet customer demand for new datanodes or clusters and had a reduced workforce due to contract changes. At first I tried to find an all solution like puppet or foreman. But, by installing this two solutions I ran into the same problem with the private name and it was a longer process to get it working. A more troublesome problem was changing the certs for https on Foreman. I also needed to find something that the team can learn fast and able to use. We got into debates going back and forth between ansible and puppet, although none on the team had much experience with Configuration Management. At the end no decision was made and everyone did what they though was easier for them. I decided to learn and use ansible, others kept deploying VM&amp;rsquo;s and configuration manually and others decided to invest more time with &lt;code&gt;shell scripting&lt;/code&gt;. Using scripts was still a better option but, there was no control or revision on the scripts. Anyone made changes and used the scripts in production making things worse. I went and bought a book on Ansible, Decided to use Gitlab to host all my roles and playbooks.&lt;/p&gt;
-
-&lt;h1 id=&#34;learning-ansible:933e59772c67293f1342c68007214815&#34;&gt;Learning Ansible&lt;/h1&gt;
-
-&lt;p&gt;I have used ansible before in a previous job but, I never created the roles and playbooks. All I did was run the playbooks and manually fix in the servers what failed. My first challenge was getting spacing and indent correctly on the .yaml. That took me a while to learn and understand. Although I read the ansible docs, I did not realize how to format the file correctly. It took me around 20 tries to finally get it correctly.&lt;/p&gt;
-
-&lt;p&gt;The first problem as a team was adding users with PKI keys and removing users that left. It was a tedious process:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Scp the script to the VM&amp;rsquo;s run &lt;code&gt;adduser.sh&lt;/code&gt; or &lt;code&gt;removeuser.sh&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;We had to do this to every VM when we had a new user or someone left. This was tedious and took us a long time since it was a large number of VM&amp;rsquo;s. Something that could take weeks to 5-8 months depending on the workload.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;At first I tried to copy roles that I found in Ansible Galaxy but, I did not understand them right away. I was not able to understand the variables, defaults and how others wrote their roles. I needed something simple that I could learn and be able to teach the rest of the team if the decide to use it. I came across a new acquired customer who started using ansible and had simpler roles I was to understand. So to be able to successfully create new users, I copy and pasted the modules all over the tasks/main.yml for every user I needed. Here is an example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-  - name: Create Group &amp;quot;&amp;quot;
-    group: name=
-  - name: Creater user &amp;quot;&amp;quot;
-    user: name=&amp;quot;&amp;quot; group=&amp;quot;&amp;quot; uid=&amp;quot;&amp;quot; groups=&amp;quot;&amp;quot; expires=&amp;quot;&amp;quot;
-  - name: Authorized keys &amp;quot;&amp;quot;
-authorized_key: user=&amp;quot;&amp;quot; key=&amp;quot;{{ lookup(&#39;file&#39;,&amp;quot;dirtothekey/.pub&#39;) }}&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I copy and pasted this for every user I needed created. My &lt;code&gt;main.yml&lt;/code&gt; was messy and dirty but, I was able to successfully create users with their keys at a fast pace. The whole process of scping every script I needed were long gone. I just had reduced months of work to around 2-3 hours.&lt;/p&gt;
-
-&lt;p&gt;After figuring out how add users to the VM&amp;rsquo;s then I needed to figure out how to delete them. To my surprise this was easier than I though. All I needed was:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-  -user:
-     name: &amp;quot;gray_cat&amp;quot;
-     state: absent
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;that is all! it was so simple, I was speechless! I was able to remove all those customers and co-workers who had left the project. Again, I was able to remove hours wasted on removing users.&lt;/p&gt;
-</description>
+      <description>After I was able to successfully Install Cloudera CM and create a cluster, I was trying to find a way to reduce the deployment time. The current deployments would take too long, waste over 500 of labor hours and no consistency. I could not meet customer demand for new datanodes or clusters and had a reduced workforce due to contract changes. At first I tried to find an all solution like puppet or foreman.</description>
     </item>
     
   </channel>

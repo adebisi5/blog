@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Using libvirt to host my VM&#39;s.</title>
+  <meta property="og:title" content="Using libvirt to host my VM&#39;s." />
+  <meta name="twitter:title" content="Using libvirt to host my VM&#39;s." />
+  <meta name="description" content="Recently I installed Fedora 25 to test some playbooks and other configurations. A co-worker mentioned to use Vagrat but, my exposure was minimal. I only used vagrant to test some applications such as netbox and it uses Virtualbox by default. Previously I have used Virtualbox and Vmware but, I decided to move away from those. First, Virtualbox breaks everytime there is a kernel update. Although there is some commands you can run to recreate the kernel it needs but, why I should do that all the time?">
+  <meta property="og:description" content="Recently I installed Fedora 25 to test some playbooks and other configurations. A co-worker mentioned to use Vagrat but, my exposure was minimal. I only used vagrant to test some applications such as netbox and it uses Virtualbox by default. Previously I have used Virtualbox and Vmware but, I decided to move away from those. First, Virtualbox breaks everytime there is a kernel update. Although there is some commands you can run to recreate the kernel it needs but, why I should do that all the time?">
+  <meta name="twitter:description" content="Recently I installed Fedora 25 to test some playbooks and other configurations. A co-worker mentioned to use Vagrat but, my exposure was minimal. I only used vagrant to test some applications such as …">
+  <meta name="author" content="Jonathan Lozada De La Matta"/>
+  <link href='https://jlozada2426.gitlab.io/blog/img/tux_sticker.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://jlozada2426.gitlab.io/blog/img/tux.gif" />
+  <meta name="twitter:image" content="https://jlozada2426.gitlab.io/blog/img/tux.gif" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@jlozadad2426" />
+  <meta name="twitter:creator" content="@jlozadad2426" />
+  <meta property="og:url" content="https://jlozada2426.gitlab.io/blog/post/install_libvirt/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Love Tux" />
+
+  <meta name="generator" content="Hugo 0.20.7" />
+  <link rel="canonical" href="https://jlozada2426.gitlab.io/blog/post/install_libvirt/" />
+  <link rel="alternate" href="https://jlozada2426.gitlab.io/blog/index.xml" type="application/rss+xml" title="Love Tux">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/highlight.min.css" />
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://jlozada2426.gitlab.io/blog/">Love Tux</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/blog/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/blog/page/about/">About</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Love Tux" href="https://jlozada2426.gitlab.io/blog/">
+            <img class="avatar-img" src="https://jlozada2426.gitlab.io/blog/img/tux.gif" alt="Love Tux" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search Love Tux</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Using libvirt to host my VM&#39;s.</h1>
+                
+                
+                  <span class="post-meta">
+  Posted on May 15, 2017
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>Recently I installed Fedora 25 to test some playbooks and other configurations. A co-worker mentioned to use Vagrat but, my exposure was minimal. I only used vagrant to test some applications such as <code>netbox</code> and it uses Virtualbox by default. Previously I have used Virtualbox and Vmware but, I decided to move away from those. First, Virtualbox breaks everytime there is a kernel update. Although there is some commands you can run to recreate the kernel it needs but, why I should do that all the time? Second, every time I installed a VM, the usage of the HDD went over 105% in <code>atop!</code>. Vmware is great but, they removed a lot of good features, higher price and getting a license is a pain. After running into this issue, I decided to try out libvirt since I found out in can be used with vagrant. You can start installing libvirt with groupinstall:</p>
+
+<pre><code>sudo dnf groupinstall &quot;Virtualization&quot;
+</code></pre>
+
+<p>Installing this extra rpms that are helpful to use.</p>
+
+<pre><code>sudo dnf install qemu-kvm virt-install virt-manager
+</code></pre>
+
+<p>Make sure this services are enabled and started</p>
+
+<pre><code>sudo systemctl enable libvirtd
+sudo systemctl start libvirtd
+sudo systemctl enable virtlogd
+sudo systemctl start virtlogd
+sudo systemctl enable network
+sudo systemctl start network
+</code></pre>
+
+<p>Since I wanted to create the VM&rsquo;s and access them over the network, I needed to create a bridge. By default, libvirt creates a network with NAT. This is the steps I took:</p>
+
+<pre><code>sudo systemctl stop NetworkManager
+sudo systemctl disable NetworkManager
+</code></pre>
+
+<p>You should have an int automatically created when you installed the OS. You can find the name of it by running:</p>
+
+<pre><code>ifconfig
+ls /etc/sysconfig/network-scripts/
+</code></pre>
+
+<p>In my case it was named ifcfg-eno1. Edit the interface:</p>
+
+<pre><code>sudo vim /etc/sysconfig/network-scripts/ifcfg-eno1
+# add TYPE=Bridge save and close
+</code></pre>
+
+<p>Restart network services</p>
+
+<pre><code>sudo systemctl restart network
+</code></pre>
+
+<p>After a while I lost connection to the network and internet. I restarted <code>network</code> and got this error <code>Determining IP information for br0.. /usr/sbin/dhclient-script: line 704: /etc/resolv.conf file not found</code> I tried to touch the file but, it did not even let me <code>permission denied</code>. After doing <code>ls -laht /etc/resolv.conf</code> I noticed that the file was linked to <code>/var/run/NetworkManager/resolv.conf</code> but, it was missing. By recreating the file at this location and restarting <code>NetworkManager</code> everything seemed to start working. I restarted <code>network</code> and <code>ping duckduckgo.com</code> and got a response! Later, I researched into this issue and turns out you don&rsquo;t have to turn off <code>NetworkManager</code> anymore. Turning off and disabling <code>NetworkManager</code> gets rid of the link to <code>/var/run/NetworkManager/resolv.conf</code> and the <code>network</code> service cannot resolve without this file.</p>
+
+<p>then check the bridge interfaces</p>
+
+<pre><code>brctl show
+</code></pre>
+
+<p>At this point everything should be running and working.</p>
+
+<p>I installed a couple of VM&rsquo;s on the same disk <code>/dev/sdc</code> and noticed the busy % never went higher than 73. It went back and forth between 55 and 73. To test this again, I used my extra disk that is similar on `<code>/dev/sdd</code>:</p>
+
+<pre><code>[2:0:0:0]    disk    ATA      WDC WD10EZEX-00B 1A01  /dev/sdc
+[3:0:0:0]    disk    ATA      WDC WD10EZEX-00B 1A01  /dev/sdd
+</code></pre>
+
+<p>This is the steps I took:</p>
+
+<pre><code>sudo parted /dev/&quot;name of disk&quot; #example /dev/vdb or /dev/sdb
+
+#in the parted menu do ```print ``` to see the disks then do:
+mklabel &gt; gpt
+mkpart
+#name of the disk
+#what filesystem to use
+# the number of the drive
+# the size of the drive in GB
+# after this then you format it
+
+ sudo mkfx.xfs /dev/&quot;the drive plus the number&quot; #example /dev/vdb1
+
+#then mount it
+
+sudo vim /etc/fstab
+# /dev/vdb1 /data xfs defaults,noatime 0 0
+</code></pre>
+
+<p>I mounted the drive directly without LVM&rsquo;s or anything else. I used <code>virt-manager</code> and added a pre-formatted block device to store the VM&rsquo;s.</p>
+
+<pre><code>lsscsi
+[0:0:0:0]    disk    ATA      ST31500341AS     CC1H  /dev/sda
+[1:0:0:0]    disk    ATA      ST31500341AS     CC1H  /dev/sdb
+[2:0:0:0]    disk    ATA      WDC WD10EZEX-00B 1A01  /dev/sdc
+[3:0:0:0]    disk    ATA      WDC WD10EZEX-00B 1A01  /dev/sdd
+[4:0:0:0]    cd/dvd  HP       DVD Writer 1260d KH25  /dev/sr0
+[6:0:0:0]    disk    ST2000DM 001-9YN164       CC4H  /dev/sde
+[6:0:0:1]    disk    ST2000DM 001-9YN164       CC4H  /dev/sdf
+</code></pre>
+
+      </article>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://jlozada2426.gitlab.io/blog/post/using_vagrant/" data-toggle="tooltip" data-placement="top" title="using vagrant">&larr; Previous Post</a>
+          </li>
+        
+        
+      </ul>
+
+      
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:jlozada2426@protonmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/chagara" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/jlozadad2426" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://reddit.com/u/jcasanova50" title="Reddit">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-reddit-alien fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://jlozada2426.gitlab.io/blog/index.xml" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          Jonathan Lozada De La Matta
+          &nbsp;&bull;&nbsp;
+          2017
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://jlozada2426.gitlab.io/blog/">Love Tux</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.20.7</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://jlozada2426.gitlab.io/blog/js/main.js"></script>
+<script src="https://jlozada2426.gitlab.io/blog/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+
+
+
+
+<script>
+  (function() {
+    var cx = '012345678901234567890:abcdefghijk';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+  </body>
+</html>
+

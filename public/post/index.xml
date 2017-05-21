@@ -8,7 +8,9 @@
     <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
     <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
     <lastBuildDate>Mon, 15 May 2017 08:12:27 -0400</lastBuildDate>
-    <atom:link href="https://jlozada2426.gitlab.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://jlozada2426.gitlab.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Using libvirt to host my VM&#39;s.</title>
@@ -16,97 +18,7 @@
       <pubDate>Mon, 15 May 2017 08:12:27 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/post/install_libvirt/</guid>
-      <description>&lt;p&gt;Recently I installed Fedora 25 to test some playbooks and other configurations. A co-worker mentioned to use Vagrat but, my exposure was minimal. I only used vagrant to test some applications such as &lt;code&gt;netbox&lt;/code&gt; and it uses Virtualbox by default. Previously I have used Virtualbox and Vmware but, I decided to move away from those. First, Virtualbox breaks everytime there is a kernel update. Although there is some commands you can run to recreate the kernel it needs but, why I should do that all the time? Second, every time I installed a VM, the usage of the HDD went over 105% in &lt;code&gt;atop!&lt;/code&gt;. Vmware is great but, they removed a lot of good features, higher price and getting a license is a pain. After running into this issue, I decided to try out libvirt since I found out in can be used with vagrant. You can start installing libvirt with groupinstall:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo dnf groupinstall &amp;quot;Virtualization&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Installing this extra rpms that are helpful to use.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo dnf install qemu-kvm virt-install virt-manager
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Make sure this services are enabled and started&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo systemctl enable libvirtd
-sudo systemctl start libvirtd
-sudo systemctl enable virtlogd
-sudo systemctl start virtlogd
-sudo systemctl enable network
-sudo systemctl start network
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Since I wanted to create the VM&amp;rsquo;s and access them over the network, I needed to create a bridge. By default, libvirt creates a network with NAT. This is the steps I took:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo systemctl stop NetworkManager
-sudo systemctl disable NetworkManager
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You should have an int automatically created when you installed the OS. You can find the name of it by running:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ifconfig
-ls /etc/sysconfig/network-scripts/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In my case it was named ifcfg-eno1. Edit the interface:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo vim /etc/sysconfig/network-scripts/ifcfg-eno1
-# add TYPE=Bridge save and close
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Restart network services&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo systemctl restart network
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;After a while I lost connection to the network and internet. I restarted &lt;code&gt;network&lt;/code&gt; and got this error &lt;code&gt;Determining IP information for br0.. /usr/sbin/dhclient-script: line 704: /etc/resolv.conf file not found&lt;/code&gt; I tried to touch the file but, it did not even let me &lt;code&gt;permission denied&lt;/code&gt;. After doing &lt;code&gt;ls -laht /etc/resolv.conf&lt;/code&gt; I noticed that the file was linked to &lt;code&gt;/var/run/NetworkManager/resolv.conf&lt;/code&gt; but, it was missing. By recreating the file at this location and restarting &lt;code&gt;NetworkManager&lt;/code&gt; everything seemed to start working. I restarted &lt;code&gt;network&lt;/code&gt; and &lt;code&gt;ping duckduckgo.com&lt;/code&gt; and got a response! Later, I researched into this issue and turns out you don&amp;rsquo;t have to turn off &lt;code&gt;NetworkManager&lt;/code&gt; anymore. Turning off and disabling &lt;code&gt;NetworkManager&lt;/code&gt; gets rid of the link to &lt;code&gt;/var/run/NetworkManager/resolv.conf&lt;/code&gt; and the &lt;code&gt;network&lt;/code&gt; service cannot resolve without this file.&lt;/p&gt;
-
-&lt;p&gt;then check the bridge interfaces&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;brctl show
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;At this point everything should be running and working.&lt;/p&gt;
-
-&lt;p&gt;I installed a couple of VM&amp;rsquo;s on the same disk &lt;code&gt;/dev/sdc&lt;/code&gt; and noticed the busy % never went higher than 73. It went back and forth between 55 and 73. To test this again, I used my extra disk that is similar on `&lt;code&gt;/dev/sdd&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[2:0:0:0]    disk    ATA      WDC WD10EZEX-00B 1A01  /dev/sdc
-[3:0:0:0]    disk    ATA      WDC WD10EZEX-00B 1A01  /dev/sdd
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This is the steps I took:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo parted /dev/&amp;quot;name of disk&amp;quot; #example /dev/vdb or /dev/sdb
-
-#in the parted menu do ```print ``` to see the disks then do:
-mklabel &amp;gt; gpt
-mkpart
-#name of the disk
-#what filesystem to use
-# the number of the drive
-# the size of the drive in GB
-# after this then you format it
-
- sudo mkfx.xfs /dev/&amp;quot;the drive plus the number&amp;quot; #example /dev/vdb1
-
-#then mount it
-
-sudo vim /etc/fstab
-# /dev/vdb1 /data xfs defaults,noatime 0 0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I mounted the drive directly without LVM&amp;rsquo;s or anything else. I used &lt;code&gt;virt-manager&lt;/code&gt; and added a pre-formatted block device to store the VM&amp;rsquo;s.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;lsscsi
-[0:0:0:0]    disk    ATA      ST31500341AS     CC1H  /dev/sda
-[1:0:0:0]    disk    ATA      ST31500341AS     CC1H  /dev/sdb
-[2:0:0:0]    disk    ATA      WDC WD10EZEX-00B 1A01  /dev/sdc
-[3:0:0:0]    disk    ATA      WDC WD10EZEX-00B 1A01  /dev/sdd
-[4:0:0:0]    cd/dvd  HP       DVD Writer 1260d KH25  /dev/sr0
-[6:0:0:0]    disk    ST2000DM 001-9YN164       CC4H  /dev/sde
-[6:0:0:1]    disk    ST2000DM 001-9YN164       CC4H  /dev/sdf
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>Recently I installed Fedora 25 to test some playbooks and other configurations. A co-worker mentioned to use Vagrat but, my exposure was minimal. I only used vagrant to test some applications such as netbox and it uses Virtualbox by default. Previously I have used Virtualbox and Vmware but, I decided to move away from those. First, Virtualbox breaks everytime there is a kernel update. Although there is some commands you can run to recreate the kernel it needs but, why I should do that all the time?</description>
     </item>
     
     <item>
@@ -151,73 +63,8 @@ sudo vim /etc/fstab
       <pubDate>Mon, 08 May 2017 15:51:12 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve2/</guid>
-      <description>&lt;p&gt;After being able automate user creation/deletion, I tackle on how to automate the Cloudera CM install as much as possible. I first started trying to install the rpms with ansible. I discovered the yum and repo modules. They allow me to add a repo and install any rpm available. This what I have:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;- name: Add the cloudera-cm repo.
-  yum_repository:
-    name: cloudera-cm
-    description: cloudera-cm repo
-    baseurl: &amp;quot;{{ rpm_repo }}&amp;quot; # http://archive.cloudera.com/cm5/redhat/7/x86_64/cm/5.11/
-    gpgcheck: yes
-    gpgkey: &amp;quot;{{ gpg_key }}&amp;quot;
-    enabled: yes
-
-- name: update system # Just update the whole system to latest rpms
-  yum:
-    name: &#39;*&#39;
-    state: latest
-
-- name: install packages
-  yum:
-    name: &amp;quot;{{ packages }}&amp;quot; # wget,net-tools,python,vim,postgresql-server,java,mod_ssl,httpd,MySQL-python,fuse-libs
-    state: latest
-
-- name: install cloudera packages
-  yum:
-    name: &amp;quot;{{ cloudera_rpm }}&amp;quot; # cloudera-manager-agent,cloudera-manager-daemons,cloudera-manager-server
-    state: latest
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Previously doing this process took around 30 minutes to around 2 hours since I had to manually do this to all the potential Cloudera CM&amp;rsquo;s.&lt;/p&gt;
-
-&lt;p&gt;I ran into issues when I created the postgres user and DB, failing to connect. I forgot that postgres does not let you do this as root and you have to switch to the &lt;code&gt;postgres&lt;/code&gt; user. This is how I was able to resolve it:&lt;/p&gt;
-
-&lt;p&gt;Init the DB first&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;- name: init postgresql
-  become: True
-  become_user: postgres
-  command: &#39;{{ pg_initdb_command }}&#39; # the command is initdb -D /var/lib/pgsql/data
-  ignore_errors: yes
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then create the user and DB&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  - name: create the postgres user and set the password
-    postgresql_user:
-     name: &amp;quot;{{ postgres_username }}&amp;quot; # DB user
-     password: &amp;quot;{{ postgres_password }}&amp;quot; # DB passwd
-     become: True
-     become_user: postgres
-
--  name: create the postgresql database for Cloudera CM
-   postgresql_db:
-     name: &amp;quot;{{ postgres_database }}&amp;quot; # just the DB name
-     owner: &amp;quot;{{ postgres_username }}&amp;quot; # the DB user created above
-     state: present
-     login_user: postgres
-   become: True
-   become_user: postgres
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I had to become user &lt;code&gt;postgres&lt;/code&gt; then create the user and the password. Then create the DB Cloudera CM will use and give rights to the user. To get the DB finalized, you need to run &lt;code&gt;/usr/share/cmf/schema/scm_prepare_database.sh postgresql scm scm scm&lt;/code&gt;. I used a variable to make the &lt;code&gt;task/main.yml&lt;/code&gt; easier to read. This command indicates the type of DB to be used, the user and passwd.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; - name: Run the db script to configure for Cloudera CM
-  shell: &amp;quot;{{ prepare_database }}&amp;quot; # includes the command above.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you want to see the whole role, check it out at &lt;a href=&#34;https://gitlab.com/sysadminonlinux/cloudera-cm&#34;&gt;https://gitlab.com/sysadminonlinux/cloudera-cm&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>After being able automate user creation/deletion, I tackle on how to automate the Cloudera CM install as much as possible. I first started trying to install the rpms with ansible. I discovered the yum and repo modules. They allow me to add a repo and install any rpm available. This what I have:
+- name: Add the cloudera-cm repo. yum_repository: name: cloudera-cm description: cloudera-cm repo baseurl: &amp;quot;{{ rpm_repo }}&amp;quot; # http://archive.</description>
     </item>
     
     <item>
@@ -226,44 +73,7 @@ sudo vim /etc/fstab
       <pubDate>Mon, 08 May 2017 13:32:05 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve/</guid>
-      <description>
-
-&lt;p&gt;After I was able to successfully Install Cloudera CM and create a cluster, I was trying to find a way to reduce the deployment time. The current deployments would take too long, waste over 500 of labor hours and no consistency. I could not meet customer demand for new datanodes or clusters and had a reduced workforce due to contract changes. At first I tried to find an all solution like puppet or foreman. But, by installing this two solutions I ran into the same problem with the private name and it was a longer process to get it working. A more troublesome problem was changing the certs for https on Foreman. I also needed to find something that the team can learn fast and able to use. We got into debates going back and forth between ansible and puppet, although none on the team had much experience with Configuration Management. At the end no decision was made and everyone did what they though was easier for them. I decided to learn and use ansible, others kept deploying VM&amp;rsquo;s and configuration manually and others decided to invest more time with &lt;code&gt;shell scripting&lt;/code&gt;. Using scripts was still a better option but, there was no control or revision on the scripts. Anyone made changes and used the scripts in production making things worse. I went and bought a book on Ansible, Decided to use Gitlab to host all my roles and playbooks.&lt;/p&gt;
-
-&lt;h1 id=&#34;learning-ansible:933e59772c67293f1342c68007214815&#34;&gt;Learning Ansible&lt;/h1&gt;
-
-&lt;p&gt;I have used ansible before in a previous job but, I never created the roles and playbooks. All I did was run the playbooks and manually fix in the servers what failed. My first challenge was getting spacing and indent correctly on the .yaml. That took me a while to learn and understand. Although I read the ansible docs, I did not realize how to format the file correctly. It took me around 20 tries to finally get it correctly.&lt;/p&gt;
-
-&lt;p&gt;The first problem as a team was adding users with PKI keys and removing users that left. It was a tedious process:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Scp the script to the VM&amp;rsquo;s run &lt;code&gt;adduser.sh&lt;/code&gt; or &lt;code&gt;removeuser.sh&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;We had to do this to every VM when we had a new user or someone left. This was tedious and took us a long time since it was a large number of VM&amp;rsquo;s. Something that could take weeks to 5-8 months depending on the workload.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;At first I tried to copy roles that I found in Ansible Galaxy but, I did not understand them right away. I was not able to understand the variables, defaults and how others wrote their roles. I needed something simple that I could learn and be able to teach the rest of the team if the decide to use it. I came across a new acquired customer who started using ansible and had simpler roles I was to understand. So to be able to successfully create new users, I copy and pasted the modules all over the tasks/main.yml for every user I needed. Here is an example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-  - name: Create Group &amp;quot;&amp;quot;
-    group: name=
-  - name: Creater user &amp;quot;&amp;quot;
-    user: name=&amp;quot;&amp;quot; group=&amp;quot;&amp;quot; uid=&amp;quot;&amp;quot; groups=&amp;quot;&amp;quot; expires=&amp;quot;&amp;quot;
-  - name: Authorized keys &amp;quot;&amp;quot;
-authorized_key: user=&amp;quot;&amp;quot; key=&amp;quot;{{ lookup(&#39;file&#39;,&amp;quot;dirtothekey/.pub&#39;) }}&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I copy and pasted this for every user I needed created. My &lt;code&gt;main.yml&lt;/code&gt; was messy and dirty but, I was able to successfully create users with their keys at a fast pace. The whole process of scping every script I needed were long gone. I just had reduced months of work to around 2-3 hours.&lt;/p&gt;
-
-&lt;p&gt;After figuring out how add users to the VM&amp;rsquo;s then I needed to figure out how to delete them. To my surprise this was easier than I though. All I needed was:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-  -user:
-     name: &amp;quot;gray_cat&amp;quot;
-     state: absent
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;that is all! it was so simple, I was speechless! I was able to remove all those customers and co-workers who had left the project. Again, I was able to remove hours wasted on removing users.&lt;/p&gt;
-</description>
+      <description>After I was able to successfully Install Cloudera CM and create a cluster, I was trying to find a way to reduce the deployment time. The current deployments would take too long, waste over 500 of labor hours and no consistency. I could not meet customer demand for new datanodes or clusters and had a reduced workforce due to contract changes. At first I tried to find an all solution like puppet or foreman.</description>
     </item>
     
     <item>
@@ -272,65 +82,7 @@ authorized_key: user=&amp;quot;&amp;quot; key=&amp;quot;{{ lookup(&#39;file&#39;
       <pubDate>Mon, 08 May 2017 11:52:33 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/post/big_data_on_openstack/</guid>
-      <description>&lt;p&gt;Openstack can be a great solution due to the increase demand of  cloud and more resources. But, it can&amp;rsquo;t resolve every issue out there. an Openstack deployment can provide &amp;ldquo;unlimited&amp;rdquo; resources but, is useless if is not architectured for the specific applications that the VM&amp;rsquo;s will be hosting. For example, a previous customer had over 20 regions, configured almost the same and had performance issues. This  customer hosted big data applications (Cloudera to be specific) on those VM&amp;rsquo;s, had an older deployment of Openstack ( Icehouse so we could not take advantage of the newer cloud features) and no budget for further expansion and upgrades ( Including software and hardware) but, had the following issues:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Was forced to use Centos &lt;sup&gt;6&lt;/sup&gt;&amp;frasl;&lt;sub&gt;7&lt;/sub&gt;. No budget for OS support.&lt;/li&gt;
-&lt;li&gt;Cloudera Clusters could not talk to each other from different regions.&lt;/li&gt;
-&lt;li&gt;Adding extra datanodes to a cluster using resources from a different region was not possible. Customer had to create a new cluster in every region.&lt;/li&gt;
-&lt;li&gt;Application links inside Cloudera CM would fail to resolve.&lt;/li&gt;
-&lt;li&gt;A new Cloudera Cluster would take around 2-5 months to deploy due to loosing knowledge ( employees left the project) and configuration issues.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I tried following the little documentation the previous Sys Admin had left but, that was troublesome. I had to spend significant time researching on the internet to find solutions to some of the issues I came across. At first I tried building a 5 host cluster with Centos 6. But, the installation would fail due to the Cloudera CM not able to talk to the cloudera agent( they were on the same host!). I found out later that is a bug with Cloudera CM with Cloud Solutions such as AWS/Openstack due to the way Openstack networking works (Floating/Public /Private hostname &amp;amp; IP) (&lt;a href=&#34;https://www.cloudera.com/documentation/enterprise/release-notes/topics/cm_rn_known_issues.html&#34;&gt;https://www.cloudera.com/documentation/enterprise/release-notes/topics/cm_rn_known_issues.html&lt;/a&gt;) Basically this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Installing on AWS, you must use private EC2 hostnames.
-
-When installing on an AWS instance, and adding hosts using their public names, the installation will fail when the hosts fail to heartbeat.
-
-Severity: Med
-
-Workaround:
-
-Use the Back button in the wizard to return to the original screen, where it prompts for a license.
-
-Rerun the wizard, but choose &amp;quot;Use existing hosts&amp;quot; instead of searching for hosts. Now those hosts show up with their internal EC2 names.
-
-Continue through the wizard and the installation should succeed.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Since Openstack operates similar to AWS then I figure I was running into this same issue. I was able to fix it by:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Either use all private hostname in &lt;code&gt;/etc/hostnames&lt;/code&gt; and &lt;code&gt;/etc/hosts&lt;/code&gt;. Yes, the name Openstack injects when you create a VM and give it a name. For example, &lt;code&gt;cloudera-cm-$regionname&lt;/code&gt; or use all FQDN. Using the private hostname in all the VM&amp;rsquo;s worked but, they still could not reach nodes in another region and Cloudera CM would inject the
-private hostname in all the links it provided in the UI. For example, if you decided to bring up the Namenode Http page from the UI, instead of resolving, it will fail because it would open &lt;code&gt;https://cloudera-cm-$regionname:50070&lt;/code&gt; instead of the FQDN( obviously it will not resolve since DNS does not know that name). This became an issue since customers would try to use the UI and complain that Cloudera is down because the page will not come up. This was resolved by using The Floating IP or the FQDN (every IP already had a FQDN in DNS) &lt;code&gt;https://bigdata.cloud.example.com:50070/&lt;/code&gt; (Told customers to just bookmark this link and ignored the links in the UI). This same problem happened with all big data applications. HDFS, Solar,Hue, Impala etc. I created another cluster to test using FQDN in all the nodes but, the install failed. So I had to go back to using the private names.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I continued testing ways to fix it but, it became more conversome. I decided to try with Centos 7 since I been using it more than 6. Using centos 7 made it easier to make certain configurations due to some tools:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;nmtui - Using nmtui changed the hostname in all the right locations and the cloudera installer accepted it right away( after a reboot)&lt;/li&gt;
-&lt;li&gt;hostnamectl - Using hostnamectl was another option that changed the hostname correctly. &lt;code&gt;hostnamectl set-hostname cloudera-cm-mars1.z1&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I did not go into extra research to see what other tools would work on centos 6 and switched to 7 since it reduced the time needed to deploy a cluster ( shaved off around an hour or so of troubleshooting).&lt;/p&gt;
-
-&lt;p&gt;While researching more issues and stalking the cloudera forums, I came across how cloudera figures out the hostname. It runs this python command:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;python -c &amp;quot;import socket;print socket.getfqdn();
-print
-socket.gethostbyname(socket.getfqdn())&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Regardless what I try, this command will always resolve to the private name. To summarize, I was able to get Cloudera CM installed doing the following:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Install in Centos 7 due to the new tools and new updates.&lt;/li&gt;
-&lt;li&gt;Use &lt;code&gt;nmtui&lt;/code&gt; and &lt;code&gt;hostnamectl&lt;/code&gt; to change the name of the system to the private hostname then restart. always use the private name.&lt;/li&gt;
-&lt;li&gt;All the VM&amp;rsquo;s will have to be on the same project and region. Adding from other regions can be a hit &amp;amp; miss. This can be annoying but, the only solution I was able to find.&lt;/li&gt;
-&lt;li&gt;I was able to discover that this issue in Openstack is not only with Cloudera CM or Hadoop but, tons of other applications. Elasticsearch,Puppet and foreman to name a few. The troublesome install of Puppet and Foreman was what direct me to use Ansible.&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+      <description>Openstack can be a great solution due to the increase demand of cloud and more resources. But, it can&amp;rsquo;t resolve every issue out there. an Openstack deployment can provide &amp;ldquo;unlimited&amp;rdquo; resources but, is useless if is not architectured for the specific applications that the VM&amp;rsquo;s will be hosting. For example, a previous customer had over 20 regions, configured almost the same and had performance issues. This customer hosted big data applications (Cloudera to be specific) on those VM&amp;rsquo;s, had an older deployment of Openstack ( Icehouse so we could not take advantage of the newer cloud features) and no budget for further expansion and upgrades ( Including software and hardware) but, had the following issues:</description>
     </item>
     
   </channel>
