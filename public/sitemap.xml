@@ -2,6 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jlozada2426.gitlab.io/blog/</loc>
+    <lastmod>2017-05-15T08:12:27-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jlozada2426.gitlab.io/blog/post/install_libvirt/</loc>
+    <lastmod>2017-05-15T08:12:27-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozada2426.gitlab.io/blog/post/using_vagrant/</loc>
+    <lastmod>2017-05-09T13:34:20-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozada2426.gitlab.io/blog/post/netbox/</loc>
+    <lastmod>2017-05-09T12:30:58-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozada2426.gitlab.io/blog/post/kde/</loc>
+    <lastmod>2017-05-09T12:17:49-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozada2426.gitlab.io/blog/post/using_ansible_tower/</loc>
+    <lastmod>2017-05-09T12:03:11-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve2/</loc>
     <lastmod>2017-05-08T15:51:12-04:00</lastmod>
   </url>
@@ -14,47 +45,6 @@
   <url>
     <loc>https://jlozada2426.gitlab.io/blog/post/big_data_on_openstack/</loc>
     <lastmod>2017-05-08T11:52:33-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jlozada2426.gitlab.io/blog/categories/ansible/</loc>
-    <lastmod>2017-05-08T15:51:12-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozada2426.gitlab.io/blog/categories/</loc>
-    <lastmod>2017-05-08T15:51:12-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozada2426.gitlab.io/blog/categories/cloud/</loc>
-    <lastmod>2017-05-08T11:52:33-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozada2426.gitlab.io/blog/</loc>
-    <lastmod>2017-05-08T15:51:12-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozada2426.gitlab.io/blog/categories/openstack/</loc>
-    <lastmod>2017-05-08T11:52:33-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozada2426.gitlab.io/blog/post/</loc>
-    <lastmod>2017-05-08T15:51:12-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozada2426.gitlab.io/blog/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
