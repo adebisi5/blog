@@ -1,7 +1,7 @@
 baseurl = "https://jlozada2426.gitlab.io/blog/"
 DefaultContentLanguage = "en"
 #DefaultContentLanguage = "ja"
-title = "Love Tux"
+title = "Love FOSS and Gaming"
 theme = "beautifulhugo"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
@@ -10,7 +10,7 @@ pygmentCodeFences = true
 #googleAnalytics = "XXX"
 
 [Params]
-  subtitle = "love FOSS, Tux and Star Trek NG is the best then DS9"
+  subtitle = "love FOSS, Gaming and Star Trek NG is the best then DS9"
   logo = "img/tux.gif"
   favicon = "img/tux_sticker.ico"
   dateFormat = "January 2, 2006"
