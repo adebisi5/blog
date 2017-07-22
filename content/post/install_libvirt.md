@@ -1,9 +1,8 @@
----
-date: 2017-05-15T08:12:27-04:00
-subtitle: ""
-tags: []
-title: Installing libvirt to host my VM's.
----
++++
+categories = ["fedora"]
+date = "2017-05-08T13:32:05-04:00"
+tags = []
+title = "Install libvirtd"
 
 Recently I installed Fedora 25 to test some playbooks and other configurations. A co-worker mentioned to use Vagrant but, my exposure was minimal. I only used vagrant to test some applications such as ```netbox``` and it uses Virtualbox by default. Previously I have used Virtualbox and Vmware but, I decided to move away from those. First, Virtualbox breaks everytime there is a kernel update. Although there is some commands you can run to recreate the kernel it needs but, why I should do this all the time? Second, every time I installed a VM, the usage of the HDD went over 105% in ```atop!```. Vmware is great but, they removed a lot of good features, higher price and getting a license is a pain. After running into this issue, I decided to try out libvirt since I found out in can be used with vagrant. You can start installing libvirt with groupinstall:
 
