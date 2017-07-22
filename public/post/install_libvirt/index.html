@@ -5,12 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Using libvirt to host my VM&#39;s.</title>
-  <meta property="og:title" content="Using libvirt to host my VM&#39;s." />
-  <meta name="twitter:title" content="Using libvirt to host my VM&#39;s." />
-  <meta name="description" content="Recently I installed Fedora 25 to test some playbooks and other configurations. A co-worker mentioned to use Vagrat but, my exposure was minimal. I only used vagrant to test some applications such as netbox and it uses Virtualbox by default. Previously I have used Virtualbox and Vmware but, I decided to move away from those. First, Virtualbox breaks everytime there is a kernel update. Although there is some commands you can run to recreate the kernel it needs but, why I should do that all the time?">
-  <meta property="og:description" content="Recently I installed Fedora 25 to test some playbooks and other configurations. A co-worker mentioned to use Vagrat but, my exposure was minimal. I only used vagrant to test some applications such as netbox and it uses Virtualbox by default. Previously I have used Virtualbox and Vmware but, I decided to move away from those. First, Virtualbox breaks everytime there is a kernel update. Although there is some commands you can run to recreate the kernel it needs but, why I should do that all the time?">
-  <meta name="twitter:description" content="Recently I installed Fedora 25 to test some playbooks and other configurations. A co-worker mentioned to use Vagrat but, my exposure was minimal. I only used vagrant to test some applications such as …">
+  <title>Install libvirtd</title>
+  <meta property="og:title" content="Install libvirtd" />
+  <meta name="twitter:title" content="Install libvirtd" />
+  <meta name="description" content="Recently I installed Fedora 25 to test some playbooks and other configurations. A co-worker mentioned to use Vagrant but, my exposure was minimal. I only used vagrant to test some applications such as netbox and it uses Virtualbox by default. Previously I have used Virtualbox and Vmware but, I decided to move away from those. First, Virtualbox breaks everytime there is a kernel update. Although there is some commands you can run to recreate the kernel it needs but, why I should do this all the time?">
+  <meta property="og:description" content="Recently I installed Fedora 25 to test some playbooks and other configurations. A co-worker mentioned to use Vagrant but, my exposure was minimal. I only used vagrant to test some applications such as netbox and it uses Virtualbox by default. Previously I have used Virtualbox and Vmware but, I decided to move away from those. First, Virtualbox breaks everytime there is a kernel update. Although there is some commands you can run to recreate the kernel it needs but, why I should do this all the time?">
+  <meta name="twitter:description" content="Recently I installed Fedora 25 to test some playbooks and other configurations. A co-worker mentioned to use Vagrant but, my exposure was minimal. I only used vagrant to test some applications such as …">
   <meta name="author" content="Jonathan Lozada De La Matta"/>
   <link href='https://jlozada2426.gitlab.io/blog/img/tux_sticker.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://jlozada2426.gitlab.io/blog/img/tux.gif" />
@@ -20,11 +20,11 @@
   <meta name="twitter:creator" content="@jlozadad2426" />
   <meta property="og:url" content="https://jlozada2426.gitlab.io/blog/post/install_libvirt/" />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Love Tux" />
+  <meta property="og:site_name" content="Love FOSS and Gaming" />
 
   <meta name="generator" content="Hugo 0.20.7" />
   <link rel="canonical" href="https://jlozada2426.gitlab.io/blog/post/install_libvirt/" />
-  <link rel="alternate" href="https://jlozada2426.gitlab.io/blog/index.xml" type="application/rss+xml" title="Love Tux">
+  <link rel="alternate" href="https://jlozada2426.gitlab.io/blog/index.xml" type="application/rss+xml" title="Love FOSS and Gaming">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -46,7 +46,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="https://jlozada2426.gitlab.io/blog/">Love Tux</a>
+      <a class="navbar-brand" href="https://jlozada2426.gitlab.io/blog/">Love FOSS and Gaming</a>
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
@@ -80,8 +80,8 @@
     <div class="avatar-container">
       <div class="avatar-img-border">
         
-          <a title="Love Tux" href="https://jlozada2426.gitlab.io/blog/">
-            <img class="avatar-img" src="https://jlozada2426.gitlab.io/blog/img/tux.gif" alt="Love Tux" />
+          <a title="Love FOSS and Gaming" href="https://jlozada2426.gitlab.io/blog/">
+            <img class="avatar-img" src="https://jlozada2426.gitlab.io/blog/img/tux.gif" alt="Love FOSS and Gaming" />
           </a>
         
       </div>
@@ -97,7 +97,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Search Love Tux</h4>
+          <h4 class="modal-title">Search Love FOSS and Gaming</h4>
         </div>
         <div class="modal-body">
           <gcse:search></gcse:search>
@@ -128,11 +128,11 @@
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>Using libvirt to host my VM&#39;s.</h1>
+              <h1>Install libvirtd</h1>
                 
                 
                   <span class="post-meta">
-  Posted on May 15, 2017
+  Posted on May 8, 2017
   
 </span>
 
@@ -151,12 +151,12 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>Recently I installed Fedora 25 to test some playbooks and other configurations. A co-worker mentioned to use Vagrat but, my exposure was minimal. I only used vagrant to test some applications such as <code>netbox</code> and it uses Virtualbox by default. Previously I have used Virtualbox and Vmware but, I decided to move away from those. First, Virtualbox breaks everytime there is a kernel update. Although there is some commands you can run to recreate the kernel it needs but, why I should do that all the time? Second, every time I installed a VM, the usage of the HDD went over 105% in <code>atop!</code>. Vmware is great but, they removed a lot of good features, higher price and getting a license is a pain. After running into this issue, I decided to try out libvirt since I found out in can be used with vagrant. You can start installing libvirt with groupinstall:</p>
+        <p>Recently I installed Fedora 25 to test some playbooks and other configurations. A co-worker mentioned to use Vagrant but, my exposure was minimal. I only used vagrant to test some applications such as <code>netbox</code> and it uses Virtualbox by default. Previously I have used Virtualbox and Vmware but, I decided to move away from those. First, Virtualbox breaks everytime there is a kernel update. Although there is some commands you can run to recreate the kernel it needs but, why I should do this all the time? Second, every time I installed a VM, the usage of the HDD went over 105% in <code>atop!</code>. Vmware is great but, they removed a lot of good features, higher price and getting a license is a pain. After running into this issue, I decided to try out libvirt since I found out in can be used with vagrant. You can start installing libvirt with groupinstall:</p>
 
 <pre><code>sudo dnf groupinstall &quot;Virtualization&quot;
 </code></pre>
 
-<p>Installing this extra rpms that are helpful to use.</p>
+<p>Install this extra rpms.</p>
 
 <pre><code>sudo dnf install qemu-kvm virt-install virt-manager
 </code></pre>
@@ -196,50 +196,26 @@ ls /etc/sysconfig/network-scripts/
 
 <p>After a while I lost connection to the network and internet. I restarted <code>network</code> and got this error <code>Determining IP information for br0.. /usr/sbin/dhclient-script: line 704: /etc/resolv.conf file not found</code> I tried to touch the file but, it did not even let me <code>permission denied</code>. After doing <code>ls -laht /etc/resolv.conf</code> I noticed that the file was linked to <code>/var/run/NetworkManager/resolv.conf</code> but, it was missing. By recreating the file at this location and restarting <code>NetworkManager</code> everything seemed to start working. I restarted <code>network</code> and <code>ping duckduckgo.com</code> and got a response! Later, I researched into this issue and turns out you don&rsquo;t have to turn off <code>NetworkManager</code> anymore. Turning off and disabling <code>NetworkManager</code> gets rid of the link to <code>/var/run/NetworkManager/resolv.conf</code> and the <code>network</code> service cannot resolve without this file.</p>
 
-<p>then check the bridge interfaces</p>
+<p>After restarting my server after patches, I lost connection to the internet again. Turns out <code>/etc/resolv.conf</code> is missing again. I had to do:</p>
+
+<pre><code>sudo touch /etc/resolv.conf
+sudo systemctl restart network
+</code></pre>
+
+<p>I got connection again and was able to download more ISO&rsquo;s for the server builds. But, this happens every time there is a restart. I reported this issue fedora bugzilla and see if its a bug.</p>
+
+<p>Finally check the bridge interfaces.</p>
 
 <pre><code>brctl show
 </code></pre>
 
-<p>At this point everything should be running and working.</p>
+<p>At this point everything should be running and working. I created my VM&rsquo;s using <code>virt-manager</code> and tested some ansible roles.</p>
 
-<p>I installed a couple of VM&rsquo;s on the same disk <code>/dev/sdc</code> and noticed the busy % never went higher than 73. It went back and forth between 55 and 73. To test this again, I used my extra disk that is similar on `<code>/dev/sdd</code>:</p>
+<p>NOTE: I decided to reinstall my OS and try to use software RAID 1 for everything. Using the HDD&rsquo;s I have available below and performance has been great.</p>
 
-<pre><code>[2:0:0:0]    disk    ATA      WDC WD10EZEX-00B 1A01  /dev/sdc
-[3:0:0:0]    disk    ATA      WDC WD10EZEX-00B 1A01  /dev/sdd
-</code></pre>
+<pre><code>[2:0:0:0]    disk    ATA      WDC WD10EZEX-00B 1A01  
+[3:0:0:0]    disk    ATA      WDC WD10EZEX-00B 1A01  
 
-<p>This is the steps I took:</p>
-
-<pre><code>sudo parted /dev/&quot;name of disk&quot; #example /dev/vdb or /dev/sdb
-
-#in the parted menu do ```print ``` to see the disks then do:
-mklabel &gt; gpt
-mkpart
-#name of the disk
-#what filesystem to use
-# the number of the drive
-# the size of the drive in GB
-# after this then you format it
-
- sudo mkfx.xfs /dev/&quot;the drive plus the number&quot; #example /dev/vdb1
-
-#then mount it
-
-sudo vim /etc/fstab
-# /dev/vdb1 /data xfs defaults,noatime 0 0
-</code></pre>
-
-<p>I mounted the drive directly without LVM&rsquo;s or anything else. I used <code>virt-manager</code> and added a pre-formatted block device to store the VM&rsquo;s.</p>
-
-<pre><code>lsscsi
-[0:0:0:0]    disk    ATA      ST31500341AS     CC1H  /dev/sda
-[1:0:0:0]    disk    ATA      ST31500341AS     CC1H  /dev/sdb
-[2:0:0:0]    disk    ATA      WDC WD10EZEX-00B 1A01  /dev/sdc
-[3:0:0:0]    disk    ATA      WDC WD10EZEX-00B 1A01  /dev/sdd
-[4:0:0:0]    cd/dvd  HP       DVD Writer 1260d KH25  /dev/sr0
-[6:0:0:0]    disk    ST2000DM 001-9YN164       CC4H  /dev/sde
-[6:0:0:1]    disk    ST2000DM 001-9YN164       CC4H  /dev/sdf
 </code></pre>
 
       </article>
@@ -247,9 +223,13 @@ sudo vim /etc/fstab
       <ul class="pager blog-pager">
         
           <li class="previous">
-            <a href="https://jlozada2426.gitlab.io/blog/post/using_vagrant/" data-toggle="tooltip" data-placement="top" title="using vagrant">&larr; Previous Post</a>
+            <a href="https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve/" data-toggle="tooltip" data-placement="top" title="Using Ansible to Resolve IT Issues Part 1">&larr; Previous Post</a>
           </li>
         
+        
+          <li class="next">
+            <a href="https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve2/" data-toggle="tooltip" data-placement="top" title="Use Ansible to Resolve IT Issues Part 2">Next Post &rarr;</a>
+          </li>
         
       </ul>
 
@@ -276,7 +256,7 @@ sudo vim /etc/fstab
                 </a>
               </li>
               <li>
-                <a href="https://github.com/chagara" title="GitHub">
+                <a href="https://github.com/jlozadad" title="GitHub">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -317,7 +297,7 @@ sudo vim /etc/fstab
 
           
             &nbsp;&bull;&nbsp;
-            <a href="https://jlozada2426.gitlab.io/blog/">Love Tux</a>
+            <a href="https://jlozada2426.gitlab.io/blog/">Love FOSS and Gaming</a>
           
         </p>
         
