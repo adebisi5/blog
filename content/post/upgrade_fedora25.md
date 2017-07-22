@@ -1,5 +1,5 @@
 ---
-categories = ["fedora"]
+
 date: 2017-07-18T00:58:43-04:00
 subtitle: ""
 tags: []
