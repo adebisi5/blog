@@ -7,13 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
     <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
-    <lastBuildDate>Fri, 21 Jul 2017 21:52:43 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 26 Jul 2017 11:54:53 -0400</lastBuildDate>
     
 	<atom:link href="https://jlozada2426.gitlab.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>upgrading_fedora25</title>
+      <title>Comics</title>
+      <link>https://jlozada2426.gitlab.io/blog/post/comics/</link>
+      <pubDate>Wed, 26 Jul 2017 11:54:53 -0400</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/post/comics/</guid>
+      <description>I always enjoyed comics since I was little. I did not get the opportunity to read Marvels or DC like others have. I grew up reading sonic and some alien comics. After that I got heavily into playing video games so I barely touched any comics and read mostly manga. In the past year I ran across this store Third Eye Comics and got exposed to the Alien and Predator comics.</description>
+    </item>
+    
+    <item>
+      <title>Aliens Defiance</title>
+      <link>https://jlozada2426.gitlab.io/blog/post/aliens_defiance/</link>
+      <pubDate>Wed, 26 Jul 2017 11:52:08 -0400</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/post/aliens_defiance/</guid>
+      <description>I bought Alien Defiance issue #1 months ago but, never got around to reading it. After going through the first issue, I got hooked. I was unable to find the second one in any local bookstores and the local comic store. I was forced to buy the digital version from Darkhorse. I&amp;rsquo;m not much of a fan of the digital versions but, I wanted to read them right away.I have to say I was hooked right away with this series.</description>
+    </item>
+    
+    <item>
+      <title>Upgrading Fedora 25</title>
       <link>https://jlozada2426.gitlab.io/blog/post/upgrading_fedora25/</link>
       <pubDate>Fri, 21 Jul 2017 21:52:43 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
