@@ -1,13 +1,10 @@
 baseurl = "https://jlozada2426.gitlab.io/blog/"
 DefaultContentLanguage = "en"
-#DefaultContentLanguage = "ja"
 title = "Love FOSS and Gaming"
 theme = "beautifulhugo"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
-#disqusShortname = "XXX"
-#googleAnalytics = "XXX"
 
 [Params]
   subtitle = "love FOSS, Gaming and Star Trek NG is the best then DS9"

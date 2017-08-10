@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>ansible_tower</title>
-  <meta property="og:title" content="ansible_tower" />
-  <meta name="twitter:title" content="ansible_tower" />
+  <title>Ansible Tower</title>
+  <meta property="og:title" content="Ansible Tower" />
+  <meta name="twitter:title" content="Ansible Tower" />
   <meta name="description" content="So you have an idea what is ansible and what you can do with it. After creating, playbooks &amp; roles and dynamic inventories, you are wondering how you can centralize and control access to your playbooks. You can do this with ansible core and limit access and permissions on the git project. You can include all the playbooks, roles and inventory files in the same repo. But, this can become a problem once the project is git clone into the controller and anyone access to the server can potentially be able to access your playbooks.">
   <meta property="og:description" content="So you have an idea what is ansible and what you can do with it. After creating, playbooks &amp; roles and dynamic inventories, you are wondering how you can centralize and control access to your playbooks. You can do this with ansible core and limit access and permissions on the git project. You can include all the playbooks, roles and inventory files in the same repo. But, this can become a problem once the project is git clone into the controller and anyone access to the server can potentially be able to access your playbooks.">
   <meta name="twitter:description" content="So you have an idea what is ansible and what you can do with it. After creating, playbooks &amp; roles and dynamic inventories, you are wondering how you can centralize and control access to your …">
@@ -22,7 +22,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Love FOSS and Gaming" />
 
-  <meta name="generator" content="Hugo 0.20.7" />
+  <meta name="generator" content="Hugo 0.25.1" />
   <link rel="canonical" href="https://jlozada2426.gitlab.io/blog/post/ansible_tower/" />
   <link rel="alternate" href="https://jlozada2426.gitlab.io/blog/index.xml" type="application/rss+xml" title="Love FOSS and Gaming">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -33,6 +33,56 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
   <link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/pygment_highlights.css" />
   <link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/highlight.min.css" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
 
 </head>
 
@@ -128,7 +178,7 @@
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>ansible_tower</h1>
+              <h1>Ansible Tower</h1>
                 
                 
                   <span class="post-meta">
@@ -147,7 +197,7 @@
 
 
     
-<div class="container">
+<div class="container" role="main">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
@@ -199,6 +249,14 @@
                 </a>
               </li>
               <li>
+                <a href="https://gitlab.com/jlozada2426" title="GitLab">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-gitlab fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
                 <a href="https://twitter.com/jlozadad2426" title="Twitter">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
@@ -226,7 +284,12 @@
           
         </ul>
         <p class="credits copyright text-muted">
-          Jonathan Lozada De La Matta
+          
+            
+              Jonathan Lozada De La Matta
+                      
+          
+          
           &nbsp;&bull;&nbsp;
           2017
 
@@ -237,7 +300,7 @@
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.20.7</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.25.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>
@@ -253,8 +316,9 @@
 <script src="https://jlozada2426.gitlab.io/blog/js/highlight.min.js"></script>
 <script> hljs.initHighlightingOnLoad(); </script>
 <script> renderMathInElement(document.body); </script>
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+<script src="https://jlozada2426.gitlab.io/blog/js/load-photoswipe.js"></script>
 
 
 <script>
