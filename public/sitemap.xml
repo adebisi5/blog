@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jlozada2426.gitlab.io/blog/post/tower-cli/</loc>
+    <lastmod>2017-10-05T12:51:46-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jlozada2426.gitlab.io/blog/post/comics/</loc>
     <lastmod>2017-07-26T11:54:53-04:00</lastmod>
   </url>
@@ -49,6 +54,12 @@
   </url>
   
   <url>
+    <loc>https://jlozada2426.gitlab.io/blog/tags/ansible/</loc>
+    <lastmod>2017-10-05T12:51:46-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://jlozada2426.gitlab.io/blog/categories/ansible/</loc>
     <lastmod>2017-05-08T15:51:12-04:00</lastmod>
     <priority>0</priority>
@@ -68,7 +79,7 @@
   
   <url>
     <loc>https://jlozada2426.gitlab.io/blog/</loc>
-    <lastmod>2017-07-26T11:54:53-04:00</lastmod>
+    <lastmod>2017-10-05T12:51:46-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -80,12 +91,13 @@
   
   <url>
     <loc>https://jlozada2426.gitlab.io/blog/post/</loc>
-    <lastmod>2017-07-26T11:54:53-04:00</lastmod>
+    <lastmod>2017-10-05T12:51:46-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jlozada2426.gitlab.io/blog/tags/</loc>
+    <lastmod>2017-10-05T12:51:46-04:00</lastmod>
     <priority>0</priority>
   </url>
   

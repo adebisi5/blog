@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
     <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
-    <lastBuildDate>Wed, 26 Jul 2017 11:54:53 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 05 Oct 2017 12:51:46 -0400</lastBuildDate>
     
 	<atom:link href="https://jlozada2426.gitlab.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tower Cli</title>
+      <link>https://jlozada2426.gitlab.io/blog/post/tower-cli/</link>
+      <pubDate>Thu, 05 Oct 2017 12:51:46 -0400</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/post/tower-cli/</guid>
+      <description>Tower-cli is a FOSS sofware made to manage Ansible Tower Configuration and launching jobs. Its a tool that communicates using the API and makes it easier to make those changes instead of using curl. Here is an example of things you can change or do with tower-cli:
+ Create Users Create Organizations Create Teams Create Launch Jobs Change Any configuration found in /api/v1/settings/all Orchestrate with other tools and have more complete automation CD/CI pipeline  Example Videos Ansible Tower: Change a setting with tower-cli (https://youtu.</description>
+    </item>
     
     <item>
       <title>Comics</title>
