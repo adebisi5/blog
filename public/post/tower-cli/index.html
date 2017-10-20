@@ -18,8 +18,8 @@
   <meta property="og:image" content="https://jlozada2426.gitlab.io/blog/img/tux.gif" />
   <meta name="twitter:image" content="https://jlozada2426.gitlab.io/blog/img/tux.gif" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@jlozadad2426" />
-  <meta name="twitter:creator" content="@jlozadad2426" />
+  <meta name="twitter:site" content="@agueybanakoroco" />
+  <meta name="twitter:creator" content="@agueybanakoroco" />
   <meta property="og:url" content="https://jlozada2426.gitlab.io/blog/post/tower-cli/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Love FOSS and Gaming" />
@@ -222,6 +222,48 @@
 
 <p>Ansible Tower: Change a setting with tower-cli (<a href="https://youtu.be/gx1We755O1Q">https://youtu.be/gx1We755O1Q</a>)</p>
 
+<h1 id="examples">Examples:</h1>
+
+<pre><code>Tower-cli setting modify AUTH_LDAP_SERVER_URI &quot;ldap://ldap.redhat.com:3268&quot;
+
+tower-cli setting modify AUTH_LDAP_SERVER_URI @server_uri
+
+tower-cli setting modify AUTH_LDAP_SERVER_URI &quot;ldap://ldap.redhat.com:3268&quot;;tower-cli setting modify AUTH_LDAP_BIND_DN &quot;CN=ansible,OU= Accounts,OU=Information Technology,OU=Administration,OU=United States,DC=fedora,DC=red,DC=redhat,DC=com&quot; ;tower-cli setting modify AUTH_LDAP_BIND_PASSWORD &quot;tower&quot;; tower-cli setting modify AUTH_LDAP_START_TLS &quot;false&quot;; tower-cli setting modify AUTH_LDAP_GROUP_TYPE &quot;ActiveDirectoryGroupType&quot;; tower-cli setting modify AUTH_LDAP_REQUIRE_GROUP &quot;CN=APP_APG0_Users,OU=Global Groups,OU=Accounts,DC=fedora,DC=red,DC=redhat,DC=com&quot;
+
+tower-cli organization create -n kablam -d &quot;the kablam show&quot;
+</code></pre>
+
+<p>They are currently certain configurations that error out if you try to change it with tower-cli so the other option is to use curl or the uri module to make the changes (bug issue is listed here (<a href="https://github.com/ansible/tower-cli/issues/352">https://github.com/ansible/tower-cli/issues/352</a>) Here are other examples:</p>
+
+<pre><code>- name: get tower tower-auth-token
+
+ uri:
+
+    url: &quot;{{ auth_token_link }}&quot;
+
+    validate_certs: false
+
+    method: POST
+
+    body_format: json
+
+    body: &quot;{\&quot;username\&quot;:\&quot;{{ username }}\&quot;,\&quot;password\&quot;:\&quot;{{ password }}\&quot;}&quot;
+
+    register: login_info
+
+curl -k --basic -u admin:yoursupersecretpasswordgoeshere -i -H &quot;Content-Type: application/json&quot; -X POST  https://${towerhost}/api/v1/job_templates/${jobid1}/survey_spec/  -d @$(pwd)/files/provision-surveyspec
+
+curl -f -k -H 'Content-Type: application/json' -XPOST \
+   --user admin:awxsecret \
+   http://192.168.42.100/api/v1/job_templates/1/launch/
+
+curl -f -k -H 'Content-Type: application/json' -XPOST \
+   -d '{&quot;extra_vars&quot;: &quot;{\&quot;foo\&quot;: \&quot;bar\&quot;}&quot;}' \
+   --user admin:awxsecret http://192.168.42.100/api/v1/job_templates/1/launch/
+
+curl -k --basic -u user:passwd -i -H &quot;Content-Typejson&quot; -X GET https://localhost:8043/api/v2/settings/ldap/
+</code></pre>
+
       </article>
 
       <ul class="pager blog-pager">
@@ -272,7 +314,7 @@
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/jlozadad2426" title="Twitter">
+                <a href="https://twitter.com/agueybanakoroco" title="Twitter">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -280,10 +322,18 @@
                 </a>
               </li>
               <li>
-                <a href="https://reddit.com/u/jcasanova50" title="Reddit">
+                <a href="https://reddit.com/u/jlozadad" title="Reddit">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-reddit-alien fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/jlozadadd" title="Instagram">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>
