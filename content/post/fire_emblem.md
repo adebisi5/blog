@@ -1,5 +1,5 @@
 ---
-title: "Fire_emblem"
+title: "Fire Emblem"
 date: 2017-10-22T17:12:54-04:00
 subtitle: ""
 tags: [3DS,fire_emblem]
