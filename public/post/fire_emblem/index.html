@@ -5,14 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Tower Cli</title>
-  <meta property="og:title" content="Tower Cli" />
-  <meta name="twitter:title" content="Tower Cli" />
-  <meta name="description" content="Tower-cli is a FOSS sofware made to manage Ansible Tower Configuration and launching jobs. Its a tool that communicates using the API and makes it easier to make those changes instead of using curl. Here is an example of things you can change or do with tower-cli:
- Create Users Create Organizations Create Teams Create Launch Jobs Change Any configuration found in /api/v1/settings/all Orchestrate with other tools and have more complete automation CD/CI pipeline  Example Videos Ansible Tower: Change a setting with tower-cli (https://youtu.">
-  <meta property="og:description" content="Tower-cli is a FOSS sofware made to manage Ansible Tower Configuration and launching jobs. Its a tool that communicates using the API and makes it easier to make those changes instead of using curl. Here is an example of things you can change or do with tower-cli:
- Create Users Create Organizations Create Teams Create Launch Jobs Change Any configuration found in /api/v1/settings/all Orchestrate with other tools and have more complete automation CD/CI pipeline  Example Videos Ansible Tower: Change a setting with tower-cli (https://youtu.">
-  <meta name="twitter:description" content="Tower-cli is a FOSS sofware made to manage Ansible Tower Configuration and launching jobs. Its a tool that communicates using the API and makes it easier to make those changes instead of using curl. …">
+  <title>Fire_emblem</title>
+  <meta property="og:title" content="Fire_emblem" />
+  <meta name="twitter:title" content="Fire_emblem" />
+  <meta name="description" content="Fire Emblem on 3DS A while ago my sister mentioned that she is going to get Fire Emblem Fates: Birthright. I always enjoyed the Fire Emblem series but, its been a while since I played one. Probably back in gamecube times ) can&rsquo;t recall). I started playing Fire Emblem Fates: Birthright and been enjoying the story so far. Most of my favorites characters are on the birthright side, specially that you can spend more time with them and build out the relationships.">
+  <meta property="og:description" content="Fire Emblem on 3DS A while ago my sister mentioned that she is going to get Fire Emblem Fates: Birthright. I always enjoyed the Fire Emblem series but, its been a while since I played one. Probably back in gamecube times ) can&rsquo;t recall). I started playing Fire Emblem Fates: Birthright and been enjoying the story so far. Most of my favorites characters are on the birthright side, specially that you can spend more time with them and build out the relationships.">
+  <meta name="twitter:description" content="Fire Emblem on 3DS A while ago my sister mentioned that she is going to get Fire Emblem Fates: Birthright. I always enjoyed the Fire Emblem series but, its been a while since I played one. Probably …">
   <meta name="author" content="Jonathan Lozada De La Matta"/>
   <link href='https://jlozada2426.gitlab.io/blog/img/tux_sticker.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://jlozada2426.gitlab.io/blog/img/tux.gif" />
@@ -20,12 +18,12 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@agueybanakoroco" />
   <meta name="twitter:creator" content="@agueybanakoroco" />
-  <meta property="og:url" content="https://jlozada2426.gitlab.io/blog/post/tower-cli/" />
+  <meta property="og:url" content="https://jlozada2426.gitlab.io/blog/post/fire_emblem/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Love FOSS and Gaming" />
 
   <meta name="generator" content="Hugo 0.29" />
-  <link rel="canonical" href="https://jlozada2426.gitlab.io/blog/post/tower-cli/" />
+  <link rel="canonical" href="https://jlozada2426.gitlab.io/blog/post/fire_emblem/" />
   <link rel="alternate" href="https://jlozada2426.gitlab.io/blog/index.xml" type="application/rss+xml" title="Love FOSS and Gaming">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -180,11 +178,11 @@
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>Tower Cli</h1>
+              <h1>Fire_emblem</h1>
                 
                 
                   <span class="post-meta">
-  Posted on October 5, 2017
+  Posted on October 22, 2017
   
 </span>
 
@@ -205,76 +203,21 @@
       <article role="main" class="blog-post">
         
 
-<p>Tower-cli is a FOSS sofware made to manage Ansible Tower Configuration and launching jobs. Its a tool that communicates using the API and makes it easier to make those changes instead of using curl. Here is an example of things you can change or do with tower-cli:</p>
+<h1 id="fire-emblem-on-3ds">Fire Emblem on 3DS</h1>
 
-<ul>
-<li>Create Users</li>
-<li>Create Organizations</li>
-<li>Create Teams</li>
-<li>Create</li>
-<li>Launch Jobs</li>
-<li>Change Any configuration found in /api/v1/settings/all</li>
-<li>Orchestrate with other tools and have more complete automation</li>
-<li>CD/CI pipeline</li>
-</ul>
-
-<h3 id="example-videos">Example Videos</h3>
-
-<p>Ansible Tower: Change a setting with tower-cli (<a href="https://youtu.be/gx1We755O1Q">https://youtu.be/gx1We755O1Q</a>)</p>
-
-<h1 id="examples">Examples:</h1>
-
-<pre><code>Tower-cli setting modify AUTH_LDAP_SERVER_URI &quot;ldap://ldap.redhat.com:3268&quot;
-
-tower-cli setting modify AUTH_LDAP_SERVER_URI @server_uri
-
-tower-cli setting modify AUTH_LDAP_SERVER_URI &quot;ldap://ldap.redhat.com:3268&quot;;tower-cli setting modify AUTH_LDAP_BIND_DN &quot;CN=ansible,OU= Accounts,OU=Information Technology,OU=Administration,OU=United States,DC=fedora,DC=red,DC=redhat,DC=com&quot; ;tower-cli setting modify AUTH_LDAP_BIND_PASSWORD &quot;tower&quot;; tower-cli setting modify AUTH_LDAP_START_TLS &quot;false&quot;; tower-cli setting modify AUTH_LDAP_GROUP_TYPE &quot;ActiveDirectoryGroupType&quot;; tower-cli setting modify AUTH_LDAP_REQUIRE_GROUP &quot;CN=APP_APG0_Users,OU=Global Groups,OU=Accounts,DC=fedora,DC=red,DC=redhat,DC=com&quot;
-
-tower-cli organization create -n kablam -d &quot;the kablam show&quot;
-</code></pre>
-
-<p>They are currently certain configurations that error out if you try to change it with tower-cli so the other option is to use curl or the uri module to make the changes (bug issue is listed here (<a href="https://github.com/ansible/tower-cli/issues/352">https://github.com/ansible/tower-cli/issues/352</a>) Here are other examples:</p>
-
-<pre><code>- name: get tower tower-auth-token
-
- uri:
-
-    url: &quot;{{ auth_token_link }}&quot;
-
-    validate_certs: false
-
-    method: POST
-
-    body_format: json
-
-    body: &quot;{\&quot;username\&quot;:\&quot;{{ username }}\&quot;,\&quot;password\&quot;:\&quot;{{ password }}\&quot;}&quot;
-
-    register: login_info
-
-curl -k --basic -u admin:yoursupersecretpasswordgoeshere -i -H &quot;Content-Type: application/json&quot; -X POST  https://${towerhost}/api/v1/job_templates/${jobid1}/survey_spec/  -d @$(pwd)/files/provision-surveyspec
-
-curl -f -k -H 'Content-Type: application/json' -XPOST \
-   --user admin:awxsecret \
-   http://192.168.42.100/api/v1/job_templates/1/launch/
-
-curl -f -k -H 'Content-Type: application/json' -XPOST \
-   -d '{&quot;extra_vars&quot;: &quot;{\&quot;foo\&quot;: \&quot;bar\&quot;}&quot;}' \
-   --user admin:awxsecret http://192.168.42.100/api/v1/job_templates/1/launch/
-
-curl -k --basic -u user:passwd -i -H &quot;Content-Typejson&quot; -X GET https://localhost:8043/api/v2/settings/ldap/
-</code></pre>
+<p>A while ago my sister mentioned that she is going to get Fire Emblem Fates: Birthright. I always enjoyed the Fire Emblem series but, its been a while since I played one. Probably back in gamecube times ) can&rsquo;t recall). I started playing Fire Emblem Fates: Birthright and been enjoying the story so far. Most of my favorites characters are on the birthright side, specially that you can spend more time with them and build out the relationships. After a while of playing I wanted to try out from the conquest side. This side has cool characters also but, I felt that with the birthright characters I was able to make a better connection. Although I do enjoy the characters on both side. I guess it depends if I feel like playing the more nice side or more evil hidden side. After playing this games for a while I wanted to try the other fire emblem games. I ordered awakening and pre ordered warriors.</p>
 
       </article>
 
       <ul class="pager blog-pager">
         
           <li class="previous">
-            <a href="https://jlozada2426.gitlab.io/blog/post/comics/" data-toggle="tooltip" data-placement="top" title="Comics">&larr; Previous Post</a>
+            <a href="https://jlozada2426.gitlab.io/blog/post/tower-cli/" data-toggle="tooltip" data-placement="top" title="Tower Cli">&larr; Previous Post</a>
           </li>
         
         
           <li class="next">
-            <a href="https://jlozada2426.gitlab.io/blog/post/fire_emblem/" data-toggle="tooltip" data-placement="top" title="Fire_emblem">Next Post &rarr;</a>
+            <a href="https://jlozada2426.gitlab.io/blog/post/fire_emblem_fates/" data-toggle="tooltip" data-placement="top" title="Fire_emblem_fates">Next Post &rarr;</a>
           </li>
         
       </ul>
