@@ -27,3 +27,18 @@ I was very surprised on how some of the characters actually die... for example, 
 # Fire Emblem Fates the Last choice
 
 
+
+# Favorite Characters
+
+* Camilla
+* Charlotte
+* Peri
+* Rinkah
+* Oboro
+* Hana
+* Orochi
+* Selena
+* Effie
+
+
+
