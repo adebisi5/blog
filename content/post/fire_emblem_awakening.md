@@ -13,5 +13,5 @@ Awesome Stuff:
 * Animation - The animation during battle felt more complete and fluid than fates. The ultimate attacks looked cooler also.
 * The classes - Although similar to fates, I liked the other options. The assasin in here does so much damage.... no joke.
 * Dragons!? - I liked better the dragons in This version compared to fates. The dragon in fates looks like a skinny robot.
-
+* 3D? - I could actually play this game in fully 3D. I tried with fates but, could not do it for some reason.
 
