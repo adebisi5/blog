@@ -18,18 +18,16 @@ All this time working in IT and I kept hearing "API and rest changes" but, still
 
 
 
-After getting exposed to ansible then I learned about Ansible Tower. A full django application with a complete Rest API. 
+After getting exposed to ansible then I learned about Ansible Tower. A full django application with a complete Rest API. This gave me chance to learn more in dept about the API and how other organizations use the api to automate more their automation tools. I ran into folks that did not want to touch the tower UI at all and wanted to run all the commands through the API. With tower that is possible since you can navigate to /api/v2/ and see all the options. Here is a list of tools you can use with Tower.
 
-
-After working with different customers, they decided to use different options:
-
-* tower-cli -
-* curl -
-* uri module -
-
-
+* tower-cli 
+* curl 
+* uri module 
 
 After messing around with curl for a while then I learned more about GET, PUT and PATCH.
 
 * PUT - Replaces the resource completely.
 * PATCH - Does an update of a specific section without replacing the whole resource.
+
+
+
