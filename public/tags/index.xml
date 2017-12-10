@@ -60,7 +60,7 @@
     <item>
       <title>Fedora</title>
       <link>https://jlozada2426.gitlab.io/blog/tags/fedora/</link>
-      <pubDate>Tue, 05 Dec 2017 19:54:29 -0500</pubDate>
+      <pubDate>Fri, 08 Dec 2017 18:06:06 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/tags/fedora/</guid>
       <description></description>
@@ -123,9 +123,18 @@
     <item>
       <title>Linux</title>
       <link>https://jlozada2426.gitlab.io/blog/tags/linux/</link>
-      <pubDate>Sat, 02 Dec 2017 21:28:34 -0500</pubDate>
+      <pubDate>Fri, 08 Dec 2017 18:06:06 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mock</title>
+      <link>https://jlozada2426.gitlab.io/blog/tags/mock/</link>
+      <pubDate>Fri, 08 Dec 2017 18:06:06 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/tags/mock/</guid>
       <description></description>
     </item>
     
@@ -171,6 +180,15 @@
       <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/tags/rpcs3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rpm</title>
+      <link>https://jlozada2426.gitlab.io/blog/tags/rpm/</link>
+      <pubDate>Fri, 08 Dec 2017 18:06:06 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/tags/rpm/</guid>
       <description></description>
     </item>
     

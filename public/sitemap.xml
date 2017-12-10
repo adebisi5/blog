@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jlozada2426.gitlab.io/blog/post/build_rpm/</loc>
-    <lastmod>2017-12-09T22:14:20-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jlozada2426.gitlab.io/blog/post/building_rpms/</loc>
     <lastmod>2017-12-08T18:06:06-05:00</lastmod>
   </url>
@@ -178,7 +173,7 @@
   
   <url>
     <loc>https://jlozada2426.gitlab.io/blog/tags/fedora/</loc>
-    <lastmod>2017-12-05T19:54:29-05:00</lastmod>
+    <lastmod>2017-12-08T18:06:06-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -220,13 +215,19 @@
   
   <url>
     <loc>https://jlozada2426.gitlab.io/blog/tags/linux/</loc>
-    <lastmod>2017-12-02T21:28:34-05:00</lastmod>
+    <lastmod>2017-12-08T18:06:06-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jlozada2426.gitlab.io/blog/</loc>
-    <lastmod>2017-12-09T22:14:20-05:00</lastmod>
+    <lastmod>2017-12-08T18:06:06-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jlozada2426.gitlab.io/blog/tags/mock/</loc>
+    <lastmod>2017-12-08T18:06:06-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -250,7 +251,7 @@
   
   <url>
     <loc>https://jlozada2426.gitlab.io/blog/post/</loc>
-    <lastmod>2017-12-09T22:14:20-05:00</lastmod>
+    <lastmod>2017-12-08T18:06:06-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -269,6 +270,12 @@
   <url>
     <loc>https://jlozada2426.gitlab.io/blog/tags/rpcs3/</loc>
     <lastmod>2017-11-25T17:07:02-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jlozada2426.gitlab.io/blog/tags/rpm/</loc>
+    <lastmod>2017-12-08T18:06:06-05:00</lastmod>
     <priority>0</priority>
   </url>
   

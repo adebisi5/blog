@@ -2,8 +2,12 @@
 title: "Building_rpms"
 date: 2017-12-08T18:06:06-05:00
 subtitle: ""
-tags: []
+tags: [linux,fedora,rpm,mock]
 ---
+So After spending hours on trying to figure out how to build obs into an rpm using mock I finally succeeded. At the bottom is my whole history of commands and things I went through trying to figure out dependencies, building local and with mock.... I have to say this is a very interesting learning experience. But, one thing I found is that everyone does the spec file differently. Some build the spec that its easily to follow with variables and others have a mix of using some variables and hard coded lines. So one issue that I ran into was that I changed the ```version:``` at the top of the spec file but, the version was hardcoded later on. So I went I got an error in the build "can't cd x.x no file or directory" I spend around 30 minutes in the spec file and noticed that It was hardcoded for the old version.
+
+
+
  772  sudo dnf install obs-studio
   773  sudo dnf remove ffmpeg
   774  sudo dnf install pavucontrol

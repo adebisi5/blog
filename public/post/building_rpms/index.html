@@ -8,9 +8,9 @@
   <title>Building_rpms</title>
   <meta property="og:title" content="Building_rpms" />
   <meta name="twitter:title" content="Building_rpms" />
-  <meta name="description" content="772 sudo dnf install obs-studio 773 sudo dnf remove ffmpeg 774 sudo dnf install pavucontrol 775 pwd 776 make -j4 777 sudo dnf install ffmpeg-devel 778 make -j4 779 sudo dnf install libjack 780 sudo dnf install jack-audio-connection-kit 781 sudo dnf install libjack-devel 782 sudo dnf install jack2 783 sudo dnf install jack2* 784 sudo dnf install jack 785 sudo dnf install jack* 786 sudo dnf install jack-audio-connection-kit-example-clients jack-keyboard jack-rack jack_capture 787 make -j4 788 sudo dnf provides *libjack.">
-  <meta property="og:description" content="772 sudo dnf install obs-studio 773 sudo dnf remove ffmpeg 774 sudo dnf install pavucontrol 775 pwd 776 make -j4 777 sudo dnf install ffmpeg-devel 778 make -j4 779 sudo dnf install libjack 780 sudo dnf install jack-audio-connection-kit 781 sudo dnf install libjack-devel 782 sudo dnf install jack2 783 sudo dnf install jack2* 784 sudo dnf install jack 785 sudo dnf install jack* 786 sudo dnf install jack-audio-connection-kit-example-clients jack-keyboard jack-rack jack_capture 787 make -j4 788 sudo dnf provides *libjack.">
-  <meta name="twitter:description" content="772 sudo dnf install obs-studio 773 sudo dnf remove ffmpeg 774 sudo dnf install pavucontrol 775 pwd 776 make -j4 777 sudo dnf install ffmpeg-devel 778 make -j4 779 sudo dnf install libjack 780 sudo …">
+  <meta name="description" content="So After spending hours on trying to figure out how to build obs into an rpm using mock I finally succeeded. At the bottom is my whole history of commands and things I went through trying to figure out dependencies, building local and with mock&hellip;. I have to say this is a very interesting learning experience. But, one thing I found is that everyone does the spec file differently. Some build the spec that its easily to follow with variables and others have a mix of using some variables and hard coded lines.">
+  <meta property="og:description" content="So After spending hours on trying to figure out how to build obs into an rpm using mock I finally succeeded. At the bottom is my whole history of commands and things I went through trying to figure out dependencies, building local and with mock&hellip;. I have to say this is a very interesting learning experience. But, one thing I found is that everyone does the spec file differently. Some build the spec that its easily to follow with variables and others have a mix of using some variables and hard coded lines.">
+  <meta name="twitter:description" content="So After spending hours on trying to figure out how to build obs into an rpm using mock I finally succeeded. At the bottom is my whole history of commands and things I went through trying to figure …">
   <meta name="author" content="Jonathan Lozada De La Matta"/>
   <link href='https://jlozada2426.gitlab.io/blog/img/tux_sticker.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://jlozada2426.gitlab.io/blog/img/tux.gif" />
@@ -201,7 +201,9 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>772  sudo dnf install obs-studio
+        <p>So After spending hours on trying to figure out how to build obs into an rpm using mock I finally succeeded. At the bottom is my whole history of commands and things I went through trying to figure out dependencies, building local and with mock&hellip;. I have to say this is a very interesting learning experience. But, one thing I found is that everyone does the spec file differently. Some build the spec that its easily to follow with variables and others have a mix of using some variables and hard coded lines. So one issue that I ran into was that I changed the <code>version:</code> at the top of the spec file but, the version was hardcoded later on. So I went I got an error in the build &ldquo;can&rsquo;t cd x.x no file or directory&rdquo; I spend around 30 minutes in the spec file and noticed that It was hardcoded for the old version.</p>
+
+<p>772  sudo dnf install obs-studio
   773  sudo dnf remove ffmpeg
   774  sudo dnf install pavucontrol
   775  pwd
@@ -519,10 +521,6 @@
             <a href="https://jlozada2426.gitlab.io/blog/post/fedora_nvidia_gpu/" data-toggle="tooltip" data-placement="top" title="Fedora Nvidia GPU">&larr; Previous Post</a>
           </li>
         
-        
-          <li class="next">
-            <a href="https://jlozada2426.gitlab.io/blog/post/build_rpm/" data-toggle="tooltip" data-placement="top" title="Build_rpm">Next Post &rarr;</a>
-          </li>
         
       </ul>
 
