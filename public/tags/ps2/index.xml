@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ps2 on Love FOSS and Gaming</title>
+    <link>https://jlozada2426.gitlab.io/blog/tags/ps2/</link>
+    <description>Recent content in Ps2 on Love FOSS and Gaming</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
+    <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
+    <lastBuildDate>Sat, 25 Nov 2017 17:07:02 -0500</lastBuildDate>
+    
+	<atom:link href="https://jlozada2426.gitlab.io/blog/tags/ps2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Emulation</title>
+      <link>https://jlozada2426.gitlab.io/blog/post/emulation/</link>
+      <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/post/emulation/</guid>
+      <description>While trying to find emulators I ran into dolphin, pcsx2 and rpcs3. I was not sure which one to start on since I did not had the collection of games I used to have since I mostly went completely pc gaming and all my games are on steam or gog. I decided to start with ps2 games since they were cheaper to acquire( at least some games). I went to ebay and got dot hack infestation, AVP extinction and the DMC series.</description>
+    </item>
+    
+    <item>
+      <title>Avp_extinction</title>
+      <link>https://jlozada2426.gitlab.io/blog/post/avp_extinction/</link>
+      <pubDate>Sat, 25 Nov 2017 17:06:36 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/post/avp_extinction/</guid>
+      <description>AVP Extinction was a game that I really enjoyed when it came out. One of my favorites IP together in a strategy type game. Nothing better than building a horde of aliens and have your own hive that destroys everything and drags the bodies back to the hive to get turned into more aliens or pre-aliens. I been able to play most of this game on pcsx2 but, I had to use windows :( because getting to build successfully in linux is a pain and you need to install a lot of i.</description>
+    </item>
+    
+  </channel>
+</rss>

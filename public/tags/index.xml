@@ -40,6 +40,33 @@
     </item>
     
     <item>
+      <title>Dolphin</title>
+      <link>https://jlozada2426.gitlab.io/blog/tags/dolphin/</link>
+      <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/tags/dolphin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Emulator</title>
+      <link>https://jlozada2426.gitlab.io/blog/tags/emulator/</link>
+      <pubDate>Sat, 02 Dec 2017 21:28:34 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/tags/emulator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fedora</title>
+      <link>https://jlozada2426.gitlab.io/blog/tags/fedora/</link>
+      <pubDate>Tue, 05 Dec 2017 19:54:29 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/tags/fedora/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Fire Emblem</title>
       <link>https://jlozada2426.gitlab.io/blog/tags/fire-emblem/</link>
       <pubDate>Mon, 23 Oct 2017 16:53:16 -0400</pubDate>
@@ -58,11 +85,110 @@
     </item>
     
     <item>
+      <title>Gamecube</title>
+      <link>https://jlozada2426.gitlab.io/blog/tags/gamecube/</link>
+      <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/tags/gamecube/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gaming</title>
+      <link>https://jlozada2426.gitlab.io/blog/tags/gaming/</link>
+      <pubDate>Tue, 05 Dec 2017 19:54:29 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/tags/gaming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gpu</title>
+      <link>https://jlozada2426.gitlab.io/blog/tags/gpu/</link>
+      <pubDate>Tue, 05 Dec 2017 19:54:29 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/tags/gpu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Json</title>
       <link>https://jlozada2426.gitlab.io/blog/tags/json/</link>
       <pubDate>Thu, 26 Oct 2017 22:39:57 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/tags/json/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://jlozada2426.gitlab.io/blog/tags/linux/</link>
+      <pubDate>Sat, 02 Dec 2017 21:28:34 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nvidia</title>
+      <link>https://jlozada2426.gitlab.io/blog/tags/nvidia/</link>
+      <pubDate>Tue, 05 Dec 2017 19:54:29 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/tags/nvidia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pcsx2</title>
+      <link>https://jlozada2426.gitlab.io/blog/tags/pcsx2/</link>
+      <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/tags/pcsx2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ps2</title>
+      <link>https://jlozada2426.gitlab.io/blog/tags/ps2/</link>
+      <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/tags/ps2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ps3</title>
+      <link>https://jlozada2426.gitlab.io/blog/tags/ps3/</link>
+      <pubDate>Sat, 02 Dec 2017 19:21:13 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/tags/ps3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rpcs3</title>
+      <link>https://jlozada2426.gitlab.io/blog/tags/rpcs3/</link>
+      <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/tags/rpcs3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Streaming</title>
+      <link>https://jlozada2426.gitlab.io/blog/tags/streaming/</link>
+      <pubDate>Fri, 24 Nov 2017 21:27:31 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/tags/streaming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wii</title>
+      <link>https://jlozada2426.gitlab.io/blog/tags/wii/</link>
+      <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/tags/wii/</guid>
       <description></description>
     </item>
     

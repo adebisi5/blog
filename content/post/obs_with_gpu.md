@@ -1,46 +1,44 @@
 ---
-title: "Obs_with_gpu"
+title: "OBS with GPU"
 date: 2017-12-02T21:28:34-05:00
 subtitle: ""
-tags: []
+tags: [gaming,linux,nvidia,emulator]
 ---
+
+I started using OBS to stream but, I noticed that in most games it uses a lot of CPU so the games start to stutter and the audio gets cut off. I started googling around and saw an article from gamingonlinux.com on how to use the GPU for streaming instead of the CPU. Of course I ran into a lot of issues since I been noticing more and more lately that most linux desktop or gaming is build with debian/ubuntu/arch in mind and fedora usually lags behind. For example, you will find a lot of FOSS projects have auto build packages for debian/ubuntu and not fedora. They also test heavily on this distros and not much on fedora. So my first problem was trying to use the latest OBS version since I went to the github page and noticed the version on fedora 27 is old. The version in the rpmfusion repo's was ```20.0.1``` and the latest was ```20.1.3``` with a bunch of bug fixes. So I went to IRC and asked if anyone has builded the latest version or how that process works. I have looked at before the Fedora wiki pages on how to build RPM's and spec files but, it was not until I ran into this issue that I actually spend some time trying to figure out how all of this works. In IRC they mentioned the following:
+
+* For the life of me to use mock when building the rpms.
+* Submit a bugzilla ticket to have them update the rpms to the latest versions.
+
+I submitted the ticket first to get that part going and started looking at how to build the RPM so I can learn myself and hopefully be part of this process in the future.
+
 ```
-679  cd Downloads/
-  680  wget https://developer.nvidia.com/video-sdk-601
-  681  ls
-  682  unzip video-sdk-601
-  683  ls
-  684  cd nvidia_video_sdk_6.0.1/
-  685  ls
-  686  ls Samples/common/inc/
-  687  sudo dnf install libfdk-aac-dev
-  688  sudo dnf install fdk-acc-devel
-  689  sudo dnf install fdk-aac-devel
-  690  dnfdownloader
-  691  sudo dnf install dnfdownloader
-  692  sudo dnf install dnf*
-  693  sudo dnf install dnf-utils
-  694  dnfdownloader
-  695  cd ..
-  696  ls
-  697  dnf download --source ffmpeg
-  698  ls
-  699  dnf builddep
-  700  ls
-  701  mkdir ffmpeg_source
-  702  mv -f ffmpeg-3.3.5-2.fc27.src.rpm ffmpeg_source/
-  703  cd ffmpeg_source/
-  704  untar -azxvf ffmpeg-3.3.5-2.fc27.src.rpm 
-  705  tar -azxvf ffmpeg-3.3.5-2.fc27.src.rpm 
-  706  ls
-  707  dnf install ffmpeg-3.3.5-2.fc27.src.rpm 
-  708  sudo dnf install ffmpeg-3.3.5-2.fc27.src.rpm 
-  709  rpm2cpio
-  710  man rpm2cpio
-  711  rpm2cpio ffmpeg-3.3.5-2.fc27.src.rpm 
-  712  rpm2cpio ./ffmpeg-3.3.5-2.fc27.src.rpm | cpio -idmv
-  713  ls
-  714  tar -azxvf ffmpeg-3.3.5.tar.xz
+  cd Downloads/
+  wget https://developer.nvidia.com/video-sdk-601
+  unzip video-sdk-601  cd nvidia_video_sdk_6.0.1/
+  sudo dnf install libfdk-aac-dev
+  sudo dnf install fdk-acc-devel
+  sudo dnf install fdk-aac-devel
+  dnfdownloader
+  sudo dnf install dnfdownloader
+  sudo dnf install dnf*
+  sudo dnf install dnf-utils
+  dnfdownloader
+  cd ..
+  dnf download --source ffmpeg
+  dnf builddep
+  mkdir ffmpeg_source
+  mv -f ffmpeg-3.3.5-2.fc27.src.rpm ffmpeg_source/
+  cd ffmpeg_source/
+  untar -azxvf ffmpeg-3.3.5-2.fc27.src.rpm 
+  tar -azxvf ffmpeg-3.3.5-2.fc27.src.rpm 
+  dnf install ffmpeg-3.3.5-2.fc27.src.rpm 
+  sudo dnf install ffmpeg-3.3.5-2.fc27.src.rpm 
+  rpm2cpio
+  man rpm2cpio
+  rpm2cpio ffmpeg-3.3.5-2.fc27.src.rpm 
+  rpm2cpio ./ffmpeg-3.3.5-2.fc27.src.rpm | cpio -idmv
+  tar -azxvf ffmpeg-3.3.5.tar.xz
   715  tar -axvf ffmpeg-3.3.5.tar.xz
   716  ls
   717  vim ffmpeg.spec 

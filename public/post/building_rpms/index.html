@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Building_rpms</title>
+  <meta property="og:title" content="Building_rpms" />
+  <meta name="twitter:title" content="Building_rpms" />
+  <meta name="description" content="772 sudo dnf install obs-studio 773 sudo dnf remove ffmpeg 774 sudo dnf install pavucontrol 775 pwd 776 make -j4 777 sudo dnf install ffmpeg-devel 778 make -j4 779 sudo dnf install libjack 780 sudo dnf install jack-audio-connection-kit 781 sudo dnf install libjack-devel 782 sudo dnf install jack2 783 sudo dnf install jack2* 784 sudo dnf install jack 785 sudo dnf install jack* 786 sudo dnf install jack-audio-connection-kit-example-clients jack-keyboard jack-rack jack_capture 787 make -j4 788 sudo dnf provides *libjack.">
+  <meta property="og:description" content="772 sudo dnf install obs-studio 773 sudo dnf remove ffmpeg 774 sudo dnf install pavucontrol 775 pwd 776 make -j4 777 sudo dnf install ffmpeg-devel 778 make -j4 779 sudo dnf install libjack 780 sudo dnf install jack-audio-connection-kit 781 sudo dnf install libjack-devel 782 sudo dnf install jack2 783 sudo dnf install jack2* 784 sudo dnf install jack 785 sudo dnf install jack* 786 sudo dnf install jack-audio-connection-kit-example-clients jack-keyboard jack-rack jack_capture 787 make -j4 788 sudo dnf provides *libjack.">
+  <meta name="twitter:description" content="772 sudo dnf install obs-studio 773 sudo dnf remove ffmpeg 774 sudo dnf install pavucontrol 775 pwd 776 make -j4 777 sudo dnf install ffmpeg-devel 778 make -j4 779 sudo dnf install libjack 780 sudo …">
+  <meta name="author" content="Jonathan Lozada De La Matta"/>
+  <link href='https://jlozada2426.gitlab.io/blog/img/tux_sticker.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://jlozada2426.gitlab.io/blog/img/tux.gif" />
+  <meta name="twitter:image" content="https://jlozada2426.gitlab.io/blog/img/tux.gif" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@jlozadadd" />
+  <meta name="twitter:creator" content="@jlozadadd" />
+  <meta property="og:url" content="https://jlozada2426.gitlab.io/blog/post/building_rpms/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Love FOSS and Gaming" />
+
+  <meta name="generator" content="Hugo 0.29" />
+  <link rel="canonical" href="https://jlozada2426.gitlab.io/blog/post/building_rpms/" />
+  <link rel="alternate" href="https://jlozada2426.gitlab.io/blog/index.xml" type="application/rss+xml" title="Love FOSS and Gaming">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/highlight.min.css" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://jlozada2426.gitlab.io/blog/">Love FOSS and Gaming</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/blog/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/blog/page/about/">About</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Love FOSS and Gaming" href="https://jlozada2426.gitlab.io/blog/">
+            <img class="avatar-img" src="https://jlozada2426.gitlab.io/blog/img/tux.gif" alt="Love FOSS and Gaming" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search Love FOSS and Gaming</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Building_rpms</h1>
+                
+                
+                  <span class="post-meta">
+  Posted on December 8, 2017
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>772  sudo dnf install obs-studio
+  773  sudo dnf remove ffmpeg
+  774  sudo dnf install pavucontrol
+  775  pwd
+  776  make -j4
+  777  sudo dnf install ffmpeg-devel
+  778  make -j4
+  779  sudo dnf install libjack
+  780  sudo dnf install jack-audio-connection-kit
+  781  sudo dnf install libjack-devel
+  782  sudo dnf install jack2
+  783  sudo dnf install jack2*
+  784  sudo dnf install jack
+  785  sudo dnf install jack*
+  786  sudo dnf install jack-audio-connection-kit-example-clients jack-keyboard jack-rack jack_capture
+  787  make -j4
+  788  sudo dnf provides *libjack.so
+  789  sudo dnf install jack-audio-connection-kit-devel
+  790  sudo dnf install qmmp-1.1.10-1
+  791  sudo dnf install qmmp
+  792  make -j4
+  793  history | grep dnf
+  794  dnfdownloader &ndash;source obs-studio
+  795  dnf downloader &ndash;source obs-studio
+  796  sudo dnf downloader &ndash;source obs-studio
+  797  sudo dnf-command downloader &ndash;source obs-studio
+  798  sudo dnf-command download &ndash;source obs-studio
+  799  sudo dnf download &ndash;source obs-studio
+  800  ls
+  801  mkdir rpm
+  802  mv obs-studio-20.0.1-1.fc27.src.rpm rpm
+  803  cd rpm
+  804  rpm2cpio ./obs-studio-20.0.1-1.fc27.src.rpm | cpio -idmv
+  805  ls
+  806  vim obs-studio.spec
+  807  rpmbuild -ba obs-studio.spec
+  808  cp ~/Downloads/obs-studio-20.1.3.tar.gz ~/rpmbuild/SOURCES/
+  809  rpmbuild -ba obs-studio.spec
+  810  vim obs-studio.spec
+  811  rpmbuild -ba obs-studio.spec
+  812  ls
+  813  cp obs-ffmpeg-mux.patch ~/rpmbuild/SOURCES/
+  814  rpmbuild -ba obs-studio.spec
+  815  vim obs-studio.spec
+  816  rpmbuild -ba obs-studio.spec
+  817  vim obs-studio.spec
+  818  rpmbuild -ba obs-studio.spec
+  819  vim obs-studio.spec
+  820  rpmlint obs-studio.spec
+  821  vim obs-studio.spec
+  822  rpmlint obs-studio.spec
+  823  rpmbuild -bi &ndash;short-circuit obs-studio.spec
+  824  vim obs-studio.spec
+  825  cat /var/tmp/rpm-tmp.Kc8Iwe
+  826  ls
+  827  fedpkg
+  828  fedpkg &ndash;release f27 mockbuild
+  829  ls
+  830  cp ~/Downloads/obs-studio-20.1.3.tar.gz .
+  831  fedpkg &ndash;release f27 mockbuild
+  832  ls
+  833  ls results_obs-studio/
+  834  ls results_obs-studio/20.1.3/
+  835  ls results_obs-studio/20.1.<sup>3</sup>&frasl;<sub>1</sub>.fc27/
+  836  ls
+  837  vim /etc/mock/fedora-27-x86_64.cfg
+  838  sudo vim /etc/mock/epel-7-x86_64-rpmfusion_free.cfg
+  839  fedpkg &ndash;release f27 mockbuild
+  840  cd
+  841  cd Downloads/
+  842  ls
+  843  mkdir obs_studio_test_srpm
+  844  ls
+  845  cp obs-studio-20.0.1-1.fc27.src.rpm obs_studio_test_srpm
+  846  cd obs_studio_test_srpm/
+  847  ls
+  848  rpm2cpio ./obs-studio-20.0.1-1.fc27.src.rpm | cpio -idmv
+  849  ls
+  850  vim obs-studio
+  851  vim obs-studio.spec
+  852  fedpkg &ndash;release f27 mockbuild
+  853  cp ~/Downloads/obs-studio-20.1.3.tar.gz .
+  854  fedpkg &ndash;release f27 mockbuild
+  855  ls /var/lib/mock/
+  856  sudo dnf install ffmpeg-devel
+  857  sudo dnf clean all
+  858  sudo dnf install ffmpeg-devel
+  859  sudo dnf what provides ffmpeg-devel
+  860  sudo dnf  provides ffmpeg-devel
+  861  sudo ls /etc/mock/
+  862  sudo vim /etc/mock/epel-7-x86_64-rpmfusion_free.cfg
+  863  cd /etc/mock
+  864  sudo mv -f epel-7-x86_64-rpmfusion_free.cfg fedora-27-x86_64-rpmfusion_free.cfg
+  865  ls
+  866  vim fedora-27-x86_64-rpmfusion_free.cfg
+  867  vim fedora-27-x86_64.cfg
+  868  vim fedora-27-x86_64-rpmfusion_free.cfg
+  869  sudo dnf install mock-rpmfusion-free mock-rpmfusion-nonfree
+  870  ls
+  871  cat fedora-27-x86_64-rpmfusion_nonfree.cfg
+  872  ls
+  873  fedpkg &ndash;release f27 mockbuild
+  874  ls
+  875  cd -
+  876  fedpkg &ndash;release f27 mockbuild
+  877  man mock
+  878  man fedpck
+  879  man fedpckg
+  880  man fedpkg
+  881  man mock
+  882  sudo vim /etc/mock/default.cfg
+  883  sudo vim /etc/mock/epel-7-x86_64-rpmfusion_free.cfg
+  884  sudo vim /etc/mock/default.cfg
+  885  fedpkg &ndash;release f27 mockbuild
+  886  ls
+  887  vim obs-studio.spec
+  888  ls
+  889  mock
+  890  ls /etc/mock/
+  891  ;s
+  892  ls
+  893  rm -rf obs-studio-20.1.3-1.fc27.src.rpm
+  894  ls
+  895  man rpmbuild-bs
+  896   rpmbuild-bs
+  897  sudo dnf install fedora-packager fedora-review
+  898  sudo usermod -a -g mock jcasanova
+  899  sudo usermod -a -G mock jcasanova
+  900  exit
+  901  cd Downloads/
+  902  ls
+  903  cd obs_studio_test_srpm/
+  904  ls
+  905  man fedora-packager-setup
+  906  id
+  907  fedora-packager-setup
+  908  ls
+  909  fedpkg &ndash;release f27 local
+  910  ls
+  911  cd obs-studio-20.1.3
+  912  ls
+  913  cd ..
+  914  ls
+  915  rpmbuild-bs obs-studio.spec
+  916  sudo dnf provides rpmbuild-bs
+  917  rpmbuild -bs obs-studio.spec
+  918  ls
+  919  cp ~/rpmbuild/SRPMS/obs-studio-20.1.3-1.fc27.src.rpm .
+  920  ls
+  921  mock /etc/mock/default &ndash;rebuild obs-studio-20.1.3-1.fc27.src.rpm
+  922  mock /etc/mock/default &ndash;rebuild obs-studio-20.1.3-1.fc27.src.rpm
+  923  mkdir results
+  924  mock /etc/mock/default &ndash;rebuild obs-studio-20.1.3-1.fc27.src.rpm &ndash;resultdir=results
+  925  mock -r /etc/mock/ &ndash;rebuild obs-studio-20.1.3-1.fc27.src.rpm &ndash;resultdir=results
+  926  mock /etc/mock/default.cfg &ndash;rebuild obs-studio-20.1.3-1.fc27.src.rpm &ndash;resultdir=results
+  927  fedpkg mockbuild
+  928  ls
+  929  ls obs-studio.spec
+  930  fedpkg mockbuild obs-studio.spec
+  931  fedpkg mockbuild &ndash;release f27
+  932  history | grep fedpkg
+  933  fedpkg &ndash;release f27 mockbuild
+  934  fedpkg &ndash;release f27 mockbuildls
+  935  ls
+  936  ls /var/mock
+  937  ls /var/lib/mock
+  938  ls
+  939  rm -rf obs-studio-20.1.3-1.fc27.src.rpm
+  940  ls
+  941  fedpkg &ndash;release f27 mockbuildls
+  942  fedpkg &ndash;release f27 mockbuilds
+  943  fedpkg &ndash;release f27 mockbuild
+  944  ls
+  945  ls results
+  946  rm -rf results
+  947  ls results_obs-studio/
+  948  cat results_obs-studio/20.1.<sup>3</sup>&frasl;<sub>1</sub>.fc27/build.log
+  949  ls /var/lib/mock/
+  950  ls
+  951  cd ..
+  952  ls
+  953  rm -rf obs_studio_test_srpm/
+  954  cd git/
+  955  ls
+  956  mkdir obs_studio_test_srpm
+  957  cd obs_studio_test_srpm/
+  958  ls
+  959  cp ../../obs-studio-20.1.3.tar.gz .
+  960  ls
+  961  cp ../../obs-studio-20.0.1-1.fc27.src.rpm .
+  962  ls
+  963  rpm2cpio ./obs-studio-20.0.1-1.fc27.src.rpm | cpio -idmv
+  964  ls
+  965  vim obs-studio.spec
+  966  ls
+  967  fedpkg &ndash;release f27 mockbuild
+  968  vim obs-studio.spec
+  969  vim /etc/mock/default.cfg
+  970  sudo vim /etc/mock/default.cfg
+  971  fedpkg &ndash;release f27 mockbuild
+  972  cat /etc/mock/fedora-27-x86_64-rpmfusion_free.cfg
+  973  sudo vim /etc/mock/default.cfg
+  974  fedpkg &ndash;release f27 mockbuild
+  975  vim obs-studio.spec
+  976  ls
+  977  cp obs-studio-20.1.3.tar.gz ~/rpmbuild/SOURCES/
+  978  ls
+  979  fedpkg &ndash;release f27 mockbuild
+  980  sudo vim /etc/mock/default.cfg
+  981  fedpkg &ndash;release f27 mockbuild
+  982  sudo dnf install rpmfusion-free-release
+  983  sudo vim /etc/mock/default.cfg
+  984  sudo dnf install rpmfusion-free-release
+  985  fedpkg &ndash;release f27 mockbuild
+  986  sudo dnf install rpmfusion-nonfree-release
+  987  sudo vim /etc/mock/default.cfg
+  988  fedpkg &ndash;release f27 mockbuild
+  989  sudo vim /etc/mock/default.cfg
+  990  fedpkg &ndash;release f27 mockbuild
+  991  sudo vim /etc/mock/default.cfg
+  992  sudo cat /etc/yum.repos.d/rpmfusion-free.repo
+  993  sudo vim /etc/mock/default.cfg
+  994  sudo cat /etc/yum.repos.d/rpmfusion-free-updates.repo
+  995  cd Downloads/git/
+  996  ls
+  997  cd obs_studio_test_srpm/
+  998  ls
+  999  sudo vim /etc/mock/default.cfg
+ 1000  sudo cat /etc/yum.repos.d/rpmfusion-free-updates.repo
+ 1001  cd Downloads/obs_test/
+ 1002  cd ../git/obs_studio_test_srpm/
+ 1003  ls
+ 1004  sudo vim /etc/mock/default.cfg
+ 1005  fedpkg &ndash;release f27 mockbuild
+ 1006  fedpkg &ndash;release f27 mockbuild -v
+ 1007  fedpkg -h
+ 1008  fedpkg &ndash;release f27 mockbuild -
+ 1009  fedpkg &ndash;release f27 mockbuild
+ 1010  sudo vim /etc/mock/default.cfg
+ 1011  fedpkg &ndash;release f27 mockbuild
+ 1012  sudo vim /etc/mock/default.cfg
+ 1013  fedpkg &ndash;release f27 mockbuild
+ 1014  sudo vim /etc/mock/default.cfg
+ 1015  fedpkg &ndash;release f27 mockbuild
+ 1016  sudo vim /etc/mock/fedora-27-x86_64-rpmfusion_free.cfg
+ 1017  sudo vim /etc/mock/default.cfg
+ 1018  mock -r MOCK_CONFIG &ndash;init
+ 1019  mock -r fedora-27-ppc64-rpmfusion_free.cfg fedora-27-ppc64-rpmfusion_nonfree.cfg
+ 1020  mock -r fedora-27-x86_64-rpmfusion_free.cfg fedora-27-x86_64-rpmfusion_nonfree.cfg &ndash;init
+ 1021  mock -r fedora-27-x86_64-rpmfusion_free.cfg  &ndash;init
+ 1022  mock -r fedora-27-x86_64-rpmfusion_free  &ndash;init
+ 1023  mock -r fedora-27-x86_64-rpmfusion_nonfree  &ndash;init
+ 1024  ls
+ 1025  cat obs-studio.spec
+ 1026  mock -r fedora-27-x86_64-rpmfusion_free  &ndash;install ffmpeg
+ 1027  mock -r fedora-27-x86_64 fedora-27-x86_64-rpmfusion_free  &ndash;install ffmpeg
+ 1028  mock -r fedora-27-x86_64-rpmfusion_nonfree  &ndash;init
+ 1029  mock -r fedora-27-x86_64  &ndash;init
+ 1030  fedpkg &ndash;release f27 mockbuild
+ 1031  mock -r fedora-27-x86_64 fedora-27-x86_64-rpmfusion_free  &ndash;install ffmpeg-devel vlc-devel x264-devel
+ 1032  mock -r   &ndash;install ffmpeg-devel vlc-devel x264-devel
+ 1033  mock    &ndash;install ffmpeg-devel vlc-devel x264-devel
+ 1034  ls
+ 1035  mock -r  fedora-27-x86_64-rpmfusion_nonfree &ndash;init
+ 1036  mock    &ndash;install ffmpeg-devel vlc-devel x264-devel
+ 1037  mock -r fedora-27-x86_64 init
+ 1038  mock -r fedora-27-x86_64-rpmfusion_free &ndash;install ffmpeg-devel
+ 1039  mock -r fedora-27-x86_64-rpmfusion_free &ndash;install vlc-devel
+ 1040  fedpkg &ndash;release f27 mockbuild
+ 1041  sudo vim /etc/mock/default.cfg
+ 1042  fedpkg &ndash;release f27 mockbuild
+ 1043  sudo vim /etc/mock/default.cfg
+ 1044  fedpkg &ndash;release f27 mockbuild
+ 1045  sudo vim /etc/mock/default.cfg
+ 1046  fedpkg &ndash;release f27 mockbuild
+ 1047  df -h
+ 1048  ls /var/lib/mock/
+ 1049  ls
+ 1050  vim /etc/mock/site-defaults.cfg
+ 1051  sudo vim /etc/mock/site-defaults.cfg
+ 1052  fedpkg &ndash;release f27 mockbuild
+ 1053  mkdir ~/mock
+ 1054  fedpkg &ndash;release f27 mockbuild
+ 1055  sudo dnf update
+ 1056  sudo dnf update &ndash;alowerasing
+ 1057  sudo dnf update &ndash;allowerasing
+ 1058  sudo dnf update &ndash;best &ndash;allowerasing
+ 1059  df -h
+ 1060  cd /
+ 1061  ls
+ 1062  cd tmp/
+ 1063  ls
+ 1064  ds -h .
+ 1065  du -h .
+ 1066  ls
+ 1067  cd
+ 1068  cd /
+ 1069  ls
+ 1070  cd
+ 1071  df -h
+ 1072  sudo vim /etc/mock/site-defaults.cfg
+ 1073  pwd
+ 1074  cd
+ 1075  cd Downloads/git/obs_studio_test_srpm/
+ 1076  fedpkg &ndash;release f27 mockbuild
+ 1077  sudo vim /etc/mock/site-defaults.cfg
+ 1078  vim ~/.config/mock.cfg
+ 1079  sudo vim /etc/mock/site-defaults.cfg
+ 1080  fedpkg &ndash;release f27 mockbuild</p>
+
+      </article>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://jlozada2426.gitlab.io/blog/post/fedora_nvidia_gpu/" data-toggle="tooltip" data-placement="top" title="Fedora Nvidia GPU">&larr; Previous Post</a>
+          </li>
+        
+        
+          <li class="next">
+            <a href="https://jlozada2426.gitlab.io/blog/post/build_rpm/" data-toggle="tooltip" data-placement="top" title="Build_rpm">Next Post &rarr;</a>
+          </li>
+        
+      </ul>
+
+      
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:jlozada2426@protonmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/jlozadad" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/jlozada2426" title="GitLab">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-gitlab fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitch.tv/darksidetaino" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitch fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/jlozadadd" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://reddit.com/u/jlozadad" title="Reddit">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-reddit-alien fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/jlozadadd" title="Instagram">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://jlozada2426.gitlab.io/blog/index.xml" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              Jonathan Lozada De La Matta
+                      
+          
+          
+          &nbsp;&bull;&nbsp;
+          2017
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://jlozada2426.gitlab.io/blog/">Love FOSS and Gaming</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.29</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://jlozada2426.gitlab.io/blog/js/main.js"></script>
+<script src="https://jlozada2426.gitlab.io/blog/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+<script src="https://jlozada2426.gitlab.io/blog/js/load-photoswipe.js"></script>
+
+
+<script>
+  (function() {
+    var cx = '012345678901234567890:abcdefghijk';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+  </body>
+</html>
+

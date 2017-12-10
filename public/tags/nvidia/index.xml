@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nvidia on Love FOSS and Gaming</title>
+    <link>https://jlozada2426.gitlab.io/blog/tags/nvidia/</link>
+    <description>Recent content in Nvidia on Love FOSS and Gaming</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
+    <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
+    <lastBuildDate>Tue, 05 Dec 2017 19:54:29 -0500</lastBuildDate>
+    
+	<atom:link href="https://jlozada2426.gitlab.io/blog/tags/nvidia/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fedora Nvidia GPU</title>
+      <link>https://jlozada2426.gitlab.io/blog/post/fedora_nvidia_gpu/</link>
+      <pubDate>Tue, 05 Dec 2017 19:54:29 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/post/fedora_nvidia_gpu/</guid>
+      <description>You can easily follow the instructions on rpmfusion on how to install the nvidia drivers on fedora but, it can be somewhat confusing if you don&amp;rsquo;t follow the instructions exactly. By installing the repo then doing the commands posted on the instructions can give you a lot of headache if you don&amp;rsquo;t really pay attention. What I mean by this is that you really have to make sure you install the correct driver for your GPU.</description>
+    </item>
+    
+    <item>
+      <title>OBS with GPU</title>
+      <link>https://jlozada2426.gitlab.io/blog/post/obs_with_gpu/</link>
+      <pubDate>Sat, 02 Dec 2017 21:28:34 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/post/obs_with_gpu/</guid>
+      <description>I started using OBS to stream but, I noticed that in most games it uses a lot of CPU so the games start to stutter and the audio gets cut off. I started googling around and saw an article from gamingonlinux.com on how to use the GPU for streaming instead of the CPU. Of course I ran into a lot of issues since I been noticing more and more lately that most linux desktop or gaming is build with debian/ubuntu/arch in mind and fedora usually lags behind.</description>
+    </item>
+    
+  </channel>
+</rss>
