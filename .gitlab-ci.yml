@@ -8,6 +8,8 @@ before_script:
 #  - echo "37ee91ab3469afbf7602a091d466dfa5  hugo_0.18.1_linux-64bit.tgz" | md5sum -c
 #  - tar xf hugo_0.18.1_Linux-64bit.tar.gz  && mv hugo_0.18.1_linux_amd64 hugo && cp -r hugo /usr/bin
 #  - /usr/bin/hugo/hugo_0.18.1_linux_amd64 version
+
+   - apt install asciidoctor
 test:
   script:
   - hugo version
