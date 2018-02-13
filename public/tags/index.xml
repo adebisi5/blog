@@ -24,7 +24,7 @@
     <item>
       <title>Ansible</title>
       <link>https://jlozada2426.gitlab.io/blog/tags/ansible/</link>
-      <pubDate>Thu, 05 Oct 2017 12:51:46 -0400</pubDate>
+      <pubDate>Mon, 08 Jan 2018 14:00:24 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/tags/ansible/</guid>
       <description></description>
@@ -40,6 +40,15 @@
     </item>
     
     <item>
+      <title>Cloud</title>
+      <link>https://jlozada2426.gitlab.io/blog/tags/cloud/</link>
+      <pubDate>Mon, 08 Jan 2018 14:00:24 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Dolphin</title>
       <link>https://jlozada2426.gitlab.io/blog/tags/dolphin/</link>
       <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
@@ -51,9 +60,18 @@
     <item>
       <title>Emulator</title>
       <link>https://jlozada2426.gitlab.io/blog/tags/emulator/</link>
-      <pubDate>Sat, 02 Dec 2017 21:28:34 -0500</pubDate>
+      <pubDate>Sat, 09 Dec 2017 23:03:18 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/tags/emulator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>F2p</title>
+      <link>https://jlozada2426.gitlab.io/blog/tags/f2p/</link>
+      <pubDate>Thu, 25 Jan 2018 15:57:25 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/tags/f2p/</guid>
       <description></description>
     </item>
     
@@ -96,7 +114,7 @@
     <item>
       <title>Gaming</title>
       <link>https://jlozada2426.gitlab.io/blog/tags/gaming/</link>
-      <pubDate>Tue, 05 Dec 2017 19:54:29 -0500</pubDate>
+      <pubDate>Thu, 25 Jan 2018 15:57:25 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/tags/gaming/</guid>
       <description></description>
@@ -123,7 +141,7 @@
     <item>
       <title>Linux</title>
       <link>https://jlozada2426.gitlab.io/blog/tags/linux/</link>
-      <pubDate>Fri, 08 Dec 2017 18:06:06 -0500</pubDate>
+      <pubDate>Thu, 25 Jan 2018 15:57:25 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/tags/linux/</guid>
       <description></description>
@@ -139,11 +157,29 @@
     </item>
     
     <item>
+      <title>Mod</title>
+      <link>https://jlozada2426.gitlab.io/blog/tags/mod/</link>
+      <pubDate>Sat, 09 Dec 2017 23:03:18 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/tags/mod/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Nvidia</title>
       <link>https://jlozada2426.gitlab.io/blog/tags/nvidia/</link>
       <pubDate>Tue, 05 Dec 2017 19:54:29 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/tags/nvidia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Osp</title>
+      <link>https://jlozada2426.gitlab.io/blog/tags/osp/</link>
+      <pubDate>Mon, 08 Jan 2018 14:00:24 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/tags/osp/</guid>
       <description></description>
     </item>
     
@@ -168,7 +204,7 @@
     <item>
       <title>Ps3</title>
       <link>https://jlozada2426.gitlab.io/blog/tags/ps3/</link>
-      <pubDate>Sat, 02 Dec 2017 19:21:13 -0500</pubDate>
+      <pubDate>Sat, 09 Dec 2017 23:03:18 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/tags/ps3/</guid>
       <description></description>
@@ -207,6 +243,15 @@
       <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/tags/wii/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wine</title>
+      <link>https://jlozada2426.gitlab.io/blog/tags/wine/</link>
+      <pubDate>Thu, 25 Jan 2018 15:57:25 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/tags/wine/</guid>
       <description></description>
     </item>
     

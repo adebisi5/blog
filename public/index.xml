@@ -7,10 +7,56 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
     <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
-    <lastBuildDate>Fri, 08 Dec 2017 18:06:06 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 12 Feb 2018 21:42:19 -0500</lastBuildDate>
     
 	<atom:link href="https://jlozada2426.gitlab.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Test_ascii</title>
+      <link>https://jlozada2426.gitlab.io/blog/post/test_ascii/</link>
+      <pubDate>Mon, 12 Feb 2018 21:42:19 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/post/test_ascii/</guid>
+      <description>another one! DJ KALEE!  </description>
+    </item>
+    
+    <item>
+      <title>f2P Games in Linux &amp; Wine.</title>
+      <link>https://jlozada2426.gitlab.io/blog/post/f2p_games_linux_and_wine/</link>
+      <pubDate>Thu, 25 Jan 2018 15:57:25 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/post/f2p_games_linux_and_wine/</guid>
+      <description>Lately I been trying to find games that are F2P because lately I have not found anything that has me interested and obsessed. Maybe I&amp;rsquo;m in a rut when it comes to gaming? no se&amp;hellip; Here is a list of what I been able to play so far.
+ Warframe - Although Warframe is not native to linux, it plays well on wine. You will have to disable a lot of settings in the game to be able to play it the best and avoid certain issues that arise with those configuration being on.</description>
+    </item>
+    
+    <item>
+      <title>Paragon_game</title>
+      <link>https://jlozada2426.gitlab.io/blog/post/paragon_game/</link>
+      <pubDate>Fri, 12 Jan 2018 09:50:14 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/post/paragon_game/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ansible OSP Modules</title>
+      <link>https://jlozada2426.gitlab.io/blog/post/ansible_osp_modules/</link>
+      <pubDate>Mon, 08 Jan 2018 14:00:24 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/post/ansible_osp_modules/</guid>
+      <description>Recently I started working on a project to create roles using ansible openstack modules. I have used openstack before but, the version I used was from 2014 and we managed the VM&amp;rsquo;s/Applications using supernova. We managed VM&amp;rsquo;s for customers in openstack but, we did not maintain the infrastructure itself. Although we troubleshooted and help diagnosed some issues with the openstack team. Issues like a VM got stuck, can&amp;rsquo;t connect to the VM&amp;rsquo; and having performance issues.</description>
+    </item>
+    
+    <item>
+      <title>How to Mod PS3</title>
+      <link>https://jlozada2426.gitlab.io/blog/post/mod_ps3/</link>
+      <pubDate>Sat, 09 Dec 2017 23:03:18 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/post/mod_ps3/</guid>
+      <description>Modding the PS3 can get quite confusing because the directions are not straight forward or can be confusing if you have not done this before or spend time trying to understand how everything works. At first I was confused but, with trial &amp;amp; error I was able to get it modded and installed homebrew and multiman.</description>
+    </item>
     
     <item>
       <title>Building_rpms</title>
