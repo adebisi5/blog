@@ -26,6 +26,8 @@ EXPOSE 1313
 ONBUILD ADD site/ /usr/share/blog
 ONBUILD RUN hugo -d /usr/share/nginx/html/
 
+#ADD beautifulhugo/ /usr/share/blog/themes/beautifulhugo/
+#ADD config.toml /usr/share/blog/
 # By default, serve site
 ENV HUGO_BASE_URL http://localhost:1313
 CMD hugo server -b ${HUGO_BASE_URL} --bind=0.0.0.0
