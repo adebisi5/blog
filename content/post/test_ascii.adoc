@@ -6,3 +6,5 @@ draft: false
 
 === another one! DJ KALEE!
 
+
+https://www.youtube.com/watch?v=5BhAJ4mEfZ8[Ansible Best Practices]
