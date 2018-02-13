@@ -1,4 +1,4 @@
-image: publysher/hugo
+image: hugo/hugo
 before_script:
   #- mkdir -p /tmp/certbot/public_html/.well-known/acme-challenge
   #- cd /tmp/certbot/public_html
