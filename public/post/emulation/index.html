@@ -26,17 +26,15 @@
   <link rel="canonical" href="https://jlozada2426.gitlab.io/blog/post/emulation/" />
   <link rel="alternate" href="https://jlozada2426.gitlab.io/blog/index.xml" type="application/rss+xml" title="Love FOSS and Gaming">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/main.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
-  <link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/pygment_highlights.css" />
-  <link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/highlight.min.css" />
+  <link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/syntax.css" /><link rel="stylesheet" href="https://jlozada2426.gitlab.io/blog/css/codeblock.css" />
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
 
 
 
@@ -182,7 +180,11 @@
                 
                 
                   <span class="post-meta">
-  Posted on November 25, 2017
+  
+  
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on November 25, 2017
+  
+  
   
 </span>
 
@@ -204,22 +206,52 @@
         <p>While trying to find emulators I ran into dolphin, pcsx2 and rpcs3. I was not sure which one to start on since I did not had the collection of games I used to have since I mostly went completely pc gaming and all my games are on steam or gog. I decided to start with ps2 games since they were cheaper to acquire( at least some games). I went to ebay and got dot hack infestation, AVP
 extinction and the DMC series. I was not sure how well this applications will work but, saw some videos on youtube and it looks like a lot of folks play the games and enjoy them again. Not to mention with better graphics and control of the game. I have been using win10 and fedora 26-27 lately to play my games. I got a rush of playing games lately that I did not care about the OS or the platform because I just wanted to play games. I been using fedora heavily that other options and decided to try to install pcsx2 since I had the games in there. What I learn was that can be a headache because this application requires a lot of the i686 rpms to function correctly so you can end up deleting or adding unncessary rpms if you are not sure what you are doing. The github instructions has a list of rpms you need to run it ( if you are building from source) or how to get the latest rpm or deb. At least for the fedora case it was just adding the nonfree rpmfusion and running <code>sudo dnf install pcsx2</code> and it should pull the dependencies automatically. Since I was running fedora 27 there seems to be a problem with the rpm on this version. I went <a href="https://forums.pcsx2.net/Thread-Issues-running-PCSX2-in-fedora-27">to the forum to ask around</a>. In the meantime I went to win to try to see if using pcsx2 in there would work out of the box. For certain games it seems to be working fine but, you have to change a lot of the settings around to make certain issues fixed. For example, when I was playing Predator: Concrete Jungle and you changed to the Green view, you would be see different shadows of the predator in every corner. I tried to ignore and continue playing the game. So far thats the only part that gets a little annoying. but, since I enjoy using more linux due to the all the things I can do in there. I switched back to fedora, did some research and waited to see if anyone would respond to my post. The main person or one of the contributors gave me some suggestions to troubleshoot( you can look at the link to get an idea of the issues). Another person recommended to install the fedora 26 rpm since it worked for them. Looks like installing the fedora 26 version did the trick and I was able to load pcsx2 fine. Then I tried to load DMC1 but, have some issues. At first when I started a new game, the game goes black screen and the usage of the CPU went over 100%!, its crazy!. I went to the discord chat room ( ugh&hellip;.) and asked for some help. A few fellows tried to have me use <code>top</code> and <code>htop</code> to troubleshoot resource usage. I know it was not an issue with having low resources or not powerful hardware to be able to play this game since I have a Xeon CPU, 24 GB of RAM and my GTX 755 TI ( its decent but, not the best). Is not the most powerful but, should be able to do the job. Then they suggested to use change the GTS from hardware to software. For some reason this worked and the game loaded fine without anything problems :) yay!. Now I have to do some research on how to use OBS the best way in a single computer to be able to stream the games without using all the CPU. Or see if I can use another computer to do the streaming but, I don&rsquo;t have a capture card or anything like that. I did some more research and it looks like you can build <code>ffmpeg</code> with <code>NVENC</code> then build OBS from source and you should be able to use the GPU to stream. I&rsquo;m in the process of trying this on fedora 27 but, having some issues building OBS.</p>
 
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://jlozada2426.gitlab.io/blog//tags/ps3/">ps3</a>&nbsp;
+            
+              <a href="https://jlozada2426.gitlab.io/blog//tags/ps2/">ps2</a>&nbsp;
+            
+              <a href="https://jlozada2426.gitlab.io/blog//tags/gamecube/">gamecube</a>&nbsp;
+            
+              <a href="https://jlozada2426.gitlab.io/blog//tags/wii/">wii</a>&nbsp;
+            
+              <a href="https://jlozada2426.gitlab.io/blog//tags/emulator/">emulator</a>&nbsp;
+            
+              <a href="https://jlozada2426.gitlab.io/blog//tags/gaming/">gaming</a>&nbsp;
+            
+              <a href="https://jlozada2426.gitlab.io/blog//tags/pcsx2/">pcsx2</a>&nbsp;
+            
+              <a href="https://jlozada2426.gitlab.io/blog//tags/rpcs3/">rpcs3</a>&nbsp;
+            
+              <a href="https://jlozada2426.gitlab.io/blog//tags/dolphin/">dolphin</a>&nbsp;
+            
+          </div>
+        
+
+        
       </article>
 
-      <ul class="pager blog-pager">
-        
-          <li class="previous">
-            <a href="https://jlozada2426.gitlab.io/blog/post/avp_extinction/" data-toggle="tooltip" data-placement="top" title="Avp_extinction">&larr; Previous Post</a>
-          </li>
-        
-        
-          <li class="next">
-            <a href="https://jlozada2426.gitlab.io/blog/post/ps3_emulator/" data-toggle="tooltip" data-placement="top" title="PS3 Emulator">Next Post &rarr;</a>
-          </li>
-        
-      </ul>
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://jlozada2426.gitlab.io/blog/post/avp_extinction/" data-toggle="tooltip" data-placement="top" title="Avp_extinction">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://jlozada2426.gitlab.io/blog/post/ps3_emulator/" data-toggle="tooltip" data-placement="top" title="PS3 Emulator">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
 
       
+        
         
       
 
@@ -258,14 +290,6 @@ extinction and the DMC series. I was not sure how well this applications will wo
                 </a>
               </li>
               <li>
-                <a href="https://twitch.tv/darksidetaino" title="Twitter">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-twitch fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li>
                 <a href="https://twitter.com/jlozadadd" title="Twitter">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
@@ -291,7 +315,9 @@ extinction and the DMC series. I was not sure how well this applications will wo
               </li>
           
           <li>
+            
             <a href="https://jlozada2426.gitlab.io/blog/index.xml" title="RSS">
+            
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
@@ -304,9 +330,9 @@ extinction and the DMC series. I was not sure how well this applications will wo
           
             
               Jonathan Lozada De La Matta
-                      
+            
           
-          
+
           &nbsp;&bull;&nbsp;
           2018
 
@@ -329,12 +355,9 @@ extinction and the DMC series. I was not sure how well this applications will wo
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="https://jlozada2426.gitlab.io/blog/js/main.js"></script>
-<script src="https://jlozada2426.gitlab.io/blog/js/highlight.min.js"></script>
-<script> hljs.initHighlightingOnLoad(); </script>
-<script> renderMathInElement(document.body); </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+<script src="https://jlozada2426.gitlab.io/blog/js/main.js"></script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
 <script src="https://jlozada2426.gitlab.io/blog/js/load-photoswipe.js"></script>
 
 
@@ -349,6 +372,9 @@ extinction and the DMC series. I was not sure how well this applications will wo
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
+
+
+
 
 
   </body>
