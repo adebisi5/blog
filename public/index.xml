@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
     <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
-    <lastBuildDate>Mon, 12 Feb 2018 21:42:19 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 25 Feb 2018 00:37:14 -0500</lastBuildDate>
     
 	<atom:link href="https://jlozada2426.gitlab.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Use Ansible to resolve IT issues Part 3</title>
+      <link>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve3/</link>
+      <pubDate>Sun, 25 Feb 2018 00:37:14 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve3/</guid>
+      <description>After successfully being able to add/remove users and install Cloudera Clusters, I needed to tag on patching systems. This is a hot item that everyone should be aware and should be able to do some down time for.</description>
+    </item>
     
     <item>
       <title>Test_ascii</title>
@@ -263,7 +272,7 @@ And just let all the packages go! then restart. I use the KDE version since I pr
       <pubDate>Mon, 08 May 2017 13:32:05 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve/</guid>
-      <description>After I was able to successfully Install Cloudera CM and create a cluster, I was trying to find a way to reduce the deployment time. The current deployments would take too long, waste over 500 of labor hours and no consistency. I could not meet customer demand for new datanodes or clusters and had a reduced workforce due to contract changes. At first I tried to find an all solution like puppet or foreman.</description>
+      <description>After spending months on trying to deploy a Cloudera CM cluster with over 40 nodes, I needed to find a way automate most of my tasks and reduce time spend doing this manually. At the time when I started on this project we were using openstack VM&amp;rsquo;s to host this Cloudera cluster. Although is not best practices to use VM for big data, it was our only option of having resources.</description>
     </item>
     
     <item>

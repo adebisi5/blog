@@ -70,4 +70,3 @@ Init the DB first
   shell: "{{ prepare_database }}" # includes the command above.
 ```
 
-If you want to see the whole role, check it out at https://gitlab.com/sysadminonlinux/cloudera-cm

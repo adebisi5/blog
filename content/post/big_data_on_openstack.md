@@ -5,7 +5,7 @@ tags = []
 title = "Big Data on Openstack"
 
 +++
-Openstack can be a great solution due to the increase demand of  cloud and more resources. But, it can't resolve every issue out there. an Openstack deployment can provide "unlimited" resources but, is useless if is not architectured for the specific applications that the VM's will be hosting. For example, a previous customer had over 20 regions, configured almost the same and had performance issues. This  customer hosted big data applications (Cloudera to be specific) on those VM's, had an older deployment of Openstack ( Icehouse so we could not take advantage of the newer cloud features) and no budget for further expansion and upgrades ( Including software and hardware) but, had the following issues:
+Openstack can be a great solution due to the increase demand of  cloud and more resources. But, it can't resolve every issue out there. an Openstack deployment can provide "unlimited" resources but, is useless if is not architecture for the specific applications that the VM's will be hosting. For example, a previous customer had over 20 regions, configured almost the same and had performance issues. This  customer hosted big data applications (Cloudera to be specific) on those VM's, had an older deployment of Openstack ( Icehouse so we could not take advantage of the newer cloud features) and no budget for further expansion and upgrades ( Including software and hardware) but, had the following issues:
 
 1. Was forced to use Centos 6/7. No budget for OS support.
 2. Cloudera Clusters could not talk to each other from different regions.
@@ -13,7 +13,7 @@ Openstack can be a great solution due to the increase demand of  cloud and more 
 4. Application links inside Cloudera CM would fail to resolve.
 5. A new Cloudera Cluster would take around 2-5 months to deploy due to loosing knowledge ( employees left the project) and configuration issues.
 
-I tried following the little documentation the previous Sys Admin had left but, that was troublesome. I had to spend significant time researching on the internet to find solutions to some of the issues I came across. At first I tried building a 5 host cluster with Centos 6. But, the installation would fail due to the Cloudera CM not able to talk to the cloudera agent( they were on the same host!). I found out later that is a bug with Cloudera CM with Cloud Solutions such as AWS/Openstack due to the way Openstack networking works (Floating/Public /Private hostname & IP) (https://www.cloudera.com/documentation/enterprise/release-notes/topics/cm_rn_known_issues.html) Basically this:
+I tried following the little documentation the previous system admin had left but, that was troublesome. I had to spend significant time researching on the internet to find solutions to some of the issues I came across. At first I tried building a 5 host cluster with Centos 6. But, the installation would fail due to the Cloudera CM not able to talk to the cloudera agent( they were on the same host!). I found out later that is a bug with Cloudera CM with Cloud Solutions such as AWS/Openstack due to the way Openstack networking works (Floating/Public /Private hostname & IP) (https://www.cloudera.com/documentation/enterprise/release-notes/topics/cm_rn_known_issues.html) Basically this:
 
 ```
 Installing on AWS, you must use private EC2 hostnames.
