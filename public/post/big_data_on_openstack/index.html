@@ -8,8 +8,8 @@
   <title>Big Data on Openstack</title>
   <meta property="og:title" content="Big Data on Openstack" />
   <meta name="twitter:title" content="Big Data on Openstack" />
-  <meta name="description" content="Openstack can be a great solution due to the increase demand of cloud and more resources. But, it can&rsquo;t resolve every issue out there. an Openstack deployment can provide &ldquo;unlimited&rdquo; resources but, is useless if is not architectured for the specific applications that the VM&rsquo;s will be hosting. For example, a previous customer had over 20 regions, configured almost the same and had performance issues. This customer hosted big data applications (Cloudera to be specific) on those VM&rsquo;s, had an older deployment of Openstack ( Icehouse so we could not take advantage of the newer cloud features) and no budget for further expansion and upgrades ( Including software and hardware) but, had the following issues:">
-  <meta property="og:description" content="Openstack can be a great solution due to the increase demand of cloud and more resources. But, it can&rsquo;t resolve every issue out there. an Openstack deployment can provide &ldquo;unlimited&rdquo; resources but, is useless if is not architectured for the specific applications that the VM&rsquo;s will be hosting. For example, a previous customer had over 20 regions, configured almost the same and had performance issues. This customer hosted big data applications (Cloudera to be specific) on those VM&rsquo;s, had an older deployment of Openstack ( Icehouse so we could not take advantage of the newer cloud features) and no budget for further expansion and upgrades ( Including software and hardware) but, had the following issues:">
+  <meta name="description" content="Openstack can be a great solution due to the increase demand of cloud and more resources. But, it can&rsquo;t resolve every issue out there. an Openstack deployment can provide &ldquo;unlimited&rdquo; resources but, is useless if is not architecture for the specific applications that the VM&rsquo;s will be hosting. For example, a previous customer had over 20 regions, configured almost the same and had performance issues. This customer hosted big data applications (Cloudera to be specific) on those VM&rsquo;s, had an older deployment of Openstack ( Icehouse so we could not take advantage of the newer cloud features) and no budget for further expansion and upgrades ( Including software and hardware) but, had the following issues:">
+  <meta property="og:description" content="Openstack can be a great solution due to the increase demand of cloud and more resources. But, it can&rsquo;t resolve every issue out there. an Openstack deployment can provide &ldquo;unlimited&rdquo; resources but, is useless if is not architecture for the specific applications that the VM&rsquo;s will be hosting. For example, a previous customer had over 20 regions, configured almost the same and had performance issues. This customer hosted big data applications (Cloudera to be specific) on those VM&rsquo;s, had an older deployment of Openstack ( Icehouse so we could not take advantage of the newer cloud features) and no budget for further expansion and upgrades ( Including software and hardware) but, had the following issues:">
   <meta name="twitter:description" content="Openstack can be a great solution due to the increase demand of cloud and more resources. But, it can&rsquo;t resolve every issue out there. an Openstack deployment can provide &ldquo;unlimited&rdquo; …">
   <meta name="author" content="Jonathan Lozada De La Matta"/>
   <link href='https://jlozada2426.gitlab.io/blog/img/tux_sticker.ico' rel='icon' type='image/x-icon'/>
@@ -22,7 +22,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Love FOSS and Gaming" />
 
-  <meta name="generator" content="Hugo 0.29" />
+  <meta name="generator" content="Hugo 0.37" />
   <link rel="canonical" href="https://jlozada2426.gitlab.io/blog/post/big_data_on_openstack/" />
   <link rel="alternate" href="https://jlozada2426.gitlab.io/blog/index.xml" type="application/rss+xml" title="Love FOSS and Gaming">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -201,7 +201,7 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>Openstack can be a great solution due to the increase demand of  cloud and more resources. But, it can&rsquo;t resolve every issue out there. an Openstack deployment can provide &ldquo;unlimited&rdquo; resources but, is useless if is not architectured for the specific applications that the VM&rsquo;s will be hosting. For example, a previous customer had over 20 regions, configured almost the same and had performance issues. This  customer hosted big data applications (Cloudera to be specific) on those VM&rsquo;s, had an older deployment of Openstack ( Icehouse so we could not take advantage of the newer cloud features) and no budget for further expansion and upgrades ( Including software and hardware) but, had the following issues:</p>
+        <p>Openstack can be a great solution due to the increase demand of  cloud and more resources. But, it can&rsquo;t resolve every issue out there. an Openstack deployment can provide &ldquo;unlimited&rdquo; resources but, is useless if is not architecture for the specific applications that the VM&rsquo;s will be hosting. For example, a previous customer had over 20 regions, configured almost the same and had performance issues. This  customer hosted big data applications (Cloudera to be specific) on those VM&rsquo;s, had an older deployment of Openstack ( Icehouse so we could not take advantage of the newer cloud features) and no budget for further expansion and upgrades ( Including software and hardware) but, had the following issues:</p>
 
 <ol>
 <li>Was forced to use Centos <sup>6</sup>&frasl;<sub>7</sub>. No budget for OS support.</li>
@@ -211,7 +211,7 @@
 <li>A new Cloudera Cluster would take around 2-5 months to deploy due to loosing knowledge ( employees left the project) and configuration issues.</li>
 </ol>
 
-<p>I tried following the little documentation the previous Sys Admin had left but, that was troublesome. I had to spend significant time researching on the internet to find solutions to some of the issues I came across. At first I tried building a 5 host cluster with Centos 6. But, the installation would fail due to the Cloudera CM not able to talk to the cloudera agent( they were on the same host!). I found out later that is a bug with Cloudera CM with Cloud Solutions such as AWS/Openstack due to the way Openstack networking works (Floating/Public /Private hostname &amp; IP) (<a href="https://www.cloudera.com/documentation/enterprise/release-notes/topics/cm_rn_known_issues.html">https://www.cloudera.com/documentation/enterprise/release-notes/topics/cm_rn_known_issues.html</a>) Basically this:</p>
+<p>I tried following the little documentation the previous system admin had left but, that was troublesome. I had to spend significant time researching on the internet to find solutions to some of the issues I came across. At first I tried building a 5 host cluster with Centos 6. But, the installation would fail due to the Cloudera CM not able to talk to the cloudera agent( they were on the same host!). I found out later that is a bug with Cloudera CM with Cloud Solutions such as AWS/Openstack due to the way Openstack networking works (Floating/Public /Private hostname &amp; IP) (<a href="https://www.cloudera.com/documentation/enterprise/release-notes/topics/cm_rn_known_issues.html">https://www.cloudera.com/documentation/enterprise/release-notes/topics/cm_rn_known_issues.html</a>) Basically this:</p>
 
 <pre><code>Installing on AWS, you must use private EC2 hostnames.
 
@@ -369,7 +369,7 @@ socket.gethostbyname(socket.getfqdn())&quot;
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.29</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.37</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

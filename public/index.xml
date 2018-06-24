@@ -18,17 +18,7 @@
       <pubDate>Sun, 25 Feb 2018 00:37:14 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve3/</guid>
-      <description>After successfully being able to add/remove users and install Cloudera Clusters, I needed to tag on patching systems. This is a hot item that everyone should be aware and should be able to do some down time for.</description>
-    </item>
-    
-    <item>
-      <title>Test_ascii</title>
-      <link>https://jlozada2426.gitlab.io/blog/post/test_ascii/</link>
-      <pubDate>Mon, 12 Feb 2018 21:42:19 -0500</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozada2426.gitlab.io/blog/post/test_ascii/</guid>
-      <description>another one! DJ KALEE! Ansible Best Practices
-  </description>
+      <description>After successfully being able to add/remove users and install Cloudera Clusters, I needed to tag on patching systems. This is a hot item that everyone should be aware and should be able to do some down time for.I could spend more time writing in here on how to do patches and how important it is but, I wrote an article for opensource.com that explains it well https://opensource.com/article/18/3/ansible-patch-systems</description>
     </item>
     
     <item>
@@ -281,7 +271,7 @@ And just let all the packages go! then restart. I use the KDE version since I pr
       <pubDate>Mon, 08 May 2017 11:52:33 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/post/big_data_on_openstack/</guid>
-      <description>Openstack can be a great solution due to the increase demand of cloud and more resources. But, it can&amp;rsquo;t resolve every issue out there. an Openstack deployment can provide &amp;ldquo;unlimited&amp;rdquo; resources but, is useless if is not architectured for the specific applications that the VM&amp;rsquo;s will be hosting. For example, a previous customer had over 20 regions, configured almost the same and had performance issues. This customer hosted big data applications (Cloudera to be specific) on those VM&amp;rsquo;s, had an older deployment of Openstack ( Icehouse so we could not take advantage of the newer cloud features) and no budget for further expansion and upgrades ( Including software and hardware) but, had the following issues:</description>
+      <description>Openstack can be a great solution due to the increase demand of cloud and more resources. But, it can&amp;rsquo;t resolve every issue out there. an Openstack deployment can provide &amp;ldquo;unlimited&amp;rdquo; resources but, is useless if is not architecture for the specific applications that the VM&amp;rsquo;s will be hosting. For example, a previous customer had over 20 regions, configured almost the same and had performance issues. This customer hosted big data applications (Cloudera to be specific) on those VM&amp;rsquo;s, had an older deployment of Openstack ( Icehouse so we could not take advantage of the newer cloud features) and no budget for further expansion and upgrades ( Including software and hardware) but, had the following issues:</description>
     </item>
     
   </channel>
