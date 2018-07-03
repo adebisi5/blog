@@ -1,0 +1,19 @@
+---
+title: "Infoblox and Ansible"
+date: 2018-07-01T10:09:41-04:00
+draft: false
+subtitle: "IT"
+tags: []
+categories: [ansible,infoblox]
+---
+
+I was working with a customer that was using Infoblox and Bluecat. From the research I done, most organizations out there use infoblox for everything network related and don't divide it between different applications to accomplish the same goal. In this case infoblox handled most of the networking parts ( IP & subnets ) and bluecat handled the DNS part. So to be able to take full advantage of the Nios modules in ansible, you need to create the DNS zones in infoblox. Even if you have the DNS service turned off and don't use it at all, the module and infoblox depends on it. So you will need to do the following:
+
+* Create a DNS zone (localnet)
+* Create a sub zone (infoblox)
+
+so you will end up with infoblox.localnet and can use the NIOS modules.
+
+
+
+

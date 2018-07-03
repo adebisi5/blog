@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Infoblox on Love FOSS and Gaming</title>
+    <link>https://jlozada2426.gitlab.io/blog/categories/infoblox/</link>
+    <description>Recent content in Infoblox on Love FOSS and Gaming</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
+    <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
+    <lastBuildDate>Sun, 01 Jul 2018 10:09:41 -0400</lastBuildDate>
+    
+	<atom:link href="https://jlozada2426.gitlab.io/blog/categories/infoblox/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Infoblox and Ansible</title>
+      <link>https://jlozada2426.gitlab.io/blog/post/infoblox_and_ansible/</link>
+      <pubDate>Sun, 01 Jul 2018 10:09:41 -0400</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/post/infoblox_and_ansible/</guid>
+      <description>I was working with a customer that was using Infoblox and Bluecat. From the research I done, most organizations out there use infoblox for everything network related and don&amp;#8217;t divide it between different applications to accomplish the same goal. In this case infoblox handled most of the networking parts ( IP &amp;amp; subnets ) and bluecat handled the DNS part. So to be able to take full advantage of the Nios modules in ansible, you need to create the DNS zones in infoblox.</description>
+    </item>
+    
+  </channel>
+</rss>

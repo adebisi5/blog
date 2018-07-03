@@ -24,7 +24,7 @@
     <item>
       <title>Ansible</title>
       <link>https://jlozada2426.gitlab.io/blog/categories/ansible/</link>
-      <pubDate>Mon, 08 May 2017 15:51:12 -0400</pubDate>
+      <pubDate>Sun, 01 Jul 2018 10:09:41 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/categories/ansible/</guid>
       <description></description>
@@ -36,6 +36,15 @@
       <pubDate>Mon, 08 May 2017 11:52:33 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozada2426.gitlab.io/blog/categories/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Infoblox</title>
+      <link>https://jlozada2426.gitlab.io/blog/categories/infoblox/</link>
+      <pubDate>Sun, 01 Jul 2018 10:09:41 -0400</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozada2426.gitlab.io/blog/categories/infoblox/</guid>
       <description></description>
     </item>
     
