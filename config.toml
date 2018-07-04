@@ -5,6 +5,7 @@ theme = "beautifulhugo"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
+googleAnalytics = "UA-121828102-1"
 
 [Params]
   subtitle = "love FOSS, Gaming and Star Trek NG is the best then DS9"
