@@ -7,8 +7,8 @@ tags: [intro]
 
 My name is Jonathan Lozada De La Matta.
 
-* From Carolina, Puerto Rico
-* Ansible Consultant
+* From https://en.wikipedia.org/wiki/Carolina,_Puerto_Rico[Carolina, Puerto Rico]
+* http://localhost:1313/blog/[Ansible Consultant]
 * Love Video Games
 * Love IT
 * Love joking and LOL
