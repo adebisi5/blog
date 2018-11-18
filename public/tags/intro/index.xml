@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Intro on Love FOSS and Gaming</title>
-    <link>http://jlozada.io/blog/tags/intro/</link>
+    <link>http://jlozadad.io/tags/intro/</link>
     <description>Recent content in Intro on Love FOSS and Gaming</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
     <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
     <lastBuildDate>Tue, 03 Jul 2018 15:25:12 -0400</lastBuildDate>
     
-	<atom:link href="http://jlozada.io/blog/tags/intro/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://jlozadad.io/tags/intro/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Quien Soy</title>
-      <link>http://jlozada.io/blog/page/about/</link>
+      <link>http://jlozadad.io/page/about/</link>
       <pubDate>Tue, 03 Jul 2018 15:25:12 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>http://jlozada.io/blog/page/about/</guid>
+      <guid>http://jlozadad.io/page/about/</guid>
       <description>My name is Jonathan Lozada De La Matta.
    From Carolina, Puerto Rico
   Ansible Consultant

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>It on Love FOSS and Gaming</title>
-    <link>http://jlozada.io/blog/tags/it/</link>
+    <link>http://jlozadad.io/tags/it/</link>
     <description>Recent content in It on Love FOSS and Gaming</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
     <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
     <lastBuildDate>Sun, 25 Feb 2018 00:37:14 -0500</lastBuildDate>
     
-	<atom:link href="http://jlozada.io/blog/tags/it/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://jlozadad.io/tags/it/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Use Ansible to resolve IT issues Part 3</title>
-      <link>http://jlozada.io/blog/post/use_ansible_to_resolve3/</link>
+      <link>http://jlozadad.io/post/use_ansible_to_resolve3/</link>
       <pubDate>Sun, 25 Feb 2018 00:37:14 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>http://jlozada.io/blog/post/use_ansible_to_resolve3/</guid>
+      <guid>http://jlozadad.io/post/use_ansible_to_resolve3/</guid>
       <description>After successfully being able to add/remove users and install Cloudera Clusters, I needed to tag on patching systems. This is a hot item that everyone should be aware and should be able to do some down time for.I could spend more time writing in here on how to do patches and how important it is but, I wrote an article for opensource.com that explains it well https://opensource.com/article/18/3/ansible-patch-systems</description>
     </item>
     

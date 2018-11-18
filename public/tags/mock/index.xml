@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mock on Love FOSS and Gaming</title>
-    <link>http://jlozada.io/blog/tags/mock/</link>
+    <link>http://jlozadad.io/tags/mock/</link>
     <description>Recent content in Mock on Love FOSS and Gaming</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
     <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
     <lastBuildDate>Fri, 08 Dec 2017 18:06:06 -0500</lastBuildDate>
     
-	<atom:link href="http://jlozada.io/blog/tags/mock/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://jlozadad.io/tags/mock/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Building_rpms</title>
-      <link>http://jlozada.io/blog/post/building_rpms/</link>
+      <link>http://jlozadad.io/post/building_rpms/</link>
       <pubDate>Fri, 08 Dec 2017 18:06:06 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>http://jlozada.io/blog/post/building_rpms/</guid>
+      <guid>http://jlozadad.io/post/building_rpms/</guid>
       <description>So After spending hours on trying to figure out how to build obs into an rpm using mock I finally succeeded. At the bottom is my whole history of commands and things I went through trying to figure out dependencies, building local and with mock&amp;hellip;. I have to say this is a very interesting learning experience. But, one thing I found is that everyone does the spec file differently. Some build the spec that its easily to follow with variables and others have a mix of using some variables and hard coded lines.</description>
     </item>
     
