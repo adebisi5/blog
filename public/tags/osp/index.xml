@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Osp on Love FOSS and Gaming</title>
-    <link>https://jlozada2426.gitlab.io/blog/tags/osp/</link>
+    <link>http://jlozada.io/blog/tags/osp/</link>
     <description>Recent content in Osp on Love FOSS and Gaming</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
     <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
     <lastBuildDate>Mon, 08 Jan 2018 14:00:24 -0500</lastBuildDate>
     
-	<atom:link href="https://jlozada2426.gitlab.io/blog/tags/osp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://jlozada.io/blog/tags/osp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ansible OSP Modules</title>
-      <link>https://jlozada2426.gitlab.io/blog/post/ansible_osp_modules/</link>
+      <link>http://jlozada.io/blog/post/ansible_osp_modules/</link>
       <pubDate>Mon, 08 Jan 2018 14:00:24 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozada2426.gitlab.io/blog/post/ansible_osp_modules/</guid>
+      <guid>http://jlozada.io/blog/post/ansible_osp_modules/</guid>
       <description>Recently I started working on a project to create roles using ansible openstack modules. I have used openstack before but, the version I used was from 2014 and we managed the VM&amp;rsquo;s/Applications using supernova. We managed VM&amp;rsquo;s for customers in openstack but, we did not maintain the infrastructure itself. Although we troubleshooted and help diagnosed some issues with the openstack team. Issues like a VM got stuck, can&amp;rsquo;t connect to the VM&amp;rsquo; and having performance issues.</description>
     </item>
     

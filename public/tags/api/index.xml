@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Api on Love FOSS and Gaming</title>
-    <link>https://jlozada2426.gitlab.io/blog/tags/api/</link>
+    <link>http://jlozada.io/blog/tags/api/</link>
     <description>Recent content in Api on Love FOSS and Gaming</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
     <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
     <lastBuildDate>Thu, 26 Oct 2017 22:39:57 -0400</lastBuildDate>
     
-	<atom:link href="https://jlozada2426.gitlab.io/blog/tags/api/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://jlozada.io/blog/tags/api/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Json and API</title>
-      <link>https://jlozada2426.gitlab.io/blog/post/json_and_api/</link>
+      <link>http://jlozada.io/blog/post/json_and_api/</link>
       <pubDate>Thu, 26 Oct 2017 22:39:57 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozada2426.gitlab.io/blog/post/json_and_api/</guid>
+      <guid>http://jlozada.io/blog/post/json_and_api/</guid>
       <description>#JSON and API
 I started using Vagrant for a while to be able to spin VM&amp;rsquo;s and troubleshoot or test certain configuration. For the moment I was fine with using virtualbox but, I decided to use libvirtd since I prefer it. I had no idea how to create images or where to start. I asked a co-worker and he mentioned to look at bento and packer. Bento has a whole list of json files for images in all linux flavors and builds the images for all Virtualization types.</description>
     </item>

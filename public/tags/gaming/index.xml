@@ -2,77 +2,77 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gaming on Love FOSS and Gaming</title>
-    <link>https://jlozada2426.gitlab.io/blog/tags/gaming/</link>
+    <link>http://jlozada.io/blog/tags/gaming/</link>
     <description>Recent content in Gaming on Love FOSS and Gaming</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
     <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
     <lastBuildDate>Thu, 25 Jan 2018 15:57:25 -0500</lastBuildDate>
     
-	<atom:link href="https://jlozada2426.gitlab.io/blog/tags/gaming/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://jlozada.io/blog/tags/gaming/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>f2P Games in Linux &amp; Wine.</title>
-      <link>https://jlozada2426.gitlab.io/blog/post/f2p_games_linux_and_wine/</link>
+      <link>http://jlozada.io/blog/post/f2p_games_linux_and_wine/</link>
       <pubDate>Thu, 25 Jan 2018 15:57:25 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozada2426.gitlab.io/blog/post/f2p_games_linux_and_wine/</guid>
+      <guid>http://jlozada.io/blog/post/f2p_games_linux_and_wine/</guid>
       <description>Lately I been trying to find games that are F2P because lately I have not found anything that has me interested and obsessed. Maybe I&amp;rsquo;m in a rut when it comes to gaming? no se&amp;hellip; Here is a list of what I been able to play so far.
  Warframe - Although Warframe is not native to linux, it plays well on wine. You will have to disable a lot of settings in the game to be able to play it the best and avoid certain issues that arise with those configuration being on.</description>
     </item>
     
     <item>
       <title>Fedora Nvidia GPU</title>
-      <link>https://jlozada2426.gitlab.io/blog/post/fedora_nvidia_gpu/</link>
+      <link>http://jlozada.io/blog/post/fedora_nvidia_gpu/</link>
       <pubDate>Tue, 05 Dec 2017 19:54:29 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozada2426.gitlab.io/blog/post/fedora_nvidia_gpu/</guid>
+      <guid>http://jlozada.io/blog/post/fedora_nvidia_gpu/</guid>
       <description>You can easily follow the instructions on rpmfusion on how to install the nvidia drivers on fedora but, it can be somewhat confusing if you don&amp;rsquo;t follow the instructions exactly. By installing the repo then doing the commands posted on the instructions can give you a lot of headache if you don&amp;rsquo;t really pay attention. What I mean by this is that you really have to make sure you install the correct driver for your GPU.</description>
     </item>
     
     <item>
       <title>OBS with GPU</title>
-      <link>https://jlozada2426.gitlab.io/blog/post/obs_with_gpu/</link>
+      <link>http://jlozada.io/blog/post/obs_with_gpu/</link>
       <pubDate>Sat, 02 Dec 2017 21:28:34 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozada2426.gitlab.io/blog/post/obs_with_gpu/</guid>
+      <guid>http://jlozada.io/blog/post/obs_with_gpu/</guid>
       <description>I started using OBS to stream but, I noticed that in most games it uses a lot of CPU so the games start to stutter and the audio gets cut off. I started googling around and saw an article from gamingonlinux.com on how to use the GPU for streaming instead of the CPU. Of course I ran into a lot of issues since I been noticing more and more lately that most linux desktop or gaming is build with debian/ubuntu/arch in mind and fedora usually lags behind.</description>
     </item>
     
     <item>
       <title>PS3 Emulator</title>
-      <link>https://jlozada2426.gitlab.io/blog/post/ps3_emulator/</link>
+      <link>http://jlozada.io/blog/post/ps3_emulator/</link>
       <pubDate>Sat, 02 Dec 2017 19:21:13 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozada2426.gitlab.io/blog/post/ps3_emulator/</guid>
+      <guid>http://jlozada.io/blog/post/ps3_emulator/</guid>
       <description>While trying to find emulators I ran into dolphin, pcsx2 and rpcs3. I was not sure which one to start on since I did not had the collection of games I used to have since I mostly went completely pc gaming and all my games are on steam or gog. I decided to start with ps2 games since they were cheaper to acquire( at least some games). I went to ebay and got dot hack infestation, AVP extinction and the DMC series.</description>
     </item>
     
     <item>
       <title>Emulation</title>
-      <link>https://jlozada2426.gitlab.io/blog/post/emulation/</link>
+      <link>http://jlozada.io/blog/post/emulation/</link>
       <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozada2426.gitlab.io/blog/post/emulation/</guid>
+      <guid>http://jlozada.io/blog/post/emulation/</guid>
       <description>While trying to find emulators I ran into dolphin, pcsx2 and rpcs3. I was not sure which one to start on since I did not had the collection of games I used to have since I mostly went completely pc gaming and all my games are on steam or gog. I decided to start with ps2 games since they were cheaper to acquire( at least some games). I went to ebay and got dot hack infestation, AVP extinction and the DMC series.</description>
     </item>
     
     <item>
       <title>Avp_extinction</title>
-      <link>https://jlozada2426.gitlab.io/blog/post/avp_extinction/</link>
+      <link>http://jlozada.io/blog/post/avp_extinction/</link>
       <pubDate>Sat, 25 Nov 2017 17:06:36 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozada2426.gitlab.io/blog/post/avp_extinction/</guid>
+      <guid>http://jlozada.io/blog/post/avp_extinction/</guid>
       <description>AVP Extinction was a game that I really enjoyed when it came out. One of my favorites IP together in a strategy type game. Nothing better than building a horde of aliens and have your own hive that destroys everything and drags the bodies back to the hive to get turned into more aliens or pre-aliens. I been able to play most of this game on pcsx2 but, I had to use windows :( because getting to build successfully in linux is a pain and you need to install a lot of i.</description>
     </item>
     
     <item>
       <title>Streaming</title>
-      <link>https://jlozada2426.gitlab.io/blog/post/streaming/</link>
+      <link>http://jlozada.io/blog/post/streaming/</link>
       <pubDate>Fri, 24 Nov 2017 21:27:31 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozada2426.gitlab.io/blog/post/streaming/</guid>
+      <guid>http://jlozada.io/blog/post/streaming/</guid>
       <description>I never been fan much of streaming and watching others play. Somehow I wanted to be the one playing and not just watch. I finally tried twitch just for the heck of it and I found out why a lot of people spend so much time on there. Be able to watch new games that come out or just classical games that you missed or haven&amp;rsquo;t played yet. I always wanted to make videos of the games I play as a way to do walthroughts and show others how to do something specific.</description>
     </item>
     

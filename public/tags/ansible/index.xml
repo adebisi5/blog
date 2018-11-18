@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ansible on Love FOSS and Gaming</title>
-    <link>https://jlozada2426.gitlab.io/blog/tags/ansible/</link>
+    <link>http://jlozada.io/blog/tags/ansible/</link>
     <description>Recent content in Ansible on Love FOSS and Gaming</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
     <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
     <lastBuildDate>Sun, 25 Feb 2018 00:37:14 -0500</lastBuildDate>
     
-	<atom:link href="https://jlozada2426.gitlab.io/blog/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://jlozada.io/blog/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Use Ansible to resolve IT issues Part 3</title>
-      <link>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve3/</link>
+      <link>http://jlozada.io/blog/post/use_ansible_to_resolve3/</link>
       <pubDate>Sun, 25 Feb 2018 00:37:14 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozada2426.gitlab.io/blog/post/use_ansible_to_resolve3/</guid>
+      <guid>http://jlozada.io/blog/post/use_ansible_to_resolve3/</guid>
       <description>After successfully being able to add/remove users and install Cloudera Clusters, I needed to tag on patching systems. This is a hot item that everyone should be aware and should be able to do some down time for.I could spend more time writing in here on how to do patches and how important it is but, I wrote an article for opensource.com that explains it well https://opensource.com/article/18/3/ansible-patch-systems</description>
     </item>
     
     <item>
       <title>Ansible OSP Modules</title>
-      <link>https://jlozada2426.gitlab.io/blog/post/ansible_osp_modules/</link>
+      <link>http://jlozada.io/blog/post/ansible_osp_modules/</link>
       <pubDate>Mon, 08 Jan 2018 14:00:24 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozada2426.gitlab.io/blog/post/ansible_osp_modules/</guid>
+      <guid>http://jlozada.io/blog/post/ansible_osp_modules/</guid>
       <description>Recently I started working on a project to create roles using ansible openstack modules. I have used openstack before but, the version I used was from 2014 and we managed the VM&amp;rsquo;s/Applications using supernova. We managed VM&amp;rsquo;s for customers in openstack but, we did not maintain the infrastructure itself. Although we troubleshooted and help diagnosed some issues with the openstack team. Issues like a VM got stuck, can&amp;rsquo;t connect to the VM&amp;rsquo; and having performance issues.</description>
     </item>
     
     <item>
       <title>Tower Cli</title>
-      <link>https://jlozada2426.gitlab.io/blog/post/tower-cli/</link>
+      <link>http://jlozada.io/blog/post/tower-cli/</link>
       <pubDate>Thu, 05 Oct 2017 12:51:46 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozada2426.gitlab.io/blog/post/tower-cli/</guid>
+      <guid>http://jlozada.io/blog/post/tower-cli/</guid>
       <description>Tower-cli is a FOSS sofware made to manage Ansible Tower Configuration and launching jobs. Its a tool that communicates using the API and makes it easier to make those changes instead of using curl. Here is an example of things you can change or do with tower-cli:
  Create Users Create Organizations Create Teams Create Launch Jobs Change Any configuration found in /api/v1/settings/all Orchestrate with other tools and have more complete automation CD/CI pipeline  Example Videos Ansible Tower: Change a setting with tower-cli (https://youtu.</description>
     </item>
