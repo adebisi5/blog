@@ -1,4 +1,4 @@
-baseurl = "https://jlozada2426.gitlab.io/blog/"
+baseurl = "http://jlozada.io/blog/"
 DefaultContentLanguage = "en"
 title = "Love FOSS and Gaming"
 theme = "beautifulhugo"
