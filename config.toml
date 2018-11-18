@@ -1,4 +1,4 @@
-baseurl = "http://jlozada.io/blog/"
+baseurl = "http://jlozadad.io/blog/"
 DefaultContentLanguage = "en"
 title = "Love FOSS and Gaming"
 theme = "beautifulhugo"
