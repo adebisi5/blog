@@ -16,7 +16,7 @@ test:
   except:
   - master
 pages:
-  script:
+        #script:
   #- hugo --theme=beautifulhugo
     #mkdir -p public/.well-known/acme-challenge/
   #cp -R acme-challenge public/.well-known/
