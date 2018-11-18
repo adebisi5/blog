@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>F2p on Love FOSS and Gaming</title>
-    <link>http://jlozadad.io/tags/f2p/</link>
+    <link>https://jlozadad.io/tags/f2p/</link>
     <description>Recent content in F2p on Love FOSS and Gaming</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
     <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
     <lastBuildDate>Thu, 25 Jan 2018 15:57:25 -0500</lastBuildDate>
     
-	<atom:link href="http://jlozadad.io/tags/f2p/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jlozadad.io/tags/f2p/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>f2P Games in Linux &amp; Wine.</title>
-      <link>http://jlozadad.io/post/f2p_games_linux_and_wine/</link>
+      <link>https://jlozadad.io/post/f2p_games_linux_and_wine/</link>
       <pubDate>Thu, 25 Jan 2018 15:57:25 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>http://jlozadad.io/post/f2p_games_linux_and_wine/</guid>
+      <guid>https://jlozadad.io/post/f2p_games_linux_and_wine/</guid>
       <description>Lately I been trying to find games that are F2P because lately I have not found anything that has me interested and obsessed. Maybe I&amp;rsquo;m in a rut when it comes to gaming? no se&amp;hellip; Here is a list of what I been able to play so far.
  Warframe - Although Warframe is not native to linux, it plays well on wine. You will have to disable a lot of settings in the game to be able to play it the best and avoid certain issues that arise with those configuration being on.</description>
     </item>

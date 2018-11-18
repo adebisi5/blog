@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Love FOSS and Gaming</title>
-    <link>http://jlozadad.io/categories/</link>
+    <link>https://jlozadad.io/categories/</link>
     <description>Recent content in Categories on Love FOSS and Gaming</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
     <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
     <lastBuildDate>Wed, 26 Jul 2017 11:54:53 -0400</lastBuildDate>
     
-	<atom:link href="http://jlozadad.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jlozadad.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Aliens</title>
-      <link>http://jlozadad.io/categories/aliens/</link>
+      <link>https://jlozadad.io/categories/aliens/</link>
       <pubDate>Wed, 26 Jul 2017 11:54:53 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>http://jlozadad.io/categories/aliens/</guid>
+      <guid>https://jlozadad.io/categories/aliens/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ansible</title>
-      <link>http://jlozadad.io/categories/ansible/</link>
+      <link>https://jlozadad.io/categories/ansible/</link>
       <pubDate>Sun, 01 Jul 2018 10:09:41 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>http://jlozadad.io/categories/ansible/</guid>
+      <guid>https://jlozadad.io/categories/ansible/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cloud</title>
-      <link>http://jlozadad.io/categories/cloud/</link>
+      <link>https://jlozadad.io/categories/cloud/</link>
       <pubDate>Mon, 08 May 2017 11:52:33 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>http://jlozadad.io/categories/cloud/</guid>
+      <guid>https://jlozadad.io/categories/cloud/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Infoblox</title>
-      <link>http://jlozadad.io/categories/infoblox/</link>
+      <link>https://jlozadad.io/categories/infoblox/</link>
       <pubDate>Sun, 01 Jul 2018 10:09:41 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>http://jlozadad.io/categories/infoblox/</guid>
+      <guid>https://jlozadad.io/categories/infoblox/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Openstack</title>
-      <link>http://jlozadad.io/categories/openstack/</link>
+      <link>https://jlozadad.io/categories/openstack/</link>
       <pubDate>Mon, 08 May 2017 11:52:33 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>http://jlozadad.io/categories/openstack/</guid>
+      <guid>https://jlozadad.io/categories/openstack/</guid>
       <description></description>
     </item>
     
