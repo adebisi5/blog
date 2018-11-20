@@ -1,0 +1,63 @@
+---
+title: "Vagrant Fedora Issue"
+date: 2018-11-19T19:31:54-05:00
+draft: false
+---
+
+I have used vagrant before to test servers and ansible content but, I stopped using it for a while. I usually try to update to latest versions and use the `libvirt` plugin. After updating to the latest version (2.2.1) I was unable to use vagrant with libvirt. Started getting this errors:
+
+```
+vagrant plugin install vagrant-libvirt                                                                             10864  19:15:16 
+Installing the 'vagrant-libvirt' plugin. This can take a few minutes...
+Building native extensions.  This could take a while...
+Bundler, the underlying system Vagrant uses to install plugins,
+reported an error. The error is shown below. These errors are usually
+caused by misconfigured plugin installations or transient network
+issues. The error from Bundler is:
+
+ERROR: Failed to build gem native extension.
+
+    current directory: /data/vagrant_home/gems/2.4.4/gems/ruby-libvirt-0.7.1/ext/libvirt
+/opt/vagrant/embedded/bin/ruby -r ./siteconf20181119-4467-cj8dte.rb extconf.rb
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/opt/vagrant/embedded/bin/$(RUBY_BASE_NAME)
+	--with-libvirt-include
+	--without-libvirt-include
+	--with-libvirt-lib
+	--without-libvirt-lib
+	--with-libvirt-config
+	--without-libvirt-config
+	--with-pkg-config
+	--without-pkg-config
+extconf.rb:73:in `<main>': libvirt library not found in default locations (RuntimeError)
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /data/vagrant_home/gems/2.4.4/extensions/x86_64-linux/2.4.0/ruby-libvirt-0.7.1/mkmf.log
+
+extconf failed, exit code 1
+
+Gem files will remain installed in /data/vagrant_home/gems/2.4.4/gems/ruby-libvirt-0.7.1 for inspection.
+Results logged to /data/vagrant_home/gems/2.4.4/extensions/x86_64-linux/2.4.0/ruby-libvirt-0.7.1/gem_make.out
+```
+
+I googled around for a solution and found this that worked:
+
+`CONFIGURE_ARGS="with-libvirt-include=/usr/include/libvirt with-libvirt-lib=/usr/lib" vagrant plugin install vagrant-libvirt`
+
+Looks like others have reported this and used this as a workaround but, I'm not sure if its a bug or a permanent fix has been done.
+
