@@ -7,10 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
     <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
-    <lastBuildDate>Mon, 19 Nov 2018 19:31:54 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 10 Jan 2019 19:49:03 -0500</lastBuildDate>
     
 	<atom:link href="https://jlozadad.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Aliens Resistance</title>
+      <link>https://jlozadad.io/post/aliens_resistance/</link>
+      <pubDate>Thu, 10 Jan 2019 19:49:03 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/post/aliens_resistance/</guid>
+      <description>In my previous post[https://jlozadad.io/post/aliens_defiance/] I discussed the Alien&amp;#8217;s Defiance comic series and I&amp;#8217;m real excited to know that Zula Hendricks was brought back on another comic series! This time she will be on Aliens Rsistance working together with Amanda Ripley. When I saw this online I really freak out
+ [FREAKOUT!](img/cat_freakout.gif)
+ img::img/cat_freakout.gif because I was expecting not to hear about Zula anymore and never see her anymore. Although they should make a movie or anime series about her and Amanda or even better a movie.</description>
+    </item>
+    
+    <item>
+      <title>Issue with WoeUSB</title>
+      <link>https://jlozadad.io/post/woe_usb/</link>
+      <pubDate>Tue, 01 Jan 2019 10:42:44 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/post/woe_usb/</guid>
+      <description>I go back and forth with Windows/Linux to try different games. Usually test games in wine/proton. I replaced some of the hardware and forgot to remove the old drives so windows kept crashing even after I went on safe mode and removed the old drivers. After spending a couple of hours at it I decided to just reinstall. I usually use linux in my other systems (fedora/Ubuntu/Arch). I have used WoeUSB before but, this time it was not working properly.</description>
+    </item>
     
     <item>
       <title>Vagrant Fedora Issue</title>

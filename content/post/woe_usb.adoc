@@ -1,0 +1,17 @@
+---
+title: "Issue with WoeUSB"
+date: 2019-01-01T10:42:44-05:00
+draft: false
+---
+
+I go back and forth with Windows/Linux to try different games. Usually test games in wine/proton. I replaced some of the hardware and forgot to remove the old drives so windows kept crashing even after I went on safe mode and removed the old drivers. After spending a couple of hours at it I decided to just reinstall. I usually use linux in my other systems (fedora/Ubuntu/Arch). I have used `WoeUSB` before but, this time it was not working properly. I kept getting this error:
+
+```
+Mounting source filesystem...
+Error: File "/media/woeusb_source_1546354988_25934/sources/install.wim" in source image has exceed the FAT32 Filesystem 4GiB Single File Size Limitation and cannot be installed.  You must specify a different --target-filesystem.
+```
+
+I thought it was because the way I formatted the USB drive or wrong sizing. I deleted all the partitions and started from scratch, still same error. Turns out that the new window installers have a certain file that is bigger than 4GB so it doesn't fit on FAT32. I found the explanation on their https://github.com/slacka/WoeUSB/wiki/Limitations[wiki in github]. The solution was using `--target-filesystem NTFS` since the GUI version doesn't support this yet.
+
+
+
