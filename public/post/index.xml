@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
     <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
-    <lastBuildDate>Thu, 10 Jan 2019 19:49:03 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 20 Jan 2019 14:49:53 -0500</lastBuildDate>
     
 	<atom:link href="https://jlozadad.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux Audio Issues</title>
+      <link>https://jlozadad.io/post/linux_audio_issues/</link>
+      <pubDate>Sun, 20 Jan 2019 14:49:53 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/post/linux_audio_issues/</guid>
+      <description>For the longest time I would had audio issues while playing games and videos on linux. I started with Fedora 26 and upgraded all the way to 29. I used pulseaudio, installed extra RPM&amp;#8217;s, googled around and still have the same issue. I modified pulseaudio files following the arch linux wiki. Everytime it got better but, still had some issues. I tried with ubuntu 16.04 and higher and still face the same issues.</description>
+    </item>
     
     <item>
       <title>Aliens Resistance</title>
@@ -19,8 +28,7 @@
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozadad.io/post/aliens_resistance/</guid>
       <description>In my previous post I discussed the Alien&amp;#8217;s Defiance comic series and I&amp;#8217;m real excited to know that Zula Hendricks was brought back on another comic series! This time she will be on Aliens Rsistance working together with Amanda Ripley. When I saw this online I really freak out image::https://giphy.com/gifs/Ys9SXSEczO5nW/html5[]
- 
- image::https://media.giphy.com/media/Ys9SXSEczO5nW/giphy.gif[] because I was expecting not to hear about Zula anymore and never see her anymore. Although they should make a movie or anime series about her and Amanda or even better a movie.</description>
+ Because I was expecting not to hear about Zula anymore and never see her anymore. Although they should make a movie or anime series about her and Amanda or even better a movie.</description>
     </item>
     
     <item>

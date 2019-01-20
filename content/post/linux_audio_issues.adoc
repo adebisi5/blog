@@ -1,0 +1,175 @@
+---
+title: "Linux Audio Issues"
+date: 2019-01-20T14:49:53-05:00
+draft: false
+---
+
+For the longest time I would had audio issues while playing games and videos on linux. I started with Fedora 26 and upgraded all the way to 29. I used pulseaudio, installed extra RPM's, googled around and still have the same issue. I modified pulseaudio files following the https://wiki.archlinux.org/index.php/PulseAudio/Troubleshooting[arch linux wiki]. Everytime it got better but, still had some issues. I tried with ubuntu 16.04 and higher and still face the same issues. I had issues with the fedora install I was using so I replaced it with Manjaro since I haven't used it in a while. I have two desktops that I have tried on. The first is the manjaro and the second the fedora:
+
+```
+
+System:     Kernel: 4.20.1-1-MANJARO x86_64 bits: 64 compiler: gcc v: 8.2.1 
+           Desktop: KDE Plasma 5.14.5 tk: Qt 5.12.0 wm: kwin_x11 dm: SDDM Distro: Manjaro Linux 
+Machine:   Type: Desktop Mobo: Gigabyte model: X58A-UD3R serial: <filter> UEFI: Award v: FH date: 01/06/2012 
+CPU:       Topology: Quad Core model: Intel Core i7 950 bits: 64 type: MT MCP arch: Nehalem rev: 5 
+           L2 cache: 8192 KiB 
+           flags: lm nx pae sse sse2 sse3 sse4_1 sse4_2 ssse3 vmx bogomips: 49049 
+           Speed: 1599 MHz min/max: 1596/3060 MHz boost: enabled Core speeds (MHz): 1: 1641 2: 1652 3: 1621 
+           4: 1612 5: 1638 6: 1655 7: 1666 8: 1625 
+Graphics:  Device-1: NVIDIA GP104 [GeForce GTX 1070] vendor: eVga.com. driver: nvidia v: 415.25 bus ID: 03:00.0 
+           chip ID: 10de:1b81 
+           Display: x11 server: X.Org 1.20.3 driver: nvidia compositor: kwin_x11 resolution: 1920x1080~60Hz 
+           OpenGL: renderer: GeForce GTX 1070/PCIe/SSE2 v: 4.6.0 NVIDIA 415.25 direct render: Yes 
+Audio:     Device-1: Intel 82801JI HD Audio vendor: Gigabyte driver: snd_hda_intel v: kernel bus ID: 00:1b.0 
+           chip ID: 8086:3a3e 
+           Device-2: NVIDIA GP104 High Definition Audio vendor: eVga.com. driver: snd_hda_intel v: kernel 
+           bus ID: 03:00.1 chip ID: 10de:10f0 
+           Device-3: Corsair type: USB driver: hid-generic,snd-usb-audio,usbhid bus ID: 5-1:2 chip ID: 1b1c:1b23 
+           Sound Server: ALSA v: k4.20.1-1-MANJARO 
+Network:   Device-1: Realtek RTL8111/8168/8411 PCI Express Gigabit Ethernet vendor: Gigabyte driver: r8169 
+           v: kernel port: ee00 bus ID: 07:00.0 chip ID: 10ec:8168 
+           IF: enp7s0 state: up speed: 1000 Mbps duplex: full mac: <filter> 
+Drives:    Local Storage: total: 1.94 TiB used: 212.27 GiB (10.7%) 
+           ID-1: /dev/sda vendor: OCZ model: VERTEX4 size: 119.24 GiB speed: 3.0 Gb/s serial: <filter> rev: 1.5 
+           scheme: GPT 
+           ID-2: /dev/sdb type: USB vendor: Western Digital model: WD My Passport 25E2 size: 1.82 TiB 
+           serial: <filter> rev: 4004 scheme: GPT 
+Partition: ID-1: / size: 91.15 GiB used: 68.60 GiB (75.3%) fs: ext4 dev: /dev/sda2 
+           ID-2: swap-1 size: 25.83 GiB used: 384.2 MiB (1.5%) fs: swap dev: /dev/sda3 
+Sensors:   System Temperatures: cpu: 46.0 C mobo: N/A gpu: nvidia temp: 54 C 
+           Fan Speeds (RPM): N/A gpu: nvidia fan: 11% 
+Info:      Processes: 272 Uptime: 1d 16h 12m Memory: 11.72 GiB used: 2.09 GiB (17.9%) Init: systemd v: 239 
+           Compilers: gcc: 8.2.1 Shell: bash v: 4.4.23 running in: konsole inxi: 3.0.28 
+
+```
+
+```
+
+System:     Kernel: 4.19.13-300.fc29.x86_64 x86_64 bits: 64 compiler: gcc 
+           v: 8.2.1 Console: tty 2 dm: GDM 3.30.2, SDDM Distro: Fedora release 29 (Twenty Nine) 
+Machine:   Type: Desktop System: ASUS product: All Series v: N/A serial: N/A 
+           Mobo: ASUSTeK model: Z97-E v: Rev X.0x serial: <filter> UEFI: American Megatrends v: 0803 
+           date: 02/23/2016 
+CPU:       Topology: Quad Core model: Intel Xeon E3-1231 v3 bits: 64 type: MT MCP arch: Haswell rev: 3 
+           L1 cache: 256 KiB L2 cache: 8192 KiB L3 cache: 8192 KiB 
+           flags: lm nx pae sse sse2 sse3 sse4_1 sse4_2 ssse3 vmx bogomips: 54367 
+           Speed: 1199 MHz min/max: 800/3800 MHz Core speeds (MHz): 1: 1199 2: 1199 3: 1199 4: 1200 5: 1199 
+           6: 1200 7: 1200 8: 1200 
+Graphics:  Device-1: NVIDIA GM107 [GeForce GTX 750 Ti] vendor: PNY driver: nvidia v: 415.25 bus ID: 01:00.0 
+           chip ID: 10de:1380 
+           Display: server: X.org 1.20.3 driver: nvidia unloaded: fbdev,modesetting,nouveau,vesa alternate: nv 
+           compositor: kwin_x11 tty: 116x55 
+           Message: Advanced graphics data unavailable in console for root. 
+Audio:     Device-1: Intel 9 Series Family HD Audio vendor: ASUSTeK driver: snd_hda_intel v: kernel 
+           bus ID: 00:1b.0 chip ID: 8086:8ca0 
+           Device-2: NVIDIA vendor: PNY driver: snd_hda_intel v: kernel bus ID: 01:00.1 chip ID: 10de:0fbc 
+           Sound Server: ALSA v: k4.19.13-300.fc29.x86_64 
+Network:   Device-1: Intel Ethernet I218-V vendor: ASUSTeK driver: e1000e v: 3.2.6-k port: f040 bus ID: 00:19.0 
+           chip ID: 8086:15a1 
+           IF: eno1 state: up speed: 1000 Mbps duplex: full mac: <filter> 
+           IF-ID-1: br-8c427ae8ded5 state: down mac: <filter> 
+           IF-ID-2: br-a4b081a667ee state: down mac: <filter> 
+           IF-ID-3: docker0 state: down mac: <filter> 
+           IF-ID-4: virbr0 state: down mac: <filter> 
+           IF-ID-5: virbr0-nic state: down mac: <filter> 
+Drives:    Local Storage: total: 2.27 TiB used: 979.64 GiB (42.1%) 
+           ID-1: /dev/sda vendor: Seagate model: ST31500341AS size: 1.36 TiB speed: 3.0 Gb/s rotation: 7200 rpm 
+           serial: <filter> rev: CC1H temp: 33 C scheme: GPT 
+           ID-2: /dev/sdb vendor: Western Digital model: WD10EZEX-00BN5A0 size: 931.51 GiB speed: 6.0 Gb/s 
+           rotation: 7200 rpm serial: <filter> rev: 1A01 temp: 28 C scheme: GPT 
+Partition: ID-1: / size: 149.93 GiB used: 32.75 GiB (21.8%) fs: xfs dev: /dev/sda1 
+           ID-2: /home size: 1.22 TiB used: 945.92 GiB (75.9%) fs: xfs dev: /dev/sda3 
+Sensors:   System Temperatures: cpu: 29.8 C mobo: 27.8 C 
+           Fan Speeds (RPM): cpu: 0 
+Info:      Processes: 278 Uptime: 1d 16h 45m Memory: 23.48 GiB used: 5.95 GiB (25.4%) Init: systemd v: 239 
+           runlevel: 5 target: graphical.target Compilers: gcc: 8.2.1 Shell: bash v: 4.4.23 
+           running in: tty 2 (SSH) inxi: 3.0.29 
+
+```
+
+The only hardware I have swapped between this two system was the GPU. I used the system that has fedora 29 with the GTX 1070 then took out the GPU and put it on the manjaro system and converted the fedora system into a server. I'm mentioning this two system because I used them back and forth for gaming/video. Although for now I'm using the manjaro system for gaming/video.
+
+Like mentioned before, I jumped on the wiki's, googled around, installed more packages, even on the manjaro system.
+Here is a list of what I installed on manjaro.
+
+```
+14  sudo pacman -Syu steam
+   16  sudo pacman -Ss xf86-video
+   23  sudo pacman -Ss ttf-liberation
+   24  sudo pacman -Ss steamcmd
+   25  sudo pacman -Syu ttf-liberation
+   26  sudo pacman -Syu steamcmd
+   28  sudo pacman -Syu pamac
+   35  sudo pacman -Syu libvirtd
+   36  sudo pacman -Syu libvirt
+   37  sudo pacman -Syu virt-manager
+   38  sudo pacman -Syu virt-manager qemu vde2 ebtables dnsmasq bridge-utils openbsd-netcat
+   45  sudo pacman -Syu gnome-disk
+   46  sudo pacman -Syu gnome-disks
+   47  sudo pacman -Syu udisk2
+   48  sudo pacman -Syu udisks2
+   49  sudo pacman -Syu kdiskfree
+   50  sudo pacman -Syu gnome-disk-utility
+   61  sudo pacman -Syu atop
+   76  sudo pacman -Syu obs-studio
+   83  sudo pacman -Syu pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-jack pulseaudio-lirc pulseaudio-zeroconf plasma-pa 
+   84  sudo pacman -Syu pavucontrol
+   85  sudo pacman -Syu lib32-libpulse lib32-alsa-plugins
+  117  man pacman
+  119  sudo pacman -Qe | grep nvidia
+  121  sudo pacman -Qe | grep nvidia -l
+  122  sudo pacman -Qe | grep "nvidia -l"
+  123  sudo pacman -Q | grep "nvidia -l"
+  124  sudo pacman -Q | grep nvidia -l
+  125  sudo pacman -Q | grep nvidia
+  126  "sudo pacman -Q | grep nvidia"
+  127  "sudo pacman -Q | grep nvidia -l"
+  128  sudo pacman -Q | grep "nvidia -l"
+  138  sudo pacman -Syu alsa-utils
+  139  sudo pacman -Syu alsamixer
+  140  sudo pacman -Syu alsa-mixer
+  185  sudo pacman -Syu nvidi
+  186  sudo pacman -Syu nvidia
+  189  sudo pacman -Syu mpv
+  191  sudo pacman -Syu youtube-dl
+  193  sudo pacman -Syu youtube-mpv
+  196  sudo pacman -Syu vaapi
+  240  sudo pacman -S pulseaudio-equalizer
+  241  sudo pacman -S pavucontrol
+  242  history | grep pacman
+  243  sudo pacman -Syu vaapi
+  244  sudo pacman -Syu pulseaudio-equalizer-ladspa
+  245  sudo pacman -Syu kdenlive
+  246  sudo pacman -Syu frei0r-plugins
+  247  sudo pacman -Syu openshot
+  265  sudo pacman -S codecs codecs64 gst-libav ffmpeg
+  271  sudo pacman -S xorg-server xorg-apps
+  272  sudo pacman -S  xorg-apps
+  279  sudo pacman -S  kdenlive
+  319  history | grep pacman
+  321  sudo pacman -S mlt
+  322  sudo pacman -S movit
+  323  sudo pacman -S Rtaudio
+  324  sudo pacman -S rtaudio
+  350  history | grep pacman
+  351  sudo pacman -S pulseaudio
+  355  sudo pacman -S audacity
+  356  sudo pacman -S pulseaudio
+  358  sudo pacman -S pulseaudio*
+  362  sudo pacman -Syyu
+  363  sudo pacman -S kernel
+  364  sudo pacman -S kernel
+  371  sudo pacman -S alsa
+  378  sudo pacman -S alsa-utils
+  391  sudo pacman -S alsa-lib
+  402  sudo pacman -S bluez bluez-utils
+  411  sudo pacman -S pavucontrol
+  416  sudo pacman -S ethtool
+  441  sudo pacman -Syu python-pip libdazzle libappindicator-gtk3
+```
+
+I started learning more about video editing so I installed openshot and kdenlive. Found out later that kdenlive needs extra packages to be able to use GPU for exporting the video.
+
+img:img/kdenlive_gpu.png
+
+Not sure exactly if this help but, around this time it started working and I get audio without stuttering/crack even if I use the monitor speakers or my corsair headset. The only issue I have sometime is that I have to select the correct audio device from pulseaudio so I can heard it correctly since at times It starts on the wrong device.
