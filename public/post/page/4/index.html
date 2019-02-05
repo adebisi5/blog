@@ -251,6 +251,41 @@ if (!doNotTrack) {
         <div class="posts-list">
           
             <article class="post-preview">
+              <a href="https://jlozadad.io/post/use_ansible_to_resolve2/">
+                <h2 class="post-title">Use Ansible to Resolve IT Issues Part 2</h2>
+
+                
+              </a>
+
+              <p class="post-meta">
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on May 8, 2017
+  
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Jonathan Lozada De La Matta
+  
+  
+</span>
+
+
+              </p>
+              <div class="post-entry">
+                
+                  After being able automate user creation/deletion, I tackle on how to automate the Cloudera CM install as much as possible. I first started trying to install the rpms with ansible. I discovered the yum and repo modules. They allow me to add a repo and install any rpm available. This what I have:
+- name: Add the cloudera-cm repo. yum_repository: name: cloudera-cm description: cloudera-cm repo baseurl: &quot;{{ rpm_repo }}&quot; # http://archive.
+                  <a href="https://jlozadad.io/post/use_ansible_to_resolve2/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+
+            </article>
+          
+            <article class="post-preview">
               <a href="https://jlozadad.io/post/install_libvirt/">
                 <h2 class="post-title">Install libvirtd</h2>
 

@@ -244,6 +244,46 @@ if (!doNotTrack) {
           
           
             <article class="post-preview">
+              <a href="https://jlozadad.io/post/json_and_api/">
+                <h2 class="post-title">Json and API</h2>
+                
+                
+              </a>
+
+              <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on October 26, 2017
+  
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Jonathan Lozada De La Matta
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  #JSON and API
+I started using Vagrant for a while to be able to spin VM&rsquo;s and troubleshoot or test certain configuration. For the moment I was fine with using virtualbox but, I decided to use libvirtd since I prefer it. I had no idea how to create images or where to start. I asked a co-worker and he mentioned to look at bento and packer. Bento has a whole list of json files for images in all linux flavors and builds the images for all Virtualization types.
+                  <a href="https://jlozadad.io/post/json_and_api/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://jlozadad.io/tags/json/">JSON</a>&nbsp;
+                  
+                    <a href="https://jlozadad.io/tags/api/">API</a>&nbsp;
+                  
+                </div>
+              
+            </article>
+          
+            <article class="post-preview">
               <a href="https://jlozadad.io/post/fire_emblem_awakening/">
                 <h2 class="post-title">Fire Emblem Awakening</h2>
                 
@@ -568,38 +608,6 @@ The combat is straightforward just like any turn based RPG game out there. It fo
                 
                   So you have an idea what is ansible and what you can do with it. After creating, playbooks &amp; roles and dynamic inventories, you are wondering how you can centralize and control access to your playbooks. You can do this with ansible core and limit access and permissions on the git project. You can include all the playbooks, roles and inventory files in the same repo. But, this can become a problem once the project is git clone into the controller and anyone access to the server can potentially be able to access your playbooks.
                   <a href="https://jlozadad.io/post/ansible_tower/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://jlozadad.io/post/use_ansible_to_resolve2/">
-                <h2 class="post-title">Use Ansible to Resolve IT Issues Part 2</h2>
-                
-                
-              </a>
-
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on May 8, 2017
-  
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Jonathan Lozada De La Matta
-  
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  After being able automate user creation/deletion, I tackle on how to automate the Cloudera CM install as much as possible. I first started trying to install the rpms with ansible. I discovered the yum and repo modules. They allow me to add a repo and install any rpm available. This what I have:
-- name: Add the cloudera-cm repo. yum_repository: name: cloudera-cm description: cloudera-cm repo baseurl: &quot;{{ rpm_repo }}&quot; # http://archive.
-                  <a href="https://jlozadad.io/post/use_ansible_to_resolve2/" class="post-read-more">[Read More]</a>
                 
               </div>
 
