@@ -11,7 +11,7 @@ before_script:
 #  - tar xf hugo_0.18.1_Linux-64bit.tar.gz  && mv hugo_0.18.1_linux_amd64 hugo && cp -r hugo /usr/bin
 #  - /usr/bin/hugo/hugo_0.18.1_linux_amd64 version
 
-   - dnf install hugo -y
+   - dnf install asciidoctor hugo -y
 test:
   script:
   - hugo version
