@@ -1,6 +1,6 @@
 #image: chagara/hugo
 
-image: ubuntu:latest
+image: fedora:latest
 before_script:
   #- mkdir -p /tmp/certbot/public_html/.well-known/acme-challenge
   #- cd /tmp/certbot/public_html
