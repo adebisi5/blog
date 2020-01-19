@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cloud on Love FOSS and Gaming</title>
+    <title>cloud on Love FOSS and Gaming</title>
     <link>https://jlozadad.io/categories/cloud/</link>
-    <description>Recent content in Cloud on Love FOSS and Gaming</description>
+    <description>Recent content in cloud on Love FOSS and Gaming</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
     <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
@@ -18,7 +18,7 @@
       <pubDate>Mon, 08 May 2017 11:52:33 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozadad.io/post/big_data_on_openstack/</guid>
-      <description>Openstack can be a great solution due to the increase demand of cloud and more resources. But, it can&amp;rsquo;t resolve every issue out there. an Openstack deployment can provide &amp;ldquo;unlimited&amp;rdquo; resources but, is useless if is not architecture for the specific applications that the VM&amp;rsquo;s will be hosting. For example, a previous customer had over 20 regions, configured almost the same and had performance issues. This customer hosted big data applications (Cloudera to be specific) on those VM&amp;rsquo;s, had an older deployment of Openstack ( Icehouse so we could not take advantage of the newer cloud features) and no budget for further expansion and upgrades ( Including software and hardware) but, had the following issues:</description>
+      <description>Openstack can be a great solution due to the increase demand of cloud and more resources. But, it can&#39;t resolve every issue out there. an Openstack deployment can provide &amp;ldquo;unlimited&amp;rdquo; resources but, is useless if is not architecture for the specific applications that the VM&#39;s will be hosting. For example, a previous customer had over 20 regions, configured almost the same and had performance issues. This customer hosted big data applications (Cloudera to be specific) on those VM&#39;s, had an older deployment of Openstack ( Icehouse so we could not take advantage of the newer cloud features) and no budget for further expansion and upgrades ( Including software and hardware) but, had the following issues:</description>
     </item>
     
   </channel>

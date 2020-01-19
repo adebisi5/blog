@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ansible on Love FOSS and Gaming</title>
+    <title>ansible on Love FOSS and Gaming</title>
     <link>https://jlozadad.io/categories/ansible/</link>
-    <description>Recent content in Ansible on Love FOSS and Gaming</description>
+    <description>Recent content in ansible on Love FOSS and Gaming</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
     <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
@@ -37,7 +37,7 @@
       <pubDate>Mon, 08 May 2017 13:32:05 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozadad.io/post/use_ansible_to_resolve/</guid>
-      <description>After spending months on trying to deploy a Cloudera CM cluster with over 40 nodes, I needed to find a way automate most of my tasks and reduce time spend doing this manually. At the time when I started on this project we were using openstack VM&amp;rsquo;s to host this Cloudera cluster. Although is not best practices to use VM for big data, it was our only option of having resources.</description>
+      <description>After spending months on trying to deploy a Cloudera CM cluster with over 40 nodes, I needed to find a way automate most of my tasks and reduce time spend doing this manually. At the time when I started on this project we were using openstack VM&#39;s to host this Cloudera cluster. Although is not best practices to use VM for big data, it was our only option of having resources.</description>
     </item>
     
   </channel>

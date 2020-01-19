@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gpu on Love FOSS and Gaming</title>
+    <title>gpu on Love FOSS and Gaming</title>
     <link>https://jlozadad.io/tags/gpu/</link>
-    <description>Recent content in Gpu on Love FOSS and Gaming</description>
+    <description>Recent content in gpu on Love FOSS and Gaming</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
     <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
@@ -18,7 +18,7 @@
       <pubDate>Tue, 05 Dec 2017 19:54:29 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozadad.io/post/fedora_nvidia_gpu/</guid>
-      <description>You can easily follow the instructions on rpmfusion on how to install the nvidia drivers on fedora but, it can be somewhat confusing if you don&amp;rsquo;t follow the instructions exactly. By installing the repo then doing the commands posted on the instructions can give you a lot of headache if you don&amp;rsquo;t really pay attention. What I mean by this is that you really have to make sure you install the correct driver for your GPU.</description>
+      <description>You can easily follow the instructions on rpmfusion on how to install the nvidia drivers on fedora but, it can be somewhat confusing if you don&#39;t follow the instructions exactly. By installing the repo then doing the commands posted on the instructions can give you a lot of headache if you don&#39;t really pay attention. What I mean by this is that you really have to make sure you install the correct driver for your GPU.</description>
     </item>
     
   </channel>

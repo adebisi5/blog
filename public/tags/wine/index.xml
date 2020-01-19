@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Wine on Love FOSS and Gaming</title>
+    <title>wine on Love FOSS and Gaming</title>
     <link>https://jlozadad.io/tags/wine/</link>
-    <description>Recent content in Wine on Love FOSS and Gaming</description>
+    <description>Recent content in wine on Love FOSS and Gaming</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
     <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
@@ -18,8 +18,8 @@
       <pubDate>Thu, 25 Jan 2018 15:57:25 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozadad.io/post/f2p_games_linux_and_wine/</guid>
-      <description>Lately I been trying to find games that are F2P because lately I have not found anything that has me interested and obsessed. Maybe I&amp;rsquo;m in a rut when it comes to gaming? no se&amp;hellip; Here is a list of what I been able to play so far.
- Warframe - Although Warframe is not native to linux, it plays well on wine. You will have to disable a lot of settings in the game to be able to play it the best and avoid certain issues that arise with those configuration being on.</description>
+      <description>Lately I been trying to find games that are F2P because lately I have not found anything that has me interested and obsessed. Maybe I&#39;m in a rut when it comes to gaming? no se&amp;hellip; Here is a list of what I been able to play so far.
+  Warframe - Although Warframe is not native to linux, it plays well on wine. You will have to disable a lot of settings in the game to be able to play it the best and avoid certain issues that arise with those configuration being on.</description>
     </item>
     
   </channel>

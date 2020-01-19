@@ -1,6 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://jlozadad.io/</loc>
+    <lastmod>2019-01-28T10:03:32-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/post/</loc>
+    <lastmod>2019-01-28T10:03:32-05:00</lastmod>
+  </url>
   
   <url>
     <loc>https://jlozadad.io/post/resident_evil2_remake/</loc>
@@ -28,8 +38,38 @@
   </url>
   
   <url>
+    <loc>https://jlozadad.io/tags/intro/</loc>
+    <lastmod>2018-07-03T15:25:12-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/page/</loc>
+    <lastmod>2018-07-03T15:25:12-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jlozadad.io/page/about/</loc>
     <lastmod>2018-07-03T15:25:12-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/</loc>
+    <lastmod>2018-07-03T15:25:12-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/categories/ansible/</loc>
+    <lastmod>2018-07-01T10:09:41-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/categories/</loc>
+    <lastmod>2018-07-01T10:09:41-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/categories/infoblox/</loc>
+    <lastmod>2018-07-01T10:09:41-04:00</lastmod>
   </url>
   
   <url>
@@ -38,12 +78,47 @@
   </url>
   
   <url>
+    <loc>https://jlozadad.io/tags/ansible/</loc>
+    <lastmod>2018-02-25T00:37:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/cm/</loc>
+    <lastmod>2018-02-25T00:37:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/it/</loc>
+    <lastmod>2018-02-25T00:37:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jlozadad.io/post/use_ansible_to_resolve3/</loc>
     <lastmod>2018-02-25T00:37:14-05:00</lastmod>
   </url>
   
   <url>
+    <loc>https://jlozadad.io/tags/f2p/</loc>
+    <lastmod>2018-01-25T15:57:25-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jlozadad.io/post/f2p_games_linux_and_wine/</loc>
+    <lastmod>2018-01-25T15:57:25-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/gaming/</loc>
+    <lastmod>2018-01-25T15:57:25-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/linux/</loc>
+    <lastmod>2018-01-25T15:57:25-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/wine/</loc>
     <lastmod>2018-01-25T15:57:25-05:00</lastmod>
   </url>
   
@@ -58,7 +133,32 @@
   </url>
   
   <url>
+    <loc>https://jlozadad.io/tags/cloud/</loc>
+    <lastmod>2018-01-08T14:00:24-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/osp/</loc>
+    <lastmod>2018-01-08T14:00:24-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/emulator/</loc>
+    <lastmod>2017-12-09T23:03:18-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jlozadad.io/post/mod_ps3/</loc>
+    <lastmod>2017-12-09T23:03:18-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/mod/</loc>
+    <lastmod>2017-12-09T23:03:18-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/ps3/</loc>
     <lastmod>2017-12-09T23:03:18-05:00</lastmod>
   </url>
   
@@ -68,7 +168,32 @@
   </url>
   
   <url>
+    <loc>https://jlozadad.io/tags/fedora/</loc>
+    <lastmod>2017-12-08T18:06:06-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/mock/</loc>
+    <lastmod>2017-12-08T18:06:06-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/rpm/</loc>
+    <lastmod>2017-12-08T18:06:06-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jlozadad.io/post/fedora_nvidia_gpu/</loc>
+    <lastmod>2017-12-05T19:54:29-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/gpu/</loc>
+    <lastmod>2017-12-05T19:54:29-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/nvidia/</loc>
     <lastmod>2017-12-05T19:54:29-05:00</lastmod>
   </url>
   
@@ -83,7 +208,37 @@
   </url>
   
   <url>
+    <loc>https://jlozadad.io/tags/dolphin/</loc>
+    <lastmod>2017-11-25T17:07:02-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jlozadad.io/post/emulation/</loc>
+    <lastmod>2017-11-25T17:07:02-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/gamecube/</loc>
+    <lastmod>2017-11-25T17:07:02-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/pcsx2/</loc>
+    <lastmod>2017-11-25T17:07:02-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/ps2/</loc>
+    <lastmod>2017-11-25T17:07:02-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/rpcs3/</loc>
+    <lastmod>2017-11-25T17:07:02-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/wii/</loc>
     <lastmod>2017-11-25T17:07:02-05:00</lastmod>
   </url>
   
@@ -108,8 +263,33 @@
   </url>
   
   <url>
+    <loc>https://jlozadad.io/tags/streaming/</loc>
+    <lastmod>2017-11-24T21:27:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/api/</loc>
+    <lastmod>2017-10-26T22:39:57-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/json/</loc>
+    <lastmod>2017-10-26T22:39:57-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jlozadad.io/post/json_and_api/</loc>
     <lastmod>2017-10-26T22:39:57-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/3ds/</loc>
+    <lastmod>2017-10-23T16:53:16-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/tags/fire-emblem/</loc>
+    <lastmod>2017-10-23T16:53:16-04:00</lastmod>
   </url>
   
   <url>
@@ -133,8 +313,18 @@
   </url>
   
   <url>
+    <loc>https://jlozadad.io/tags/fire_emblem/</loc>
+    <lastmod>2017-10-22T17:12:54-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jlozadad.io/post/tower-cli/</loc>
     <lastmod>2017-10-05T12:51:46-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jlozadad.io/categories/aliens/</loc>
+    <lastmod>2017-07-26T11:54:53-04:00</lastmod>
   </url>
   
   <url>
@@ -178,243 +368,13 @@
   </url>
   
   <url>
-    <loc>https://jlozadad.io/tags/3ds/</loc>
-    <lastmod>2017-10-23T16:53:16-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/categories/aliens/</loc>
-    <lastmod>2017-07-26T11:54:53-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/ansible/</loc>
-    <lastmod>2018-02-25T00:37:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/categories/ansible/</loc>
-    <lastmod>2018-07-01T10:09:41-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/api/</loc>
-    <lastmod>2017-10-26T22:39:57-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/categories/</loc>
-    <lastmod>2017-07-26T11:54:53-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/cloud/</loc>
-    <lastmod>2018-01-08T14:00:24-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://jlozadad.io/categories/cloud/</loc>
     <lastmod>2017-05-08T11:52:33-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/cm/</loc>
-    <lastmod>2018-02-25T00:37:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/dolphin/</loc>
-    <lastmod>2017-11-25T17:07:02-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/emulator/</loc>
-    <lastmod>2017-12-09T23:03:18-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/f2p/</loc>
-    <lastmod>2018-01-25T15:57:25-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/fedora/</loc>
-    <lastmod>2017-12-08T18:06:06-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/fire-emblem/</loc>
-    <lastmod>2017-10-23T16:53:16-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/fire_emblem/</loc>
-    <lastmod>2017-10-22T17:12:54-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/gamecube/</loc>
-    <lastmod>2017-11-25T17:07:02-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/gaming/</loc>
-    <lastmod>2018-01-25T15:57:25-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/gpu/</loc>
-    <lastmod>2017-12-05T19:54:29-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/categories/infoblox/</loc>
-    <lastmod>2018-07-01T10:09:41-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/intro/</loc>
-    <lastmod>2018-07-03T15:25:12-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/it/</loc>
-    <lastmod>2018-02-25T00:37:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/json/</loc>
-    <lastmod>2017-10-26T22:39:57-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/linux/</loc>
-    <lastmod>2018-01-25T15:57:25-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/</loc>
-    <lastmod>2019-01-28T10:03:32-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/mock/</loc>
-    <lastmod>2017-12-08T18:06:06-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/mod/</loc>
-    <lastmod>2017-12-09T23:03:18-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/nvidia/</loc>
-    <lastmod>2017-12-05T19:54:29-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jlozadad.io/categories/openstack/</loc>
     <lastmod>2017-05-08T11:52:33-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/osp/</loc>
-    <lastmod>2018-01-08T14:00:24-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/page/</loc>
-    <lastmod>2018-07-03T15:25:12-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/pcsx2/</loc>
-    <lastmod>2017-11-25T17:07:02-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/post/</loc>
-    <lastmod>2019-01-28T10:03:32-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/ps2/</loc>
-    <lastmod>2017-11-25T17:07:02-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/ps3/</loc>
-    <lastmod>2017-12-09T23:03:18-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/rpcs3/</loc>
-    <lastmod>2017-11-25T17:07:02-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/rpm/</loc>
-    <lastmod>2017-12-08T18:06:06-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/streaming/</loc>
-    <lastmod>2017-11-24T21:27:31-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/</loc>
-    <lastmod>2017-10-23T16:53:16-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/wii/</loc>
-    <lastmod>2017-11-25T17:07:02-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jlozadad.io/tags/wine/</loc>
-    <lastmod>2018-01-25T15:57:25-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>

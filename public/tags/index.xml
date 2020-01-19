@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Love FOSS and Gaming</title>
@@ -7,22 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</managingEditor>
     <webMaster>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</webMaster>
-    <lastBuildDate>Mon, 23 Oct 2017 16:53:16 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 03 Jul 2018 15:25:12 -0400</lastBuildDate>
     
 	<atom:link href="https://jlozadad.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>3ds</title>
-      <link>https://jlozadad.io/tags/3ds/</link>
-      <pubDate>Mon, 23 Oct 2017 16:53:16 -0400</pubDate>
+      <title>intro</title>
+      <link>https://jlozadad.io/tags/intro/</link>
+      <pubDate>Tue, 03 Jul 2018 15:25:12 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/3ds/</guid>
+      <guid>https://jlozadad.io/tags/intro/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Ansible</title>
+      <title>ansible</title>
       <link>https://jlozadad.io/tags/ansible/</link>
       <pubDate>Sun, 25 Feb 2018 00:37:14 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
@@ -31,25 +31,7 @@
     </item>
     
     <item>
-      <title>Api</title>
-      <link>https://jlozadad.io/tags/api/</link>
-      <pubDate>Thu, 26 Oct 2017 22:39:57 -0400</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/api/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cloud</title>
-      <link>https://jlozadad.io/tags/cloud/</link>
-      <pubDate>Mon, 08 Jan 2018 14:00:24 -0500</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/cloud/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cm</title>
+      <title>CM</title>
       <link>https://jlozadad.io/tags/cm/</link>
       <pubDate>Sun, 25 Feb 2018 00:37:14 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
@@ -58,25 +40,16 @@
     </item>
     
     <item>
-      <title>Dolphin</title>
-      <link>https://jlozadad.io/tags/dolphin/</link>
-      <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
+      <title>IT</title>
+      <link>https://jlozadad.io/tags/it/</link>
+      <pubDate>Sun, 25 Feb 2018 00:37:14 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/dolphin/</guid>
+      <guid>https://jlozadad.io/tags/it/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Emulator</title>
-      <link>https://jlozadad.io/tags/emulator/</link>
-      <pubDate>Sat, 09 Dec 2017 23:03:18 -0500</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/emulator/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>F2p</title>
+      <title>f2p</title>
       <link>https://jlozadad.io/tags/f2p/</link>
       <pubDate>Thu, 25 Jan 2018 15:57:25 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
@@ -85,11 +58,209 @@
     </item>
     
     <item>
-      <title>Fedora</title>
+      <title>gaming</title>
+      <link>https://jlozadad.io/tags/gaming/</link>
+      <pubDate>Thu, 25 Jan 2018 15:57:25 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/tags/gaming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://jlozadad.io/tags/linux/</link>
+      <pubDate>Thu, 25 Jan 2018 15:57:25 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wine</title>
+      <link>https://jlozadad.io/tags/wine/</link>
+      <pubDate>Thu, 25 Jan 2018 15:57:25 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/tags/wine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloud</title>
+      <link>https://jlozadad.io/tags/cloud/</link>
+      <pubDate>Mon, 08 Jan 2018 14:00:24 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>osp</title>
+      <link>https://jlozadad.io/tags/osp/</link>
+      <pubDate>Mon, 08 Jan 2018 14:00:24 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/tags/osp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>emulator</title>
+      <link>https://jlozadad.io/tags/emulator/</link>
+      <pubDate>Sat, 09 Dec 2017 23:03:18 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/tags/emulator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mod</title>
+      <link>https://jlozadad.io/tags/mod/</link>
+      <pubDate>Sat, 09 Dec 2017 23:03:18 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/tags/mod/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ps3</title>
+      <link>https://jlozadad.io/tags/ps3/</link>
+      <pubDate>Sat, 09 Dec 2017 23:03:18 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/tags/ps3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fedora</title>
       <link>https://jlozadad.io/tags/fedora/</link>
       <pubDate>Fri, 08 Dec 2017 18:06:06 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozadad.io/tags/fedora/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mock</title>
+      <link>https://jlozadad.io/tags/mock/</link>
+      <pubDate>Fri, 08 Dec 2017 18:06:06 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/tags/mock/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rpm</title>
+      <link>https://jlozadad.io/tags/rpm/</link>
+      <pubDate>Fri, 08 Dec 2017 18:06:06 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/tags/rpm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gpu</title>
+      <link>https://jlozadad.io/tags/gpu/</link>
+      <pubDate>Tue, 05 Dec 2017 19:54:29 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/tags/gpu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nvidia</title>
+      <link>https://jlozadad.io/tags/nvidia/</link>
+      <pubDate>Tue, 05 Dec 2017 19:54:29 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/tags/nvidia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dolphin</title>
+      <link>https://jlozadad.io/tags/dolphin/</link>
+      <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/tags/dolphin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gamecube</title>
+      <link>https://jlozadad.io/tags/gamecube/</link>
+      <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/tags/gamecube/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pcsx2</title>
+      <link>https://jlozadad.io/tags/pcsx2/</link>
+      <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/tags/pcsx2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ps2</title>
+      <link>https://jlozadad.io/tags/ps2/</link>
+      <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/tags/ps2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rpcs3</title>
+      <link>https://jlozadad.io/tags/rpcs3/</link>
+      <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/tags/rpcs3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wii</title>
+      <link>https://jlozadad.io/tags/wii/</link>
+      <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/tags/wii/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>streaming</title>
+      <link>https://jlozadad.io/tags/streaming/</link>
+      <pubDate>Fri, 24 Nov 2017 21:27:31 -0500</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/tags/streaming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>API</title>
+      <link>https://jlozadad.io/tags/api/</link>
+      <pubDate>Thu, 26 Oct 2017 22:39:57 -0400</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JSON</title>
+      <link>https://jlozadad.io/tags/json/</link>
+      <pubDate>Thu, 26 Oct 2017 22:39:57 -0400</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/tags/json/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3DS</title>
+      <link>https://jlozadad.io/tags/3ds/</link>
+      <pubDate>Mon, 23 Oct 2017 16:53:16 -0400</pubDate>
+      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
+      <guid>https://jlozadad.io/tags/3ds/</guid>
       <description></description>
     </item>
     
@@ -103,182 +274,11 @@
     </item>
     
     <item>
-      <title>Fire_emblem</title>
+      <title>fire_emblem</title>
       <link>https://jlozadad.io/tags/fire_emblem/</link>
       <pubDate>Sun, 22 Oct 2017 17:12:54 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozadad.io/tags/fire_emblem/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gamecube</title>
-      <link>https://jlozadad.io/tags/gamecube/</link>
-      <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/gamecube/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gaming</title>
-      <link>https://jlozadad.io/tags/gaming/</link>
-      <pubDate>Thu, 25 Jan 2018 15:57:25 -0500</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/gaming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gpu</title>
-      <link>https://jlozadad.io/tags/gpu/</link>
-      <pubDate>Tue, 05 Dec 2017 19:54:29 -0500</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/gpu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Intro</title>
-      <link>https://jlozadad.io/tags/intro/</link>
-      <pubDate>Tue, 03 Jul 2018 15:25:12 -0400</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/intro/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>It</title>
-      <link>https://jlozadad.io/tags/it/</link>
-      <pubDate>Sun, 25 Feb 2018 00:37:14 -0500</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/it/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Json</title>
-      <link>https://jlozadad.io/tags/json/</link>
-      <pubDate>Thu, 26 Oct 2017 22:39:57 -0400</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/json/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://jlozadad.io/tags/linux/</link>
-      <pubDate>Thu, 25 Jan 2018 15:57:25 -0500</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mock</title>
-      <link>https://jlozadad.io/tags/mock/</link>
-      <pubDate>Fri, 08 Dec 2017 18:06:06 -0500</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/mock/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mod</title>
-      <link>https://jlozadad.io/tags/mod/</link>
-      <pubDate>Sat, 09 Dec 2017 23:03:18 -0500</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/mod/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nvidia</title>
-      <link>https://jlozadad.io/tags/nvidia/</link>
-      <pubDate>Tue, 05 Dec 2017 19:54:29 -0500</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/nvidia/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Osp</title>
-      <link>https://jlozadad.io/tags/osp/</link>
-      <pubDate>Mon, 08 Jan 2018 14:00:24 -0500</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/osp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pcsx2</title>
-      <link>https://jlozadad.io/tags/pcsx2/</link>
-      <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/pcsx2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ps2</title>
-      <link>https://jlozadad.io/tags/ps2/</link>
-      <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/ps2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ps3</title>
-      <link>https://jlozadad.io/tags/ps3/</link>
-      <pubDate>Sat, 09 Dec 2017 23:03:18 -0500</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/ps3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rpcs3</title>
-      <link>https://jlozadad.io/tags/rpcs3/</link>
-      <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/rpcs3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rpm</title>
-      <link>https://jlozadad.io/tags/rpm/</link>
-      <pubDate>Fri, 08 Dec 2017 18:06:06 -0500</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/rpm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Streaming</title>
-      <link>https://jlozadad.io/tags/streaming/</link>
-      <pubDate>Fri, 24 Nov 2017 21:27:31 -0500</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/streaming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Wii</title>
-      <link>https://jlozadad.io/tags/wii/</link>
-      <pubDate>Sat, 25 Nov 2017 17:07:02 -0500</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/wii/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Wine</title>
-      <link>https://jlozadad.io/tags/wine/</link>
-      <pubDate>Thu, 25 Jan 2018 15:57:25 -0500</pubDate>
-      <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
-      <guid>https://jlozadad.io/tags/wine/</guid>
       <description></description>
     </item>
     

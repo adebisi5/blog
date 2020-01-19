@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Love FOSS and Gaming</title>
@@ -84,8 +84,8 @@
       <pubDate>Thu, 25 Jan 2018 15:57:25 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozadad.io/post/f2p_games_linux_and_wine/</guid>
-      <description>Lately I been trying to find games that are F2P because lately I have not found anything that has me interested and obsessed. Maybe I&amp;rsquo;m in a rut when it comes to gaming? no se&amp;hellip; Here is a list of what I been able to play so far.
- Warframe - Although Warframe is not native to linux, it plays well on wine. You will have to disable a lot of settings in the game to be able to play it the best and avoid certain issues that arise with those configuration being on.</description>
+      <description>Lately I been trying to find games that are F2P because lately I have not found anything that has me interested and obsessed. Maybe I&#39;m in a rut when it comes to gaming? no se&amp;hellip; Here is a list of what I been able to play so far.
+  Warframe - Although Warframe is not native to linux, it plays well on wine. You will have to disable a lot of settings in the game to be able to play it the best and avoid certain issues that arise with those configuration being on.</description>
     </item>
     
     <item>
@@ -103,7 +103,7 @@
       <pubDate>Mon, 08 Jan 2018 14:00:24 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozadad.io/post/ansible_osp_modules/</guid>
-      <description>Recently I started working on a project to create roles using ansible openstack modules. I have used openstack before but, the version I used was from 2014 and we managed the VM&amp;rsquo;s/Applications using supernova. We managed VM&amp;rsquo;s for customers in openstack but, we did not maintain the infrastructure itself. Although we troubleshooted and help diagnosed some issues with the openstack team. Issues like a VM got stuck, can&amp;rsquo;t connect to the VM&amp;rsquo; and having performance issues.</description>
+      <description>Recently I started working on a project to create roles using ansible openstack modules. I have used openstack before but, the version I used was from 2014 and we managed the VM&#39;s/Applications using supernova. We managed VM&#39;s for customers in openstack but, we did not maintain the infrastructure itself. Although we troubleshooted and help diagnosed some issues with the openstack team. Issues like a VM got stuck, can&#39;t connect to the VM&amp;rsquo; and having performance issues.</description>
     </item>
     
     <item>
@@ -130,7 +130,7 @@
       <pubDate>Tue, 05 Dec 2017 19:54:29 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozadad.io/post/fedora_nvidia_gpu/</guid>
-      <description>You can easily follow the instructions on rpmfusion on how to install the nvidia drivers on fedora but, it can be somewhat confusing if you don&amp;rsquo;t follow the instructions exactly. By installing the repo then doing the commands posted on the instructions can give you a lot of headache if you don&amp;rsquo;t really pay attention. What I mean by this is that you really have to make sure you install the correct driver for your GPU.</description>
+      <description>You can easily follow the instructions on rpmfusion on how to install the nvidia drivers on fedora but, it can be somewhat confusing if you don&#39;t follow the instructions exactly. By installing the repo then doing the commands posted on the instructions can give you a lot of headache if you don&#39;t really pay attention. What I mean by this is that you really have to make sure you install the correct driver for your GPU.</description>
     </item>
     
     <item>
@@ -193,7 +193,7 @@
       <pubDate>Fri, 24 Nov 2017 21:27:31 -0500</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozadad.io/post/streaming/</guid>
-      <description>I never been fan much of streaming and watching others play. Somehow I wanted to be the one playing and not just watch. I finally tried twitch just for the heck of it and I found out why a lot of people spend so much time on there. Be able to watch new games that come out or just classical games that you missed or haven&amp;rsquo;t played yet. I always wanted to make videos of the games I play as a way to do walthroughts and show others how to do something specific.</description>
+      <description>I never been fan much of streaming and watching others play. Somehow I wanted to be the one playing and not just watch. I finally tried twitch just for the heck of it and I found out why a lot of people spend so much time on there. Be able to watch new games that come out or just classical games that you missed or haven&#39;t played yet. I always wanted to make videos of the games I play as a way to do walthroughts and show others how to do something specific.</description>
     </item>
     
     <item>
@@ -203,7 +203,7 @@
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozadad.io/post/json_and_api/</guid>
       <description>#JSON and API
-I started using Vagrant for a while to be able to spin VM&amp;rsquo;s and troubleshoot or test certain configuration. For the moment I was fine with using virtualbox but, I decided to use libvirtd since I prefer it. I had no idea how to create images or where to start. I asked a co-worker and he mentioned to look at bento and packer. Bento has a whole list of json files for images in all linux flavors and builds the images for all Virtualization types.</description>
+I started using Vagrant for a while to be able to spin VM&#39;s and troubleshoot or test certain configuration. For the moment I was fine with using virtualbox but, I decided to use libvirtd since I prefer it. I had no idea how to create images or where to start. I asked a co-worker and he mentioned to look at bento and packer. Bento has a whole list of json files for images in all linux flavors and builds the images for all Virtualization types.</description>
     </item>
     
     <item>
@@ -212,7 +212,7 @@ I started using Vagrant for a while to be able to spin VM&amp;rsquo;s and troubl
       <pubDate>Mon, 23 Oct 2017 16:53:16 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozadad.io/post/fire_emblem_awakening/</guid>
-      <description>In here I continue my obsession of playing all the Fire Emblem games that I can get my hands on. After playing one of the DLC&amp;rsquo;s in fates and getting exposed to Chrom and the gang, I wanted to play with them since they looked like a cooler bunch. Here is my list:
+      <description>In here I continue my obsession of playing all the Fire Emblem games that I can get my hands on. After playing one of the DLC&#39;s in fates and getting exposed to Chrom and the gang, I wanted to play with them since they looked like a cooler bunch. Here is my list:
 Awesome Stuff:
  Scenes - The scenes and voice acting are just so awesome. It felt more complete and ties better with the story.</description>
     </item>
@@ -223,9 +223,9 @@ Awesome Stuff:
       <pubDate>Sun, 22 Oct 2017 21:37:31 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozadad.io/post/fire_emblem_warriors/</guid>
-      <description>Fire Emblem Warriors I always enjoy most of the Dynasty Warriors games or any of the similar series. I started all the way from DW1 until around 8 that I played on the pc. Although most of these games are straight up hack &amp;amp; slash, I liked the additions they have made throughout the years. This time I&amp;rsquo;m trying with the fire emblem universe.
+      <description>Fire Emblem Warriors I always enjoy most of the Dynasty Warriors games or any of the similar series. I started all the way from DW1 until around 8 that I played on the pc. Although most of these games are straight up hack &amp;amp; slash, I liked the additions they have made throughout the years. This time I&#39;m trying with the fire emblem universe.
 Awesome Stuff:
- Hack &amp;amp; Slack Character Selection and be able to switch around Story Upgrades and level up Give Orders voice Acting Scenes  Bad Stuff: * The graphics - It seems to be a continous problem with some of this games.</description>
+ Hack &amp;amp; Slack Character Selection and be able to switch around Story Upgrades and level up Give Orders voice Acting Scenes  Bad Stuff:</description>
     </item>
     
     <item>
@@ -244,7 +244,7 @@ The combat is straightforward just like any turn based RPG game out there. It fo
       <pubDate>Sun, 22 Oct 2017 17:12:54 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozadad.io/post/fire_emblem/</guid>
-      <description>Fire Emblem on 3DS A while ago my sister mentioned that she is going to get Fire Emblem Fates: Birthright. I always enjoyed the Fire Emblem series but, its been a while since I played one. Probably back in gamecube times ) can&amp;rsquo;t recall). I started playing Fire Emblem Fates: Birthright and been enjoying the story so far. Most of my favorites characters are on the birthright side, specially that you can spend more time with them and build out the relationships.</description>
+      <description>Fire Emblem on 3DS A while ago my sister mentioned that she is going to get Fire Emblem Fates: Birthright. I always enjoyed the Fire Emblem series but, its been a while since I played one. Probably back in gamecube times ) can&#39;t recall). I started playing Fire Emblem Fates: Birthright and been enjoying the story so far. Most of my favorites characters are on the birthright side, specially that you can spend more time with them and build out the relationships.</description>
     </item>
     
     <item>
@@ -272,7 +272,7 @@ The combat is straightforward just like any turn based RPG game out there. It fo
       <pubDate>Wed, 26 Jul 2017 11:52:08 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozadad.io/post/aliens_defiance/</guid>
-      <description>I bought Alien Defiance issue #1 months ago but, never got around to reading it. After going through the first issue, I got hooked. I was unable to find the second one in any local bookstores and the local comic store. I was forced to buy the digital version from Darkhorse. I&amp;rsquo;m not much of a fan of the digital versions but, I wanted to read them right away.I have to say I was hooked right away with this series.</description>
+      <description>I bought Alien Defiance issue #1 months ago but, never got around to reading it. After going through the first issue, I got hooked. I was unable to find the second one in any local bookstores and the local comic store. I was forced to buy the digital version from Darkhorse. I&#39;m not much of a fan of the digital versions but, I wanted to read them right away.I have to say I was hooked right away with this series.</description>
     </item>
     
     <item>
@@ -281,8 +281,8 @@ The combat is straightforward just like any turn based RPG game out there. It fo
       <pubDate>Fri, 21 Jul 2017 21:52:43 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozadad.io/post/upgrading_fedora25/</guid>
-      <description>With the release of Fedora 26, I decided to upgrade my Fedora 25. Fedora 26 introduced a lot of cool things and I have been using the beta version on my work laptop. You can do upgrade by doing the following: * sudo dnf install fedora-upgrade * sudo fedora-upgrade
-And just let all the packages go! then restart. I use the KDE version since I prefer it over GNOME.</description>
+      <description>With the release of Fedora 26, I decided to upgrade my Fedora 25. Fedora 26 introduced a lot of cool things and I have been using the beta version on my work laptop. You can do upgrade by doing the following:
+ sudo dnf install fedora-upgrade sudo fedora-upgrade  And just let all the packages go! then restart. I use the KDE version since I prefer it over GNOME.</description>
     </item>
     
     <item>
@@ -319,7 +319,7 @@ And just let all the packages go! then restart. I use the KDE version since I pr
       <pubDate>Mon, 08 May 2017 13:32:05 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozadad.io/post/use_ansible_to_resolve/</guid>
-      <description>After spending months on trying to deploy a Cloudera CM cluster with over 40 nodes, I needed to find a way automate most of my tasks and reduce time spend doing this manually. At the time when I started on this project we were using openstack VM&amp;rsquo;s to host this Cloudera cluster. Although is not best practices to use VM for big data, it was our only option of having resources.</description>
+      <description>After spending months on trying to deploy a Cloudera CM cluster with over 40 nodes, I needed to find a way automate most of my tasks and reduce time spend doing this manually. At the time when I started on this project we were using openstack VM&#39;s to host this Cloudera cluster. Although is not best practices to use VM for big data, it was our only option of having resources.</description>
     </item>
     
     <item>
@@ -328,7 +328,7 @@ And just let all the packages go! then restart. I use the KDE version since I pr
       <pubDate>Mon, 08 May 2017 11:52:33 -0400</pubDate>
       <author>jlozada2426@protonmail.com (Jonathan Lozada De La Matta)</author>
       <guid>https://jlozadad.io/post/big_data_on_openstack/</guid>
-      <description>Openstack can be a great solution due to the increase demand of cloud and more resources. But, it can&amp;rsquo;t resolve every issue out there. an Openstack deployment can provide &amp;ldquo;unlimited&amp;rdquo; resources but, is useless if is not architecture for the specific applications that the VM&amp;rsquo;s will be hosting. For example, a previous customer had over 20 regions, configured almost the same and had performance issues. This customer hosted big data applications (Cloudera to be specific) on those VM&amp;rsquo;s, had an older deployment of Openstack ( Icehouse so we could not take advantage of the newer cloud features) and no budget for further expansion and upgrades ( Including software and hardware) but, had the following issues:</description>
+      <description>Openstack can be a great solution due to the increase demand of cloud and more resources. But, it can&#39;t resolve every issue out there. an Openstack deployment can provide &amp;ldquo;unlimited&amp;rdquo; resources but, is useless if is not architecture for the specific applications that the VM&#39;s will be hosting. For example, a previous customer had over 20 regions, configured almost the same and had performance issues. This customer hosted big data applications (Cloudera to be specific) on those VM&#39;s, had an older deployment of Openstack ( Icehouse so we could not take advantage of the newer cloud features) and no budget for further expansion and upgrades ( Including software and hardware) but, had the following issues:</description>
     </item>
     
   </channel>
