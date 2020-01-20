@@ -1,0 +1,9 @@
+---
+title: "Working Too Much"
+date: 2020-01-20T10:56:45-05:00
+draft: true
+---
+
+
+I haven't updated this blog in over a year and had my domain expired. A lot has changed how gitlab pages are done, hugo version and containers. I spend a couple of weeks trying to get gitlab pages to work again since the process also includes verifying the domain with DNS records and auto generate a certificate. I spend so much time trying to create the TXT and CNAME records and nothing worked out the bat. Its been a while since I used DNS records because is not something I do anymore and this is the only time I mainly touch it. I reached out to namecheap since I bought the domain through there and support helped me figure out the issue. The first mistake was that I used the domain name instead of @. The other issues was that some of the content in the TXT record included the domain name and that had to be removed. The last part was that I continued to make mistakes and types. I been traveling lately and trying to do other things at the same time that I been so tire while still trying to complete goals. I been trying to take more breaks to avoid this but, sometimes I can't.
+
